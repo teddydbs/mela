@@ -5,10 +5,10 @@ import Link from 'next/link';
 import { useRouter, notFound } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
-import { Check, Sparkles, X } from 'lucide-react';
+import { ArrowLeft, Check, Sparkles, X } from 'lucide-react';
 import { CATEGORIES } from '@/lib/data/categories';
-import { ProgressBar } from '@/components/progress-bar';
 import { useUserData } from '@/lib/use-user-data';
+import { CategoryIconCircle } from '@/components/category-icon';
 import type { CategoryId } from '@/lib/types';
 
 interface PageProps {
@@ -68,7 +68,6 @@ export default function PracticePage({ params }: PageProps) {
     }
   };
 
-  // Keyboard shortcuts (1-4 to answer, Enter to continue)
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (finished) return;
@@ -88,8 +87,7 @@ export default function PracticePage({ params }: PageProps) {
   }, [showResult, finished, currentIdx, exercise]);
 
   if (finished) {
-    const sessionAccuracy =
-      sessionTotal > 0 ? Math.round((sessionCorrect / sessionTotal) * 100) : 0;
+    const sessionAccuracy = sessionTotal > 0 ? Math.round((sessionCorrect / sessionTotal) * 100) : 0;
     return (
       <FinishedView
         catId={catId}
@@ -102,64 +100,68 @@ export default function PracticePage({ params }: PageProps) {
 
   if (!exercise) return null;
 
+  const progress = ((currentIdx + (showResult ? 1 : 0)) / cat.exercises.length) * 100;
+
   return (
-    <div className="text-gray-900 pb-8">
-      {/* Header */}
-      <div className="bg-white border-b border-gray-100">
-        <div className="max-w-2xl mx-auto px-4 py-3 flex items-center gap-4">
-          <button
-            onClick={() => router.back()}
-            className="flex items-center text-gray-500 hover:text-gray-900 transition active:scale-95"
-            aria-label="Quitter"
-          >
-            <X size={20} strokeWidth={2.5} />
-          </button>
-          <div className="flex-1">
-            <ProgressBar
-              value={currentIdx + (showResult ? 1 : 0)}
-              max={cat.exercises.length}
-              color={cat.accent}
-              height="h-2"
-            />
-          </div>
-          <div
-            className="px-2.5 py-1 rounded-full text-xs font-bold tabular-nums"
-            style={{ backgroundColor: cat.bgLight, color: cat.accent }}
-          >
-            {sessionCorrect}/{sessionTotal}
-          </div>
+    <div className="px-4 sm:px-6 md:px-8 pt-5 pb-6">
+      {/* Header bar with back / progress / score */}
+      <div className="flex items-center gap-3 mb-5">
+        <button
+          onClick={() => router.back()}
+          className="flex-shrink-0 w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-gray-200 transition active:scale-95"
+          aria-label="Quitter"
+        >
+          <ArrowLeft size={16} strokeWidth={2.5} />
+        </button>
+        <div className="flex-1 h-3 bg-gray-100 rounded-full overflow-hidden">
+          <motion.div
+            initial={{ width: 0 }}
+            animate={{ width: `${progress}%` }}
+            transition={{ duration: 0.5 }}
+            className="h-full rounded-full"
+            style={{ background: `linear-gradient(90deg, ${cat.accent}, ${cat.accent}DD)` }}
+          />
+        </div>
+        <div
+          className="flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-extrabold tabular-nums"
+          style={{ backgroundColor: cat.bgLight, color: cat.accent }}
+        >
+          {sessionCorrect}/{sessionTotal}
         </div>
       </div>
 
-      {/* Content */}
-      <div className="max-w-2xl mx-auto px-5 pt-8">
-        <div className="flex items-center gap-2 mb-4">
-          <div className="text-2xl">{cat.emoji}</div>
-          <div
-            className="text-xs uppercase tracking-widest font-bold"
-            style={{ color: cat.accent }}
-          >
-            {cat.name}
+      <div className="max-w-2xl mx-auto">
+        {/* Category banner */}
+        <div className="flex items-center gap-3 mb-4">
+          <CategoryIconCircle catId={catId} size={40} iconSize={20} variant="solid" />
+          <div>
+            <div
+              className="text-[10px] uppercase tracking-widest font-extrabold"
+              style={{ color: cat.accent }}
+            >
+              {cat.name}
+            </div>
+            <div className="text-xs text-gray-500 font-semibold">
+              Question {currentIdx + 1} sur {cat.exercises.length}
+            </div>
           </div>
         </div>
 
+        {/* Question card */}
         <motion.div
           key={currentIdx}
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className="bg-white rounded-3xl p-6 shadow-sm shadow-gray-200/40 border border-gray-100 mb-6"
+          className="bg-white rounded-3xl p-6 shadow-sm border-2 border-gray-100 mb-5"
         >
-          <div className="text-xs uppercase tracking-widest text-gray-400 mb-3 font-bold">
-            Question {currentIdx + 1}
-          </div>
-          <h2 className="text-2xl leading-tight font-bold tracking-tight text-gray-900">
+          <h2 className="text-xl sm:text-2xl leading-tight font-extrabold tracking-tight text-gray-900">
             {exercise.q.split('_____').map((part, i, arr) => (
               <span key={i}>
                 {part}
                 {i < arr.length - 1 && (
                   <span
-                    className="inline-block mx-1 px-3 py-0.5 rounded-lg font-bold"
+                    className="inline-block mx-1 px-3 py-0.5 rounded-lg font-extrabold"
                     style={{
                       minWidth: '70px',
                       backgroundColor: showResult ? cat.bgLight : '#F3F4F6',
@@ -175,7 +177,7 @@ export default function PracticePage({ params }: PageProps) {
         </motion.div>
 
         {/* Options */}
-        <div className="space-y-3">
+        <div className="space-y-2.5">
           {exercise.o.map((opt, idx) => {
             const isSelected = selected === idx;
             const isCorrectOpt = idx === exercise.c;
@@ -199,7 +201,7 @@ export default function PracticePage({ params }: PageProps) {
                   color: 'white',
                 };
               } else {
-                classes = 'border-gray-100 bg-gray-50/50 opacity-50';
+                classes = 'border-gray-100 bg-gray-50/50 opacity-60';
               }
             }
 
@@ -213,7 +215,7 @@ export default function PracticePage({ params }: PageProps) {
               >
                 <div className="flex items-center gap-3">
                   <div
-                    className="flex-shrink-0 w-8 h-8 rounded-xl flex items-center justify-center text-sm font-black"
+                    className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-sm font-extrabold"
                     style={dotStyle}
                   >
                     {showResult && isCorrectOpt ? (
@@ -224,14 +226,14 @@ export default function PracticePage({ params }: PageProps) {
                       String.fromCharCode(65 + idx)
                     )}
                   </div>
-                  <span className="text-base font-semibold text-gray-900 flex-1">{opt}</span>
+                  <span className="text-base font-bold text-gray-900 flex-1">{opt}</span>
                 </div>
               </motion.button>
             );
           })}
         </div>
 
-        {/* Explanation enrichie */}
+        {/* Feedback */}
         <AnimatePresence>
           {showResult && (
             <motion.div
@@ -239,7 +241,7 @@ export default function PracticePage({ params }: PageProps) {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="mt-6 rounded-3xl p-5 border-2"
+              className="mt-5 rounded-3xl p-5 border-2"
               style={{
                 backgroundColor: isCorrect ? '#E8F8EC' : '#FFEBEA',
                 borderColor: isCorrect ? '#34C759' : '#FF3B30',
@@ -248,43 +250,40 @@ export default function PracticePage({ params }: PageProps) {
               <div className="flex items-center gap-2 mb-3">
                 {isCorrect ? (
                   <>
-                    <div className="px-3 py-1 rounded-full bg-gradient-to-r from-[#34C759] to-[#4ADB6F] text-white text-xs font-black tracking-wide flex items-center gap-1">
+                    <div className="px-3 py-1 rounded-full bg-gradient-to-r from-[#34C759] to-[#4ADB6F] text-white text-xs font-extrabold tracking-wide flex items-center gap-1">
                       <Sparkles size={12} fill="white" /> +10 XP
                     </div>
-                    <span className="text-sm font-bold text-[#1F7A3F]">Bien joué !</span>
+                    <span className="text-sm font-extrabold text-[#1F7A3F]">Bien joué !</span>
                   </>
                 ) : (
                   <>
-                    <div className="px-3 py-1 rounded-full bg-gradient-to-r from-[#FF3B30] to-[#FF6961] text-white text-xs font-black tracking-wide">
+                    <div className="px-3 py-1 rounded-full bg-gradient-to-r from-[#FF3B30] to-[#FF6961] text-white text-xs font-extrabold tracking-wide">
                       Pas tout à fait
                     </div>
-                    <span className="text-sm font-bold text-[#B91C1C]">+2 XP pour l&apos;effort</span>
+                    <span className="text-sm font-extrabold text-[#B91C1C]">
+                      +2 XP pour l&apos;effort
+                    </span>
                   </>
                 )}
               </div>
 
-              {/* Encadré "Pourquoi du comment" */}
               <div className="space-y-3">
                 <div>
-                  <div className="text-[10px] uppercase tracking-widest text-gray-500 font-bold mb-1">
+                  <div className="text-[10px] uppercase tracking-widest text-gray-500 font-extrabold mb-1">
                     La règle
                   </div>
-                  <p className="text-sm leading-relaxed text-gray-800 font-medium">
-                    {exercise.e}
-                  </p>
+                  <p className="text-sm leading-relaxed text-gray-800 font-medium">{exercise.e}</p>
                 </div>
 
                 {!isCorrect && selected !== null && (
                   <div className="pt-3 border-t border-current/10">
-                    <div className="text-[10px] uppercase tracking-widest text-gray-500 font-bold mb-1">
+                    <div className="text-[10px] uppercase tracking-widest text-gray-500 font-extrabold mb-1">
                       Ta réponse
                     </div>
-                    <div className="flex items-center gap-2 mb-2">
-                      <span className="text-sm line-through text-gray-500">
-                        {exercise.o[selected]}
-                      </span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm line-through text-gray-500">{exercise.o[selected]}</span>
                       <span className="text-gray-400">→</span>
-                      <span className="text-sm font-bold" style={{ color: cat.accent }}>
+                      <span className="text-sm font-extrabold" style={{ color: cat.accent }}>
                         {exercise.o[exercise.c]}
                       </span>
                     </div>
@@ -302,15 +301,15 @@ export default function PracticePage({ params }: PageProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             onClick={handleNext}
-            className="mt-5 w-full py-5 rounded-3xl font-bold text-white transition-all active:scale-[0.98] shadow-lg"
+            className="mt-5 w-full py-5 rounded-3xl font-extrabold text-white transition-all active:scale-[0.98] shadow-lg"
             style={{
               background: `linear-gradient(135deg, ${cat.accent}, ${cat.accent}DD)`,
-              boxShadow: `0 10px 30px -10px ${cat.accent}80`,
+              boxShadow: `0 12px 36px -10px ${cat.accent}80`,
             }}
           >
             {currentIdx < cat.exercises.length - 1
               ? 'Question suivante →'
-              : 'Terminer la session 🎉'}
+              : 'Terminer la session'}
           </motion.button>
         )}
       </div>
@@ -354,14 +353,20 @@ function FinishedView({
         transition={{ duration: 0.5, type: 'spring' }}
         className="text-center mb-8"
       >
-        <div className="text-7xl mb-4">{accuracy >= 70 ? '🎉' : '💪'}</div>
-        <h1 className="text-3xl font-black tracking-tight text-gray-900 mb-2">
+        <div
+          className="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4 shadow-xl"
+          style={{
+            background: `linear-gradient(135deg, ${cat.accent}, ${cat.accent}DD)`,
+            boxShadow: `0 12px 36px -10px ${cat.accent}80`,
+          }}
+        >
+          <Sparkles size={36} className="text-white" strokeWidth={2.5} fill="white" />
+        </div>
+        <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 mb-2">
           {accuracy >= 70 ? 'Session terminée !' : 'Belle session'}
         </h1>
-        <p className="text-sm text-gray-500 font-medium">
-          {accuracy >= 70
-            ? 'T’as cartonné. Continue comme ça.'
-            : "T'as bossé, c'est le principal."}
+        <p className="text-sm text-gray-500 font-semibold">
+          {accuracy >= 70 ? "T'as cartonné. Continue comme ça." : "T'as bossé, c'est le principal."}
         </p>
       </motion.div>
 
@@ -370,29 +375,27 @@ function FinishedView({
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
         className="rounded-3xl p-6 text-white shadow-lg mb-6"
-        style={{
-          background: `linear-gradient(135deg, ${cat.accent}, ${cat.accent}DD)`,
-        }}
+        style={{ background: `linear-gradient(135deg, ${cat.accent}, ${cat.accent}DD)` }}
       >
         <div className="grid grid-cols-3 gap-4 text-center">
           <div>
-            <div className="text-4xl font-black tabular-nums leading-none">{correct}</div>
-            <div className="text-[11px] uppercase tracking-wider font-semibold opacity-80 mt-2">
+            <div className="text-4xl font-extrabold tabular-nums leading-none">{correct}</div>
+            <div className="text-[11px] uppercase tracking-wider font-bold opacity-80 mt-2">
               Bonnes
             </div>
           </div>
           <div>
-            <div className="text-4xl font-black tabular-nums leading-none">{total - correct}</div>
-            <div className="text-[11px] uppercase tracking-wider font-semibold opacity-80 mt-2">
+            <div className="text-4xl font-extrabold tabular-nums leading-none">{total - correct}</div>
+            <div className="text-[11px] uppercase tracking-wider font-bold opacity-80 mt-2">
               À revoir
             </div>
           </div>
           <div>
-            <div className="text-4xl font-black tabular-nums leading-none">
+            <div className="text-4xl font-extrabold tabular-nums leading-none">
               {accuracy}
               <span className="text-2xl opacity-70">%</span>
             </div>
-            <div className="text-[11px] uppercase tracking-wider font-semibold opacity-80 mt-2">
+            <div className="text-[11px] uppercase tracking-wider font-bold opacity-80 mt-2">
               Précision
             </div>
           </div>
@@ -402,16 +405,14 @@ function FinishedView({
       <div className="grid grid-cols-2 gap-3">
         <Link
           href={`/learn/${catId}`}
-          className="text-center py-4 rounded-2xl bg-white border border-gray-200 font-bold text-gray-700 hover:border-gray-300 transition active:scale-95"
+          className="text-center py-4 rounded-2xl bg-white border-2 border-gray-200 font-extrabold text-gray-700 hover:border-gray-300 transition active:scale-95"
         >
           Relire le cours
         </Link>
         <Link
           href="/"
-          className="text-center py-4 rounded-2xl font-bold text-white shadow-lg transition active:scale-95"
-          style={{
-            background: `linear-gradient(135deg, ${cat.accent}, ${cat.accent}DD)`,
-          }}
+          className="text-center py-4 rounded-2xl font-extrabold text-white shadow-lg transition active:scale-95"
+          style={{ background: `linear-gradient(135deg, ${cat.accent}, ${cat.accent}DD)` }}
         >
           Retour accueil
         </Link>

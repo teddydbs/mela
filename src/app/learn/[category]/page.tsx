@@ -4,9 +4,10 @@ import { use } from 'react';
 import Link from 'next/link';
 import { notFound, useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Zap } from 'lucide-react';
+import { ArrowLeft, Play, Zap } from 'lucide-react';
 import { CATEGORIES } from '@/lib/data/categories';
 import { LESSONS } from '@/lib/data/lessons';
+import { CategoryIconCircle } from '@/components/category-icon';
 import type { CategoryId } from '@/lib/types';
 
 interface PageProps {
@@ -25,91 +26,104 @@ export default function LessonPage({ params }: PageProps) {
   const lesson = LESSONS[catId];
 
   return (
-    <div className="text-gray-900 pb-8">
-      {/* Header */}
-      <div className="bg-white border-b border-gray-100">
-        <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
-          <button
-            onClick={() => router.back()}
-            className="flex items-center gap-1.5 text-gray-500 hover:text-gray-900 transition active:scale-95"
-          >
-            <ArrowLeft size={18} strokeWidth={2.5} />
-            <span className="text-sm font-medium">Retour</span>
-          </button>
-          <Link
-            href={`/practice/${catId}`}
-            className="text-sm font-bold hover:opacity-80 transition active:scale-95 px-3 py-1.5 rounded-full"
-            style={{ color: cat.accent, backgroundColor: cat.bgLight }}
-          >
-            Exercices →
-          </Link>
-        </div>
+    <div className="px-4 sm:px-6 md:px-8 pt-5 pb-6">
+      {/* Back button */}
+      <div className="flex items-center justify-between mb-5">
+        <button
+          onClick={() => router.back()}
+          className="flex items-center gap-1.5 text-gray-500 hover:text-gray-900 transition active:scale-95 bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded-full"
+        >
+          <ArrowLeft size={16} strokeWidth={2.5} />
+          <span className="text-sm font-bold">Retour</span>
+        </button>
+        <Link
+          href={`/practice/${catId}`}
+          className="flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-extrabold text-white shadow-md active:scale-95 transition"
+          style={{
+            background: `linear-gradient(135deg, ${cat.accent}, ${cat.accent}DD)`,
+            boxShadow: `0 6px 20px -8px ${cat.accent}80`,
+          }}
+        >
+          <Play size={13} fill="white" />
+          Exercices
+        </Link>
       </div>
 
-      {/* Hero coloré */}
+      {/* Featured Lesson Header (style pastel card) */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
-        className="relative overflow-hidden"
+        className="relative rounded-3xl p-6 sm:p-8 mb-6 shadow-lg overflow-hidden"
+        style={{ backgroundColor: cat.bgLight }}
       >
-        <div
-          className="absolute inset-0 opacity-95"
-          style={{ background: `linear-gradient(135deg, ${cat.accent} 0%, ${cat.accent}DD 100%)` }}
-        />
-        <div className="relative max-w-2xl mx-auto px-6 pt-10 pb-10 text-white">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/20 backdrop-blur-md rounded-full mb-4">
-            <span className="text-xs font-bold tracking-wider uppercase">Leçon</span>
+        {/* Decorative blobs */}
+        <div className="absolute -top-8 -right-8 w-32 h-32 bg-white/30 rounded-full blur-2xl" />
+        <div className="absolute -bottom-12 -left-12 w-40 h-40 bg-white/20 rounded-full blur-3xl" />
+        <div className="absolute top-4 right-4">
+          <CategoryIconCircle catId={catId} size={48} iconSize={22} variant="solid" />
+        </div>
+
+        <div className="relative max-w-2xl">
+          <div className="text-[10px] uppercase tracking-widest font-extrabold mb-2" style={{ color: cat.accent }}>
+            Leçon
           </div>
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.1, type: 'spring', stiffness: 200 }}
-            className="text-6xl mb-3 leading-none"
-          >
-            {cat.emoji}
-          </motion.div>
-          <h1 className="text-4xl font-black tracking-tight mb-3 leading-tight">{cat.name}</h1>
-          <p className="text-base text-white/90 leading-relaxed max-w-md">{lesson.intro}</p>
+          <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 leading-tight mb-3">
+            {cat.name}
+          </h1>
+          <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-5">{lesson.intro}</p>
+
+          <div className="flex items-center gap-3 flex-wrap">
+            <Link
+              href={`/practice/${catId}`}
+              className="inline-flex items-center gap-2 bg-white rounded-full px-5 py-2.5 text-sm font-extrabold text-gray-900 shadow-md active:scale-95 transition hover:scale-105"
+            >
+              <Play size={14} fill="currentColor" />
+              Commencer
+            </Link>
+            <span className="text-xs font-semibold text-gray-600">
+              {cat.exercises.length} exercices · ~{Math.ceil(cat.exercises.length * 0.7)} min
+            </span>
+          </div>
         </div>
       </motion.div>
 
       {/* Sections */}
-      <div className="max-w-2xl mx-auto px-5 py-8 space-y-6">
+      <div className="space-y-3">
         {lesson.sections.map((section, idx) => (
           <motion.div
             key={idx}
-            initial={{ opacity: 0, y: 12 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.1 + idx * 0.06 }}
-            className="bg-white rounded-3xl p-6 shadow-sm shadow-gray-200/40 border border-gray-100"
+            transition={{ duration: 0.3, delay: 0.1 + idx * 0.05 }}
+            className="relative bg-white border-2 border-gray-100 rounded-3xl p-5 sm:p-6 shadow-sm hover:border-gray-200 transition"
           >
-            <div className="flex items-start gap-3 mb-4">
-              <div
-                className="flex-shrink-0 w-9 h-9 rounded-2xl flex items-center justify-center text-white font-black text-sm"
-                style={{ background: `linear-gradient(135deg, ${cat.accent}, ${cat.accent}CC)` }}
-              >
-                {idx + 1}
-              </div>
-              <h2 className="text-xl font-bold text-gray-900 tracking-tight pt-1 leading-snug">
-                {section.title.replace(/^\d+\.\s*/, '')}
-              </h2>
+            {/* Section number circular badge top-right */}
+            <div
+              className="absolute -top-3 right-5 w-10 h-10 rounded-full flex items-center justify-center text-white font-extrabold text-sm shadow-md border-2 border-white"
+              style={{ background: `linear-gradient(135deg, ${cat.accent}, ${cat.accent}DD)` }}
+            >
+              {idx + 1}
             </div>
-            <p className="text-sm text-gray-600 leading-relaxed mb-5 ml-12">{section.rule}</p>
+
+            <h2 className="text-lg sm:text-xl font-extrabold text-gray-900 tracking-tight pr-12 mb-2 leading-snug">
+              {section.title.replace(/^\d+\.\s*/, '')}
+            </h2>
+            <p className="text-sm text-gray-600 leading-relaxed mb-4">{section.rule}</p>
 
             {/* Examples */}
-            <div className="space-y-2 mb-4 ml-12">
+            <div className="space-y-2 mb-4">
               {section.examples.map((ex, exIdx) => (
                 <div
                   key={exIdx}
-                  className="p-4 rounded-2xl"
+                  className="p-3.5 rounded-2xl"
                   style={{ backgroundColor: cat.bgLight }}
                 >
-                  <div className="text-[15px] font-semibold text-gray-900 mb-1 leading-snug">
+                  <div className="text-[14px] font-extrabold text-gray-900 mb-1 leading-snug">
                     {ex.en}
                   </div>
                   {ex.fr && (
-                    <div className="text-[13px] text-gray-500 leading-relaxed">{ex.fr}</div>
+                    <div className="text-[12px] text-gray-600 leading-relaxed">{ex.fr}</div>
                   )}
                 </div>
               ))}
@@ -117,15 +131,15 @@ export default function LessonPage({ params }: PageProps) {
 
             {/* Markers */}
             {section.markers && (
-              <div className="mb-4 ml-12">
-                <div className="text-[10px] uppercase tracking-widest text-gray-400 mb-2 font-bold">
+              <div className="mb-4">
+                <div className="text-[10px] uppercase tracking-widest text-gray-400 mb-2 font-extrabold">
                   {section.markers.label}
                 </div>
                 <div className="flex flex-wrap gap-1.5">
                   {section.markers.items.map((m, mIdx) => (
                     <span
                       key={mIdx}
-                      className="text-xs px-3 py-1.5 rounded-full font-semibold"
+                      className="text-xs px-3 py-1.5 rounded-full font-bold"
                       style={{ backgroundColor: cat.bgLight, color: cat.accent }}
                     >
                       {m}
@@ -138,10 +152,10 @@ export default function LessonPage({ params }: PageProps) {
             {/* Warning */}
             {section.warning && (
               <div
-                className="ml-12 p-4 rounded-2xl border-l-4"
+                className="rounded-2xl p-4 border-l-4 mt-3"
                 style={{ borderColor: cat.accent, backgroundColor: '#FFFBF5' }}
               >
-                <div className="text-[10px] uppercase tracking-widest text-gray-500 mb-2 font-bold flex items-center gap-1.5">
+                <div className="text-[10px] uppercase tracking-widest text-gray-500 mb-2 font-extrabold flex items-center gap-1.5">
                   <Zap size={11} style={{ color: cat.accent }} fill={cat.accent} />
                   À retenir
                 </div>
@@ -155,20 +169,17 @@ export default function LessonPage({ params }: PageProps) {
       </div>
 
       {/* CTA bottom */}
-      <div className="max-w-2xl mx-auto px-5 pt-2 pb-8">
+      <div className="mt-8">
         <Link
           href={`/practice/${catId}`}
-          className="block w-full text-center py-5 rounded-3xl font-bold text-white transition-all hover:opacity-95 active:scale-[0.98] shadow-lg text-base"
+          className="block w-full text-center py-5 rounded-3xl font-extrabold text-white transition-all hover:opacity-95 active:scale-[0.98] shadow-lg text-base"
           style={{
             background: `linear-gradient(135deg, ${cat.accent}, ${cat.accent}DD)`,
-            boxShadow: `0 10px 30px -10px ${cat.accent}80`,
+            boxShadow: `0 12px 36px -10px ${cat.accent}80`,
           }}
         >
           Lancer les exercices →
         </Link>
-        <p className="text-xs text-gray-400 text-center mt-3">
-          Tu peux relire ce cours à tout moment.
-        </p>
       </div>
     </div>
   );

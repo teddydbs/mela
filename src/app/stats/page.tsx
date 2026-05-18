@@ -1,9 +1,17 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { RotateCcw } from 'lucide-react';
+import {
+  BarChart3,
+  Check,
+  Dumbbell,
+  Flame,
+  RotateCcw,
+  Target,
+} from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 import { CATEGORIES, TOTAL_EXERCISES } from '@/lib/data/categories';
-import { ProgressBar } from '@/components/progress-bar';
+import { CategoryIconCircle } from '@/components/category-icon';
 import { useUserData } from '@/lib/use-user-data';
 import { overallAccuracy, totalCompletedExercises } from '@/lib/storage';
 
@@ -18,113 +26,140 @@ export default function StatsPage() {
     }
   };
 
-  const heroCards = [
+  const heroCards: {
+    label: string;
+    value: number;
+    suffix: string;
+    bg: string;
+    accent: string;
+    Icon: LucideIcon;
+  }[] = [
     {
       label: 'Exercices',
       value: data.totalAttempts,
-      gradient: 'from-[#FF6B35] to-[#FF8C5A]',
-      shadow: 'shadow-[#FF6B35]/20',
+      suffix: '',
+      bg: '#FFE4D6',
+      accent: '#FF6B35',
+      Icon: Dumbbell,
     },
     {
       label: 'Précision',
       value: accuracy,
       suffix: '%',
-      gradient: 'from-[#34C759] to-[#4ADB6F]',
-      shadow: 'shadow-[#34C759]/20',
+      bg: '#D6F5DD',
+      accent: '#34C759',
+      Icon: Target,
     },
     {
       label: 'Série',
       value: data.streak,
       suffix: 'j',
-      gradient: 'from-[#FFB800] to-[#FFCB42]',
-      shadow: 'shadow-[#FFB800]/20',
+      bg: '#FFF4CC',
+      accent: '#FFB800',
+      Icon: Flame,
     },
     {
       label: 'Complétés',
       value: totalCompleted,
       suffix: `/${TOTAL_EXERCISES}`,
-      gradient: 'from-[#007AFF] to-[#5856D6]',
-      shadow: 'shadow-[#007AFF]/20',
+      bg: '#D7E8FF',
+      accent: '#007AFF',
+      Icon: Check,
     },
   ];
 
   return (
-    <div className="max-w-2xl mx-auto px-5 pt-4 pb-4">
+    <div className="px-4 sm:px-6 md:px-8 pt-5 pb-6">
       <motion.div
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
+        className="mb-6"
       >
-        <div className="text-xs uppercase tracking-widest text-gray-400 mb-1 font-bold">
-          Statistiques
-        </div>
-        <h1 className="text-4xl font-black tracking-tight text-gray-900 leading-tight mb-6">
-          Tes progrès
+        <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 leading-tight flex items-center gap-3">
+          Mes progrès
+          <BarChart3 size={26} className="text-[#AF52DE]" strokeWidth={2.5} />
         </h1>
+        <p className="text-sm text-gray-500 font-semibold mt-1">
+          {data.totalAttempts} exercices · {totalCompleted} complété
+          {totalCompleted !== 1 && 's'} sur {TOTAL_EXERCISES}
+        </p>
       </motion.div>
 
-      <div className="grid grid-cols-2 gap-3 mb-6">
-        {heroCards.map((card, i) => (
-          <motion.div
-            key={card.label}
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.05 + i * 0.05 }}
-            className={`relative overflow-hidden rounded-3xl p-5 bg-gradient-to-br ${card.gradient} text-white shadow-lg ${card.shadow}`}
-          >
-            <div className="text-xs uppercase tracking-widest font-bold opacity-80 mb-1">
-              {card.label}
-            </div>
-            <div className="text-4xl font-black tabular-nums leading-none">
-              {card.value}
-              {card.suffix && <span className="text-2xl opacity-80">{card.suffix}</span>}
-            </div>
-          </motion.div>
-        ))}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-8">
+        {heroCards.map((card, i) => {
+          const Icon = card.Icon;
+          return (
+            <motion.div
+              key={card.label}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.05 + i * 0.05 }}
+              className="relative rounded-3xl p-5 shadow-sm overflow-hidden"
+              style={{ backgroundColor: card.bg }}
+            >
+              <div className="absolute top-3 right-3 w-9 h-9 rounded-xl bg-white/70 flex items-center justify-center shadow-sm">
+                <Icon size={16} strokeWidth={2.5} style={{ color: card.accent }} />
+              </div>
+              <div
+                className="text-[10px] uppercase tracking-widest font-extrabold mb-1"
+                style={{ color: card.accent }}
+              >
+                {card.label}
+              </div>
+              <div className="text-3xl font-extrabold tabular-nums leading-none text-gray-900">
+                {card.value}
+                {card.suffix && <span className="text-xl opacity-70">{card.suffix}</span>}
+              </div>
+            </motion.div>
+          );
+        })}
       </div>
 
-      <div className="text-xs uppercase tracking-widest text-gray-400 mb-3 font-bold">
-        Par catégorie
-      </div>
-      <div className="space-y-3 mb-8">
+      <h2 className="text-lg font-extrabold text-gray-900 mb-3">Par catégorie</h2>
+
+      <div className="grid sm:grid-cols-2 gap-3 mb-8">
         {Object.entries(CATEGORIES).map(([key, cat], i) => {
           const prog = data.categoryProgress[cat.id] ?? { correct: 0, attempts: 0, completed: [] };
           const catAccuracy =
             prog.attempts > 0 ? Math.round((prog.correct / prog.attempts) * 100) : 0;
+          const pct = Math.round((prog.completed.length / cat.exercises.length) * 100);
           return (
             <motion.div
               key={key}
               initial={{ opacity: 0, x: -8 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.1 + i * 0.04 }}
-              className="bg-white rounded-2xl p-4 border border-gray-100 shadow-sm shadow-gray-100"
+              className="relative bg-white border-2 border-gray-100 rounded-3xl p-5 shadow-sm hover:border-gray-200 transition"
             >
-              <div className="flex items-center gap-3 mb-3">
-                <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center text-lg shadow-sm"
-                  style={{
-                    background: `linear-gradient(135deg, ${cat.accent}, ${cat.accent}DD)`,
-                    boxShadow: `0 6px 16px -8px ${cat.accent}80`,
-                  }}
-                >
-                  {cat.emoji}
-                </div>
-                <div className="flex-1">
-                  <div className="text-sm font-bold text-gray-900">{cat.name}</div>
-                  <div className="text-xs text-gray-500 tabular-nums">
-                    {prog.correct}/{prog.attempts} • {catAccuracy}% précis
-                  </div>
-                </div>
-                <div className="text-xs font-black tabular-nums" style={{ color: cat.accent }}>
-                  {prog.completed.length}/{cat.exercises.length}
-                </div>
+              <div className="absolute -top-3 right-5">
+                <CategoryIconCircle catId={cat.id} size={40} iconSize={18} variant="tint" className="shadow-md border-2 border-white" />
               </div>
-              <ProgressBar
-                value={prog.completed.length}
-                max={cat.exercises.length}
-                color={cat.accent}
-                height="h-2"
-              />
+
+              <div className="text-base font-extrabold text-gray-900 leading-tight mb-1 pr-12">
+                {cat.name}
+              </div>
+              <div className="text-xs text-gray-500 tabular-nums font-semibold mb-3">
+                {prog.correct}/{prog.attempts} · {catAccuracy}% précis
+              </div>
+
+              <div className="flex items-center justify-between text-[10px] font-bold mb-1.5">
+                <span className="text-gray-400 uppercase tracking-wider">
+                  {prog.completed.length}/{cat.exercises.length}
+                </span>
+                <span className="tabular-nums" style={{ color: cat.accent }}>
+                  {pct}%
+                </span>
+              </div>
+              <div className="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
+                <div
+                  className="h-full rounded-full transition-all duration-700"
+                  style={{
+                    width: `${pct}%`,
+                    background: `linear-gradient(90deg, ${cat.accent}, ${cat.accent}DD)`,
+                  }}
+                />
+              </div>
             </motion.div>
           );
         })}
@@ -132,7 +167,7 @@ export default function StatsPage() {
 
       <button
         onClick={handleReset}
-        className="w-full py-4 bg-white border border-gray-200 text-gray-500 rounded-2xl text-sm font-semibold hover:bg-red-50 hover:text-red-500 hover:border-red-200 transition flex items-center justify-center gap-2 active:scale-[0.99]"
+        className="w-full sm:w-auto sm:mx-auto sm:flex px-6 py-3 bg-white border-2 border-gray-200 text-gray-500 rounded-2xl text-sm font-extrabold hover:bg-red-50 hover:text-red-500 hover:border-red-200 transition flex items-center justify-center gap-2 active:scale-[0.99]"
       >
         <RotateCcw size={14} />
         Réinitialiser ma progression

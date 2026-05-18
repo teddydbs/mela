@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Check, Copy, ExternalLink, Target, X } from 'lucide-react';
+import { Check, Clock, Copy, ExternalLink, Target, X } from 'lucide-react';
 import { ROLEPLAY_CATEGORIES } from '@/lib/data/roleplay';
 import type { RoleplayScenario } from '@/lib/types';
+import { RoleplayCategoryIconCircle } from '@/components/roleplay-icon';
 
 interface ScenarioModalProps {
   scenario: RoleplayScenario;
@@ -43,7 +44,7 @@ export function ScenarioModal({ scenario, onClose }: ScenarioModalProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4"
+        className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4"
         onClick={onClose}
       >
         <motion.div
@@ -61,7 +62,7 @@ export function ScenarioModal({ scenario, onClose }: ScenarioModalProps) {
               background: `linear-gradient(135deg, ${cat.accent}, ${cat.accent}DD)`,
             }}
           >
-            <div className="absolute -top-12 -right-12 w-48 h-48 bg-white/10 rounded-full blur-2xl" />
+            <div className="absolute -top-12 -right-12 w-48 h-48 bg-white/20 rounded-full blur-2xl" />
             <button
               onClick={onClose}
               className="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-white/30 transition active:scale-95"
@@ -70,31 +71,39 @@ export function ScenarioModal({ scenario, onClose }: ScenarioModalProps) {
               <X size={18} strokeWidth={2.5} />
             </button>
             <div className="relative">
-              <div className="text-5xl mb-3 leading-none">{scenario.emoji}</div>
-              <h2 className="text-2xl font-black leading-tight mb-2">{scenario.title}</h2>
-              <div className="flex items-center gap-2 text-[11px] mb-3">
-                <span className="px-2 py-0.5 rounded-full font-bold bg-white/20 backdrop-blur-md uppercase tracking-wider">
+              <div className="mb-3">
+                <RoleplayCategoryIconCircle
+                  category={scenario.category}
+                  size={52}
+                  variant="tint"
+                  className="bg-white/90"
+                />
+              </div>
+              <h2 className="text-2xl font-extrabold leading-tight mb-2">{scenario.title}</h2>
+              <div className="flex items-center gap-2 text-[11px]">
+                <span className="px-2 py-0.5 rounded-full font-extrabold bg-white/20 backdrop-blur-md uppercase tracking-wider">
                   {scenario.level}
                 </span>
-                <span className="opacity-80 font-medium">⏱ {scenario.duration}</span>
-                <span className="opacity-80 font-medium">• {cat.label}</span>
+                <span className="opacity-90 font-semibold flex items-center gap-1">
+                  <Clock size={11} strokeWidth={2.5} />
+                  {scenario.duration}
+                </span>
+                <span className="opacity-90 font-semibold">· {cat.label}</span>
               </div>
             </div>
           </div>
 
           {/* Scrollable content */}
           <div className="flex-1 overflow-y-auto px-6 py-5 space-y-5">
-            {/* Contexte */}
             <div>
-              <div className="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">
+              <div className="text-[10px] uppercase tracking-widest text-gray-400 font-extrabold mb-2">
                 Contexte
               </div>
               <p className="text-sm text-gray-700 leading-relaxed">{scenario.context}</p>
             </div>
 
-            {/* Objectifs */}
             <div>
-              <div className="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">
+              <div className="text-[10px] uppercase tracking-widest text-gray-400 font-extrabold mb-2">
                 Tes objectifs
               </div>
               <ul className="space-y-2">
@@ -106,18 +115,17 @@ export function ScenarioModal({ scenario, onClose }: ScenarioModalProps) {
                     >
                       <Target size={11} style={{ color: cat.accent }} strokeWidth={3} />
                     </div>
-                    <span className="text-gray-700 font-medium leading-snug">{goal}</span>
+                    <span className="text-gray-700 font-semibold leading-snug">{goal}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            {/* Prompt preview */}
             <div>
-              <div className="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">
+              <div className="text-[10px] uppercase tracking-widest text-gray-400 font-extrabold mb-2">
                 Le prompt à coller dans ton IA
               </div>
-              <div className="rounded-2xl bg-gray-50 border border-gray-200 p-4 max-h-48 overflow-y-auto">
+              <div className="rounded-2xl bg-gray-50 border-2 border-gray-100 p-4 max-h-48 overflow-y-auto">
                 <pre className="text-[11px] text-gray-600 font-mono leading-relaxed whitespace-pre-wrap break-words">
                   {scenario.prompt}
                 </pre>
@@ -125,11 +133,10 @@ export function ScenarioModal({ scenario, onClose }: ScenarioModalProps) {
             </div>
           </div>
 
-          {/* Footer */}
           <div className="border-t border-gray-100 p-4 space-y-2 bg-white">
             <button
               onClick={handleCopy}
-              className="w-full py-4 rounded-2xl font-bold text-white transition active:scale-[0.98] shadow-lg flex items-center justify-center gap-2"
+              className="w-full py-4 rounded-2xl font-extrabold text-white transition active:scale-[0.98] shadow-lg flex items-center justify-center gap-2"
               style={{
                 background: copied
                   ? 'linear-gradient(135deg, #34C759, #4ADB6F)'
@@ -156,7 +163,7 @@ export function ScenarioModal({ scenario, onClose }: ScenarioModalProps) {
                 href="https://claude.ai/new"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-1.5 py-3 rounded-2xl text-sm font-bold text-gray-700 bg-gray-50 hover:bg-gray-100 transition active:scale-95"
+                className="flex items-center justify-center gap-1.5 py-3 rounded-2xl text-sm font-extrabold text-gray-700 bg-gray-50 hover:bg-gray-100 transition active:scale-95"
               >
                 Claude <ExternalLink size={12} />
               </a>
@@ -164,7 +171,7 @@ export function ScenarioModal({ scenario, onClose }: ScenarioModalProps) {
                 href="https://chat.openai.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-1.5 py-3 rounded-2xl text-sm font-bold text-gray-700 bg-gray-50 hover:bg-gray-100 transition active:scale-95"
+                className="flex items-center justify-center gap-1.5 py-3 rounded-2xl text-sm font-extrabold text-gray-700 bg-gray-50 hover:bg-gray-100 transition active:scale-95"
               >
                 ChatGPT <ExternalLink size={12} />
               </a>

@@ -21,7 +21,9 @@ export function TopBar() {
     <div className="bg-[#0A0A0A] text-white px-4 sm:px-6 py-4 flex items-center justify-between gap-3">
       {/* Logo */}
       <Link href="/" className="flex items-center gap-2 flex-shrink-0 active:scale-95 transition">
-        <span className="text-2xl">🇦🇺</span>
+        <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#FF6B35] to-[#FFB800] flex items-center justify-center shadow-md shadow-[#FF6B35]/40">
+          <span className="text-sm font-black text-white tracking-tighter">M</span>
+        </div>
         <span className="text-lg font-extrabold tracking-tight">MELA</span>
       </Link>
 

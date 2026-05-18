@@ -35,18 +35,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`${jakarta.variable} h-full`}>
-      <body className="min-h-full bg-[#C5E8EE] text-gray-900 antialiased">
-        {/* Outer pastel canvas */}
-        <div className="min-h-screen p-2 sm:p-4 md:p-6 lg:p-8">
-          {/* Inner dark frame */}
-          <div className="bg-[#0A0A0A] rounded-[28px] sm:rounded-[40px] overflow-hidden min-h-[calc(100vh-16px)] sm:min-h-[calc(100vh-32px)] md:min-h-[calc(100vh-48px)] lg:min-h-[calc(100vh-64px)] flex flex-col">
-            <TopBar />
-            {/* White inner canvas */}
-            <div className="flex-1 bg-white rounded-t-[24px] sm:rounded-t-[32px] mt-1 overflow-hidden relative">
-              <main className="pb-32">{children}</main>
-              <BottomNav />
-            </div>
+    <html lang="fr" className={`${jakarta.variable} h-full bg-[#0A0A0A]`}>
+      <body className="min-h-full bg-[#0A0A0A] text-gray-900 antialiased">
+        <div className="min-h-screen flex flex-col bg-[#0A0A0A] px-[5px] pb-[5px]">
+          <TopBar />
+          {/* White inner canvas with rounded corners on all sides */}
+          <div className="flex-1 bg-white rounded-[24px] sm:rounded-[28px] mt-[5px] overflow-hidden relative">
+            <main className="pb-32">{children}</main>
+            <BottomNav />
           </div>
         </div>
       </body>

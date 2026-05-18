@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  /* Pastel blue background (canvas) */
-  --background: #C5E8EE;
+  /* Outer canvas = black frame */
+  --background: #0A0A0A;
   /* Inner dark frame */
   --frame-dark: #0A0A0A;
   /* Inner content (white floor) */
