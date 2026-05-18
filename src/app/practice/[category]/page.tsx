@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter, notFound } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
-import { ArrowLeft, Check, Sparkles, X } from 'lucide-react';
+import { ArrowLeft, BookOpen, Check, Sparkles, X } from 'lucide-react';
 import { CATEGORIES } from '@/lib/data/categories';
 import { useUserData } from '@/lib/use-user-data';
 import { CategoryIconCircle } from '@/components/category-icon';
@@ -122,9 +122,18 @@ export default function PracticePage({ params }: PageProps) {
             style={{ background: `linear-gradient(90deg, ${cat.accent}, ${cat.accent}DD)` }}
           />
         </div>
-        <div
-          className="flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-extrabold tabular-nums"
+        <Link
+          href={`/learn/${catId}`}
+          className="flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-extrabold transition active:scale-95 hover:opacity-90 shadow-sm"
           style={{ backgroundColor: cat.bgLight, color: cat.accent }}
+          aria-label="Voir le cours"
+          title="Revoir le cours"
+        >
+          <BookOpen size={13} strokeWidth={2.5} />
+          <span className="hidden sm:inline">Cours</span>
+        </Link>
+        <div
+          className="flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-extrabold tabular-nums bg-gray-100 text-gray-700"
         >
           {sessionCorrect}/{sessionTotal}
         </div>

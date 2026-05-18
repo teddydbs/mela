@@ -18,7 +18,7 @@ import {
   Star,
   Target,
 } from 'lucide-react';
-import { CATEGORIES, TOTAL_EXERCISES, CATEGORY_IDS } from '@/lib/data/categories';
+import { CATEGORIES, TOTAL_EXERCISES, CATEGORY_IDS, CATEGORY_CHAPTERS } from '@/lib/data/categories';
 import { WEEKLY_PLAN, PHASE_COLORS } from '@/lib/data/weekly-plan';
 import { useUserData } from '@/lib/use-user-data';
 import {
@@ -114,31 +114,80 @@ export default function HomePage() {
         {/* Featured current lesson */}
         <FeaturedCard currentWeek={currentWeek} />
 
-        {/* Learning path */}
-        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
-          {CATEGORY_IDS.map((catId, i) => {
-            const cat = CATEGORIES[catId];
-            const prog = data.categoryProgress[catId] ?? {
-              correct: 0,
-              attempts: 0,
-              completed: [],
-            };
-            const isCompleted = prog.completed.length === cat.exercises.length;
-            const isInProgress = prog.completed.length > 0 && !isCompleted;
-            return (
-              <CategoryCard
-                key={catId}
-                catId={catId}
-                category={cat}
-                isCompleted={isCompleted}
-                isInProgress={isInProgress}
-                completedCount={prog.completed.length}
-                totalCount={cat.exercises.length}
-                delay={0.1 + i * 0.05}
-              />
-            );
-          })}
-        </div>
+        {/* Learning path — organisé en chapitres par niveau (A2 → B1 → B1+) */}
+        {CATEGORY_CHAPTERS.map((chapter, chapterIdx) => {
+          const chapterCats = chapter.categoryIds.map((id) => CATEGORIES[id]);
+          const chapterTotalEx = chapterCats.reduce((s, c) => s + c.exercises.length, 0);
+          const chapterDone = chapter.categoryIds.reduce(
+            (s, id) => s + (data.categoryProgress[id]?.completed.length ?? 0),
+            0,
+          );
+          const chapterPct = chapterTotalEx > 0 ? Math.round((chapterDone / chapterTotalEx) * 100) : 0;
+
+          return (
+            <section key={chapter.level} className="mb-8 last:mb-0">
+              {/* Chapter header */}
+              <motion.div
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.05 + chapterIdx * 0.08 }}
+                className="mb-4 flex items-end justify-between gap-3 flex-wrap"
+              >
+                <div className="min-w-0">
+                  <div
+                    className="text-[10px] uppercase tracking-widest font-extrabold mb-1"
+                    style={{ color: chapter.accent }}
+                  >
+                    Niveau {chapter.level} · Chapitre {chapterIdx + 1}
+                  </div>
+                  <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900 leading-tight">
+                    {chapter.title}
+                  </h2>
+                  <p className="text-sm text-gray-500 font-semibold mt-1 max-w-xl">
+                    {chapter.subtitle}
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 flex-shrink-0">
+                  <span
+                    className="inline-flex items-center gap-1 text-[11px] font-extrabold px-2.5 py-1 rounded-full tabular-nums"
+                    style={{ backgroundColor: chapter.bgLight, color: chapter.accent }}
+                  >
+                    {chapterDone}/{chapterTotalEx} · {chapterPct}%
+                  </span>
+                  <span className="inline-flex items-center gap-1 bg-gray-100 text-gray-600 text-[11px] font-extrabold px-2.5 py-1 rounded-full">
+                    {chapter.categoryIds.length} cours
+                  </span>
+                </div>
+              </motion.div>
+
+              {/* Chapter category grid */}
+              <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
+                {chapter.categoryIds.map((catId, i) => {
+                  const cat = CATEGORIES[catId];
+                  const prog = data.categoryProgress[catId] ?? {
+                    correct: 0,
+                    attempts: 0,
+                    completed: [],
+                  };
+                  const isCompleted = prog.completed.length === cat.exercises.length;
+                  const isInProgress = prog.completed.length > 0 && !isCompleted;
+                  return (
+                    <CategoryCard
+                      key={catId}
+                      catId={catId}
+                      category={cat}
+                      isCompleted={isCompleted}
+                      isInProgress={isInProgress}
+                      completedCount={prog.completed.length}
+                      totalCount={cat.exercises.length}
+                      delay={0.1 + chapterIdx * 0.08 + i * 0.04}
+                    />
+                  );
+                })}
+              </div>
+            </section>
+          );
+        })}
 
       </div>
 
@@ -258,24 +307,30 @@ function CategoryCard({
         <CategoryIconCircle catId={catId} size={42} iconSize={20} variant="tint" className="shadow-md border-2 border-white" />
       </div>
 
-      <h3 className="text-xl font-extrabold text-gray-900 leading-tight mb-1 pr-14">
-        {category.name}
-      </h3>
-      <p className="text-xs text-gray-500 leading-relaxed mb-3 line-clamp-2">
-        {category.description}
-      </p>
+      {/* Clickable area: first visit → cours, sinon → cours aussi (toujours accessible) */}
+      <Link
+        href={`/learn/${category.id}`}
+        className="group/card flex-1 flex flex-col -m-2 p-2 rounded-2xl hover:bg-gray-50/60 transition"
+      >
+        <h3 className="text-xl font-extrabold text-gray-900 leading-tight mb-1 pr-14 group-hover/card:opacity-80 transition">
+          {category.name}
+        </h3>
+        <p className="text-xs text-gray-500 leading-relaxed mb-3 line-clamp-2">
+          {category.description}
+        </p>
 
-      <div className="flex items-center gap-3 text-[11px] text-gray-400 font-semibold mb-4">
-        <span className="flex items-center gap-1">
-          <Clock size={11} strokeWidth={2.5} />
-          ~{Math.ceil(totalCount * 0.7)} min
-        </span>
-        <span className="text-gray-200">·</span>
-        <span className="flex items-center gap-1">
-          <Target size={11} strokeWidth={2.5} />
-          {totalCount} exercices
-        </span>
-      </div>
+        <div className="flex items-center gap-3 text-[11px] text-gray-400 font-semibold mb-4">
+          <span className="flex items-center gap-1">
+            <Clock size={11} strokeWidth={2.5} />
+            ~{Math.ceil(totalCount * 0.7)} min
+          </span>
+          <span className="text-gray-200">·</span>
+          <span className="flex items-center gap-1">
+            <Target size={11} strokeWidth={2.5} />
+            {totalCount} exercices
+          </span>
+        </div>
+      </Link>
 
       {(isInProgress || isCompleted) && (
         <div className="mb-4">
