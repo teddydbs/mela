@@ -16,6 +16,7 @@ interface PomodoroState {
   durationMin: number;
   hidden: boolean;
   finished: boolean;
+  started: boolean;
   start: (minutes: number) => void;
   pause: () => void;
   resume: () => void;
@@ -33,6 +34,10 @@ export function PomodoroProvider({ children }: { children: ReactNode }) {
   const [remaining, setRemaining] = useState(25 * 60 * 1000);
   const [hidden, setHidden] = useState(false);
   const [finished, setFinished] = useState(false);
+  // `started` stays true between start() and reset()/dismiss(),
+  // even when the user pauses. The floating pill uses this so it doesn't
+  // vanish during a pause.
+  const [started, setStarted] = useState(false);
   const endRef = useRef<number | null>(null);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -80,6 +85,7 @@ export function PomodoroProvider({ children }: { children: ReactNode }) {
     setRemaining(minutes * 60 * 1000);
     setFinished(false);
     setHidden(false);
+    setStarted(true);
     setRunning(true);
     if (
       typeof window !== 'undefined' &&
@@ -96,6 +102,7 @@ export function PomodoroProvider({ children }: { children: ReactNode }) {
   const reset = useCallback(() => {
     setRunning(false);
     setFinished(false);
+    setStarted(false);
     setRemaining(durationMin * 60 * 1000);
   }, [durationMin]);
 
@@ -104,6 +111,7 @@ export function PomodoroProvider({ children }: { children: ReactNode }) {
   const dismiss = useCallback(() => {
     setRunning(false);
     setFinished(false);
+    setStarted(false);
     setRemaining(durationMin * 60 * 1000);
     setHidden(false);
   }, [durationMin]);
@@ -114,6 +122,7 @@ export function PomodoroProvider({ children }: { children: ReactNode }) {
     durationMin,
     hidden,
     finished,
+    started,
     start,
     pause,
     resume,

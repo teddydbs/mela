@@ -7,12 +7,13 @@ import { formatTimer, usePomodoro } from '@/lib/pomodoro-context';
 import { FocusTimerModal } from '@/components/tools/focus-timer-modal';
 
 export function FloatingTimer() {
-  const { running, remaining, hidden, finished, pause, resume, toggleHidden, dismiss } =
+  const { running, started, remaining, hidden, finished, pause, resume, toggleHidden, dismiss } =
     usePomodoro();
   const [modalOpen, setModalOpen] = useState(false);
 
-  // Show when running OR when finished and not dismissed
-  const visible = running || finished;
+  // Visible during the whole session: started (running OR paused) OR finished
+  const visible = started || finished;
+  const paused = started && !running && !finished;
 
   return (
     <>
@@ -32,20 +33,32 @@ export function FloatingTimer() {
                   onClick={toggleHidden}
                   className="w-12 h-12 rounded-full bg-[#0A0A0A] border-2 border-white/10 flex items-center justify-center text-white shadow-2xl active:scale-95 transition relative"
                   aria-label="Afficher le timer"
-                  title="Afficher le timer"
+                  title={`Timer ${paused ? 'en pause' : 'en cours'} — clique pour afficher`}
                 >
-                  <Timer size={18} strokeWidth={2.5} className="text-[#34C759]" />
+                  <Timer
+                    size={18}
+                    strokeWidth={2.5}
+                    className={paused ? 'text-[#FFB800]' : 'text-[#34C759]'}
+                  />
                   <span
-                    className={`absolute -top-0.5 -right-0.5 w-3 h-3 rounded-full ${
-                      running ? 'bg-[#34C759] animate-pulse' : 'bg-[#FFB800]'
-                    } border-2 border-[#0A0A0A]`}
+                    className={`absolute -top-0.5 -right-0.5 w-3 h-3 rounded-full border-2 border-[#0A0A0A] ${
+                      finished
+                        ? 'bg-[#FFB800]'
+                        : paused
+                          ? 'bg-[#FFB800]'
+                          : 'bg-[#34C759] animate-pulse'
+                    }`}
                   />
                 </button>
               ) : (
                 /* Expanded pill */
                 <div
                   className={`flex items-center gap-2 bg-[#0A0A0A] border-2 border-white/10 rounded-full pl-2 pr-1.5 py-1.5 shadow-2xl ${
-                    finished ? 'ring-2 ring-[#FFB800]/60' : ''
+                    finished
+                      ? 'ring-2 ring-[#FFB800]/60'
+                      : paused
+                        ? 'ring-2 ring-[#FFB800]/30'
+                        : ''
                   }`}
                 >
                   {/* Big tappable area opens modal */}
@@ -56,7 +69,7 @@ export function FloatingTimer() {
                   >
                     <div
                       className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                        finished ? 'bg-[#FFB800]' : 'bg-[#34C759]'
+                        finished || paused ? 'bg-[#FFB800]' : 'bg-[#34C759]'
                       }`}
                     >
                       <Timer size={14} strokeWidth={2.5} className="text-white" />
@@ -105,11 +118,11 @@ export function FloatingTimer() {
                 </div>
               )}
 
-              {/* Mini label below when expanded and finished */}
-              {finished && !hidden && (
+              {/* Mini label below */}
+              {!hidden && (finished || paused) && (
                 <div className="text-center mt-2">
                   <span className="text-[10px] uppercase tracking-widest font-extrabold text-[#FFB800] bg-[#0A0A0A]/80 backdrop-blur px-2 py-0.5 rounded-full">
-                    Session terminée
+                    {finished ? 'Session terminée' : 'En pause'}
                   </span>
                 </div>
               )}
