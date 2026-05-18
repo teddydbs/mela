@@ -1,0 +1,1019 @@
+[
+  {
+    "en": "actually",
+    "fr_false_meaning": "actuellement",
+    "fr_real_meaning": "en réalité / en fait",
+    "en_for_intended_french": "currently",
+    "example_correct_en": "Actually, I don't agree with that.",
+    "example_correct_fr": "En fait, je ne suis pas d'accord avec ça.",
+    "level": "A2"
+  },
+  {
+    "en": "currently",
+    "fr_false_meaning": "couramment (parler une langue)",
+    "fr_real_meaning": "actuellement / en ce moment",
+    "en_for_intended_french": "fluently",
+    "example_correct_en": "She currently lives in Boston.",
+    "example_correct_fr": "Elle vit actuellement à Boston.",
+    "level": "A2"
+  },
+  {
+    "en": "eventually",
+    "fr_false_meaning": "éventuellement",
+    "fr_real_meaning": "finalement / au bout du compte",
+    "en_for_intended_french": "possibly / maybe",
+    "example_correct_en": "He eventually agreed to come.",
+    "example_correct_fr": "Il a finalement accepté de venir.",
+    "level": "B1"
+  },
+  {
+    "en": "library",
+    "fr_false_meaning": "librairie",
+    "fr_real_meaning": "bibliothèque",
+    "en_for_intended_french": "bookstore",
+    "example_correct_en": "I borrowed this book from the library.",
+    "example_correct_fr": "J'ai emprunté ce livre à la bibliothèque.",
+    "level": "A2"
+  },
+  {
+    "en": "sensible",
+    "fr_false_meaning": "sensible (émotionnellement)",
+    "fr_real_meaning": "raisonnable / sensé",
+    "en_for_intended_french": "sensitive",
+    "example_correct_en": "That's a sensible decision.",
+    "example_correct_fr": "C'est une décision raisonnable.",
+    "level": "B1"
+  },
+  {
+    "en": "sensitive",
+    "fr_false_meaning": "sensé / raisonnable",
+    "fr_real_meaning": "sensible (émotionnellement)",
+    "en_for_intended_french": "sensible / reasonable",
+    "example_correct_en": "She's very sensitive to criticism.",
+    "example_correct_fr": "Elle est très sensible à la critique.",
+    "level": "B1"
+  },
+  {
+    "en": "attend",
+    "fr_false_meaning": "attendre",
+    "fr_real_meaning": "assister à / participer à",
+    "en_for_intended_french": "wait (for)",
+    "example_correct_en": "Will you attend the meeting?",
+    "example_correct_fr": "Tu vas assister à la réunion ?",
+    "level": "B1"
+  },
+  {
+    "en": "assist",
+    "fr_false_meaning": "assister à (un événement)",
+    "fr_real_meaning": "aider",
+    "en_for_intended_french": "attend",
+    "example_correct_en": "Can you assist me with this?",
+    "example_correct_fr": "Tu peux m'aider avec ça ?",
+    "level": "B1"
+  },
+  {
+    "en": "deceive",
+    "fr_false_meaning": "décevoir",
+    "fr_real_meaning": "tromper / duper",
+    "en_for_intended_french": "disappoint",
+    "example_correct_en": "He deceived everyone with his lies.",
+    "example_correct_fr": "Il a trompé tout le monde avec ses mensonges.",
+    "level": "B2"
+  },
+  {
+    "en": "deception",
+    "fr_false_meaning": "déception",
+    "fr_real_meaning": "tromperie / supercherie",
+    "en_for_intended_french": "disappointment",
+    "example_correct_en": "The whole story was a deception.",
+    "example_correct_fr": "Toute cette histoire était une tromperie.",
+    "level": "B2"
+  },
+  {
+    "en": "disappoint",
+    "fr_false_meaning": "désapprendre / pointer",
+    "fr_real_meaning": "décevoir",
+    "en_for_intended_french": "(it depends on the false meaning)",
+    "example_correct_en": "I don't want to disappoint you.",
+    "example_correct_fr": "Je ne veux pas te décevoir.",
+    "level": "B1"
+  },
+  {
+    "en": "demand",
+    "fr_false_meaning": "demander (poliment)",
+    "fr_real_meaning": "exiger / réclamer",
+    "en_for_intended_french": "ask (for)",
+    "example_correct_en": "The boss demanded an explanation.",
+    "example_correct_fr": "Le patron a exigé une explication.",
+    "level": "B1"
+  },
+  {
+    "en": "resume",
+    "fr_false_meaning": "résumer",
+    "fr_real_meaning": "reprendre / recommencer",
+    "en_for_intended_french": "summarize",
+    "example_correct_en": "Let's resume the meeting after lunch.",
+    "example_correct_fr": "Reprenons la réunion après le déjeuner.",
+    "level": "B1"
+  },
+  {
+    "en": "coin",
+    "fr_false_meaning": "coin (angle)",
+    "fr_real_meaning": "pièce de monnaie",
+    "en_for_intended_french": "corner",
+    "example_correct_en": "I found a coin on the sidewalk.",
+    "example_correct_fr": "J'ai trouvé une pièce sur le trottoir.",
+    "level": "A2"
+  },
+  {
+    "en": "journey",
+    "fr_false_meaning": "journée",
+    "fr_real_meaning": "voyage / trajet (long)",
+    "en_for_intended_french": "day",
+    "example_correct_en": "It was a long journey across the country.",
+    "example_correct_fr": "Ça a été un long voyage à travers le pays.",
+    "level": "A2"
+  },
+  {
+    "en": "lecture",
+    "fr_false_meaning": "lecture",
+    "fr_real_meaning": "cours magistral / conférence",
+    "en_for_intended_french": "reading",
+    "example_correct_en": "I have a physics lecture at 10.",
+    "example_correct_fr": "J'ai un cours magistral de physique à 10 h.",
+    "level": "B1"
+  },
+  {
+    "en": "location",
+    "fr_false_meaning": "location (d'un logement)",
+    "fr_real_meaning": "emplacement / lieu",
+    "en_for_intended_french": "rental",
+    "example_correct_en": "The restaurant has a great location.",
+    "example_correct_fr": "Le restaurant a un super emplacement.",
+    "level": "A2"
+  },
+  {
+    "en": "pass an exam",
+    "fr_false_meaning": "passer un examen (le faire)",
+    "fr_real_meaning": "réussir un examen",
+    "en_for_intended_french": "take an exam",
+    "example_correct_en": "Did you pass the driving test?",
+    "example_correct_fr": "Tu as réussi le permis ?",
+    "level": "A2"
+  },
+  {
+    "en": "preservative",
+    "fr_false_meaning": "préservatif",
+    "fr_real_meaning": "conservateur (alimentaire)",
+    "en_for_intended_french": "condom",
+    "example_correct_en": "This bread has no preservatives.",
+    "example_correct_fr": "Ce pain ne contient pas de conservateurs.",
+    "level": "B1"
+  },
+  {
+    "en": "rest",
+    "fr_false_meaning": "rester",
+    "fr_real_meaning": "se reposer / le reste",
+    "en_for_intended_french": "stay / remain",
+    "example_correct_en": "You should rest a few days.",
+    "example_correct_fr": "Tu devrais te reposer quelques jours.",
+    "level": "A2"
+  },
+  {
+    "en": "achieve",
+    "fr_false_meaning": "achever / terminer",
+    "fr_real_meaning": "accomplir / réussir / atteindre (un but)",
+    "en_for_intended_french": "finish / complete",
+    "example_correct_en": "She achieved her goal of running a marathon.",
+    "example_correct_fr": "Elle a accompli son objectif de courir un marathon.",
+    "level": "B1"
+  },
+  {
+    "en": "ancient",
+    "fr_false_meaning": "ancien (précédent)",
+    "fr_real_meaning": "antique / très vieux",
+    "en_for_intended_french": "former / previous",
+    "example_correct_en": "We visited some ancient Roman ruins.",
+    "example_correct_fr": "On a visité des ruines romaines antiques.",
+    "level": "B1"
+  },
+  {
+    "en": "blessed",
+    "fr_false_meaning": "blessé",
+    "fr_real_meaning": "béni / bienheureux",
+    "en_for_intended_french": "injured / hurt",
+    "example_correct_en": "We feel blessed to have such a family.",
+    "example_correct_fr": "On se sent bénis d'avoir une telle famille.",
+    "level": "B1"
+  },
+  {
+    "en": "injury",
+    "fr_false_meaning": "injure",
+    "fr_real_meaning": "blessure",
+    "en_for_intended_french": "insult",
+    "example_correct_en": "He recovered from a knee injury.",
+    "example_correct_fr": "Il s'est remis d'une blessure au genou.",
+    "level": "B1"
+  },
+  {
+    "en": "blouse",
+    "fr_false_meaning": "blouse (de travail)",
+    "fr_real_meaning": "chemisier",
+    "en_for_intended_french": "(lab) coat / overall / smock",
+    "example_correct_en": "She wore a silk blouse to the interview.",
+    "example_correct_fr": "Elle portait un chemisier en soie à l'entretien.",
+    "level": "B1"
+  },
+  {
+    "en": "cabinet",
+    "fr_false_meaning": "cabinet médical",
+    "fr_real_meaning": "meuble de rangement / cabinet ministériel",
+    "en_for_intended_french": "doctor's office / surgery (UK)",
+    "example_correct_en": "The cups are in the top cabinet.",
+    "example_correct_fr": "Les tasses sont dans le placard du haut.",
+    "level": "B1"
+  },
+  {
+    "en": "car",
+    "fr_false_meaning": "car (autobus / parce que)",
+    "fr_real_meaning": "voiture",
+    "en_for_intended_french": "coach / because",
+    "example_correct_en": "I parked the car downtown.",
+    "example_correct_fr": "J'ai garé la voiture au centre-ville.",
+    "level": "A2"
+  },
+  {
+    "en": "chair",
+    "fr_false_meaning": "chair (corps)",
+    "fr_real_meaning": "chaise",
+    "en_for_intended_french": "flesh",
+    "example_correct_en": "Pull up a chair and join us.",
+    "example_correct_fr": "Prends une chaise et joins-toi à nous.",
+    "level": "A2"
+  },
+  {
+    "en": "chance",
+    "fr_false_meaning": "chance (avoir de la veine)",
+    "fr_real_meaning": "opportunité / probabilité",
+    "en_for_intended_french": "luck",
+    "example_correct_en": "There's a good chance it will rain.",
+    "example_correct_fr": "Il y a de fortes chances qu'il pleuve.",
+    "level": "A2"
+  },
+  {
+    "en": "character",
+    "fr_false_meaning": "caractère (tempérament)",
+    "fr_real_meaning": "personnage (livre/film) / caractère (typo)",
+    "en_for_intended_french": "personality / temperament",
+    "example_correct_en": "My favorite character in the book is the brother.",
+    "example_correct_fr": "Mon personnage préféré dans le livre, c'est le frère.",
+    "level": "B1"
+  },
+  {
+    "en": "college",
+    "fr_false_meaning": "collège",
+    "fr_real_meaning": "université (US) / faculté",
+    "en_for_intended_french": "middle school (US) / secondary school (UK)",
+    "example_correct_en": "She's going to college in the fall.",
+    "example_correct_fr": "Elle part à la fac à l'automne.",
+    "level": "A2"
+  },
+  {
+    "en": "comprehensive",
+    "fr_false_meaning": "compréhensif",
+    "fr_real_meaning": "exhaustif / complet / global",
+    "en_for_intended_french": "understanding",
+    "example_correct_en": "We need a comprehensive plan.",
+    "example_correct_fr": "Il nous faut un plan complet.",
+    "level": "B2"
+  },
+  {
+    "en": "confidence",
+    "fr_false_meaning": "confidence",
+    "fr_real_meaning": "confiance (en soi)",
+    "en_for_intended_french": "secret",
+    "example_correct_en": "He spoke with a lot of confidence.",
+    "example_correct_fr": "Il a parlé avec beaucoup d'assurance.",
+    "level": "B1"
+  },
+  {
+    "en": "confused",
+    "fr_false_meaning": "confus (gêné)",
+    "fr_real_meaning": "perdu / pas sûr de comprendre",
+    "en_for_intended_french": "embarrassed",
+    "example_correct_en": "I'm confused — what time is the meeting?",
+    "example_correct_fr": "Je suis perdu — la réunion est à quelle heure ?",
+    "level": "A2"
+  },
+  {
+    "en": "crayon",
+    "fr_false_meaning": "crayon (à papier)",
+    "fr_real_meaning": "crayon de couleur (cire)",
+    "en_for_intended_french": "pencil",
+    "example_correct_en": "Kids love drawing with crayons.",
+    "example_correct_fr": "Les enfants adorent dessiner aux crayons de couleur.",
+    "level": "A2"
+  },
+  {
+    "en": "delay",
+    "fr_false_meaning": "délai (durée allouée)",
+    "fr_real_meaning": "retard",
+    "en_for_intended_french": "deadline / time limit",
+    "example_correct_en": "There's a two-hour delay on my flight.",
+    "example_correct_fr": "Il y a deux heures de retard sur mon vol.",
+    "level": "A2"
+  },
+  {
+    "en": "dramatic",
+    "fr_false_meaning": "dramatique (tragique)",
+    "fr_real_meaning": "spectaculaire / important",
+    "en_for_intended_french": "tragic",
+    "example_correct_en": "Sales saw a dramatic increase this quarter.",
+    "example_correct_fr": "Les ventes ont connu une hausse spectaculaire ce trimestre.",
+    "level": "B1"
+  },
+  {
+    "en": "editor",
+    "fr_false_meaning": "éditeur (maison d'édition)",
+    "fr_real_meaning": "rédacteur en chef / réviseur",
+    "en_for_intended_french": "publisher",
+    "example_correct_en": "The editor of the magazine emailed me.",
+    "example_correct_fr": "Le rédacteur en chef du magazine m'a écrit.",
+    "level": "B1"
+  },
+  {
+    "en": "engaged",
+    "fr_false_meaning": "engagé (recruté / politiquement)",
+    "fr_real_meaning": "fiancé / occupé",
+    "en_for_intended_french": "hired / committed",
+    "example_correct_en": "They just got engaged last week.",
+    "example_correct_fr": "Ils viennent de se fiancer la semaine dernière.",
+    "level": "B1"
+  },
+  {
+    "en": "envy",
+    "fr_false_meaning": "envie (de faire qqch)",
+    "fr_real_meaning": "jalousie / envie d'avoir ce que l'autre a",
+    "en_for_intended_french": "want / feel like",
+    "example_correct_en": "I envy his patience.",
+    "example_correct_fr": "Je lui envie sa patience.",
+    "level": "B1"
+  },
+  {
+    "en": "evidence",
+    "fr_false_meaning": "évidence",
+    "fr_real_meaning": "preuve / élément de preuve",
+    "en_for_intended_french": "obviousness (rare) / 'it's obvious'",
+    "example_correct_en": "There's no evidence to support that claim.",
+    "example_correct_fr": "Il n'y a aucune preuve pour étayer cette affirmation.",
+    "level": "B1"
+  },
+  {
+    "en": "experience",
+    "fr_false_meaning": "expérience (test scientifique)",
+    "fr_real_meaning": "expérience vécue",
+    "en_for_intended_french": "experiment",
+    "example_correct_en": "She has ten years of experience in marketing.",
+    "example_correct_fr": "Elle a dix ans d'expérience en marketing.",
+    "level": "A2"
+  },
+  {
+    "en": "extra",
+    "fr_false_meaning": "extra (super, génial)",
+    "fr_real_meaning": "supplémentaire / en plus",
+    "en_for_intended_french": "great / awesome",
+    "example_correct_en": "Can I get an extra napkin?",
+    "example_correct_fr": "Je peux avoir une serviette en plus ?",
+    "level": "A2"
+  },
+  {
+    "en": "fabric",
+    "fr_false_meaning": "fabrique / usine",
+    "fr_real_meaning": "tissu / étoffe",
+    "en_for_intended_french": "factory",
+    "example_correct_en": "I love the fabric of this jacket.",
+    "example_correct_fr": "J'adore le tissu de cette veste.",
+    "level": "B1"
+  },
+  {
+    "en": "figure",
+    "fr_false_meaning": "figure (visage)",
+    "fr_real_meaning": "chiffre / silhouette / personnage important",
+    "en_for_intended_french": "face",
+    "example_correct_en": "The sales figures look strong this month.",
+    "example_correct_fr": "Les chiffres de vente sont solides ce mois-ci.",
+    "level": "B1"
+  },
+  {
+    "en": "genial",
+    "fr_false_meaning": "génial (super)",
+    "fr_real_meaning": "cordial / aimable",
+    "en_for_intended_french": "great / brilliant / awesome",
+    "example_correct_en": "He has a genial personality.",
+    "example_correct_fr": "Il a une personnalité cordiale.",
+    "level": "B2"
+  },
+  {
+    "en": "gentle",
+    "fr_false_meaning": "gentil",
+    "fr_real_meaning": "doux / délicat",
+    "en_for_intended_french": "kind / nice",
+    "example_correct_en": "Be gentle with the puppy.",
+    "example_correct_fr": "Sois doux avec le chiot.",
+    "level": "A2"
+  },
+  {
+    "en": "grand",
+    "fr_false_meaning": "grand (taille)",
+    "fr_real_meaning": "grandiose / majestueux",
+    "en_for_intended_french": "tall / big",
+    "example_correct_en": "They live in a grand old mansion.",
+    "example_correct_fr": "Ils vivent dans une grande et majestueuse demeure.",
+    "level": "B1"
+  },
+  {
+    "en": "hazard",
+    "fr_false_meaning": "hasard",
+    "fr_real_meaning": "danger / risque",
+    "en_for_intended_french": "chance / coincidence",
+    "example_correct_en": "Wet floors are a serious hazard.",
+    "example_correct_fr": "Les sols mouillés sont un vrai danger.",
+    "level": "B1"
+  },
+  {
+    "en": "inconvenient",
+    "fr_false_meaning": "inconvénient (nom)",
+    "fr_real_meaning": "gênant / qui ne convient pas (adjectif)",
+    "en_for_intended_french": "drawback / disadvantage",
+    "example_correct_en": "Is this time inconvenient for you?",
+    "example_correct_fr": "Cet horaire vous gêne-t-il ?",
+    "level": "B1"
+  },
+  {
+    "en": "introduce",
+    "fr_false_meaning": "introduire (insérer)",
+    "fr_real_meaning": "présenter (quelqu'un)",
+    "en_for_intended_french": "insert / put in",
+    "example_correct_en": "Let me introduce you to my brother.",
+    "example_correct_fr": "Laisse-moi te présenter mon frère.",
+    "level": "A2"
+  },
+  {
+    "en": "issue",
+    "fr_false_meaning": "issue (sortie)",
+    "fr_real_meaning": "problème / question / numéro (magazine)",
+    "en_for_intended_french": "exit / outcome",
+    "example_correct_en": "We're having some issues with the printer.",
+    "example_correct_fr": "On a quelques problèmes avec l'imprimante.",
+    "level": "B1"
+  },
+  {
+    "en": "jolly",
+    "fr_false_meaning": "joli",
+    "fr_real_meaning": "joyeux / jovial",
+    "en_for_intended_french": "pretty",
+    "example_correct_en": "He's a jolly old fellow.",
+    "example_correct_fr": "C'est un vieux bonhomme jovial.",
+    "level": "B2"
+  },
+  {
+    "en": "large",
+    "fr_false_meaning": "large (en largeur)",
+    "fr_real_meaning": "grand / volumineux",
+    "en_for_intended_french": "wide",
+    "example_correct_en": "I'd like a large coffee, please.",
+    "example_correct_fr": "Un grand café, s'il vous plaît.",
+    "level": "A2"
+  },
+  {
+    "en": "luxury",
+    "fr_false_meaning": "luxure",
+    "fr_real_meaning": "luxe",
+    "en_for_intended_french": "lust",
+    "example_correct_en": "They stayed in a luxury hotel.",
+    "example_correct_fr": "Ils ont logé dans un hôtel de luxe.",
+    "level": "B1"
+  },
+  {
+    "en": "miser",
+    "fr_false_meaning": "miser (parier)",
+    "fr_real_meaning": "avare",
+    "en_for_intended_french": "bet on",
+    "example_correct_en": "His uncle was a notorious miser.",
+    "example_correct_fr": "Son oncle était un avare notoire.",
+    "level": "B2"
+  },
+  {
+    "en": "nervous",
+    "fr_false_meaning": "énervé / agacé",
+    "fr_real_meaning": "anxieux / stressé",
+    "en_for_intended_french": "annoyed / irritated",
+    "example_correct_en": "I'm nervous about the interview.",
+    "example_correct_fr": "Je suis stressé pour l'entretien.",
+    "level": "A2"
+  },
+  {
+    "en": "notice",
+    "fr_false_meaning": "notice (manuel)",
+    "fr_real_meaning": "remarquer / avis affiché",
+    "en_for_intended_french": "instructions / manual",
+    "example_correct_en": "Did you notice anything strange?",
+    "example_correct_fr": "Tu as remarqué quelque chose de bizarre ?",
+    "level": "B1"
+  },
+  {
+    "en": "novel",
+    "fr_false_meaning": "nouvelle (information)",
+    "fr_real_meaning": "roman",
+    "en_for_intended_french": "news / piece of news",
+    "example_correct_en": "She's reading a novel by Hemingway.",
+    "example_correct_fr": "Elle lit un roman de Hemingway.",
+    "level": "B1"
+  },
+  {
+    "en": "occasion",
+    "fr_false_meaning": "occasion (bonne affaire / d'occasion)",
+    "fr_real_meaning": "événement / moment particulier",
+    "en_for_intended_french": "bargain / second-hand",
+    "example_correct_en": "We saved this wine for a special occasion.",
+    "example_correct_fr": "On a gardé ce vin pour une occasion spéciale.",
+    "level": "B1"
+  },
+  {
+    "en": "opportunity",
+    "fr_false_meaning": "opportunité (au sens du moment opportun)",
+    "fr_real_meaning": "occasion / chance à saisir",
+    "en_for_intended_french": "timeliness / appropriateness",
+    "example_correct_en": "This is a great opportunity for you.",
+    "example_correct_fr": "C'est une super occasion pour toi.",
+    "level": "B1"
+  },
+  {
+    "en": "pain",
+    "fr_false_meaning": "pain (à manger)",
+    "fr_real_meaning": "douleur / souffrance",
+    "en_for_intended_french": "bread",
+    "example_correct_en": "I have a sharp pain in my back.",
+    "example_correct_fr": "J'ai une douleur aiguë dans le dos.",
+    "level": "A2"
+  },
+  {
+    "en": "parents",
+    "fr_false_meaning": "parents (famille élargie)",
+    "fr_real_meaning": "parents (uniquement père/mère)",
+    "en_for_intended_french": "relatives",
+    "example_correct_en": "My parents are visiting next weekend.",
+    "example_correct_fr": "Mes parents viennent le week-end prochain.",
+    "level": "A2"
+  },
+  {
+    "en": "partition",
+    "fr_false_meaning": "partition (musique)",
+    "fr_real_meaning": "cloison / partition (disque)",
+    "en_for_intended_french": "sheet music / score",
+    "example_correct_en": "There's a glass partition between the offices.",
+    "example_correct_fr": "Il y a une cloison en verre entre les bureaux.",
+    "level": "B2"
+  },
+  {
+    "en": "petrol",
+    "fr_false_meaning": "pétrole",
+    "fr_real_meaning": "essence (UK)",
+    "en_for_intended_french": "oil / crude oil",
+    "example_correct_en": "We need to get petrol before the trip.",
+    "example_correct_fr": "Il faut faire le plein d'essence avant le voyage.",
+    "level": "B1"
+  },
+  {
+    "en": "physician",
+    "fr_false_meaning": "physicien",
+    "fr_real_meaning": "médecin",
+    "en_for_intended_french": "physicist",
+    "example_correct_en": "She's a physician at the local hospital.",
+    "example_correct_fr": "Elle est médecin à l'hôpital local.",
+    "level": "B2"
+  },
+  {
+    "en": "pretend",
+    "fr_false_meaning": "prétendre (affirmer)",
+    "fr_real_meaning": "faire semblant",
+    "en_for_intended_french": "claim",
+    "example_correct_en": "He pretended not to hear me.",
+    "example_correct_fr": "Il a fait semblant de ne pas m'entendre.",
+    "level": "B1"
+  },
+  {
+    "en": "raisin",
+    "fr_false_meaning": "raisin (frais)",
+    "fr_real_meaning": "raisin sec",
+    "en_for_intended_french": "grape",
+    "example_correct_en": "This cookie has raisins in it.",
+    "example_correct_fr": "Ce biscuit contient des raisins secs.",
+    "level": "A2"
+  },
+  {
+    "en": "realize",
+    "fr_false_meaning": "réaliser (un projet)",
+    "fr_real_meaning": "se rendre compte / prendre conscience",
+    "en_for_intended_french": "carry out / achieve",
+    "example_correct_en": "I realized I had forgotten my keys.",
+    "example_correct_fr": "Je me suis rendu compte que j'avais oublié mes clés.",
+    "level": "B1"
+  },
+  {
+    "en": "relative",
+    "fr_false_meaning": "relatif (adjectif)",
+    "fr_real_meaning": "un membre de la famille",
+    "en_for_intended_french": "relative (adjectif, même mot — sens différent)",
+    "example_correct_en": "I have relatives in Texas.",
+    "example_correct_fr": "J'ai de la famille au Texas.",
+    "level": "B1"
+  },
+  {
+    "en": "resign",
+    "fr_false_meaning": "se résigner",
+    "fr_real_meaning": "démissionner",
+    "en_for_intended_french": "resign oneself (to)",
+    "example_correct_en": "She resigned from her job last month.",
+    "example_correct_fr": "Elle a démissionné le mois dernier.",
+    "level": "B1"
+  },
+  {
+    "en": "respond",
+    "fr_false_meaning": "répondre (à une question)",
+    "fr_real_meaning": "réagir / répondre à un stimulus",
+    "en_for_intended_french": "answer / reply",
+    "example_correct_en": "How did the patient respond to the treatment?",
+    "example_correct_fr": "Comment le patient a-t-il réagi au traitement ?",
+    "level": "B1"
+  },
+  {
+    "en": "responsible",
+    "fr_false_meaning": "responsable (titulaire d'un poste)",
+    "fr_real_meaning": "qui rend des comptes / sérieux",
+    "en_for_intended_french": "manager / in charge / lead",
+    "example_correct_en": "She's a very responsible employee.",
+    "example_correct_fr": "C'est une employée très sérieuse.",
+    "level": "B1"
+  },
+  {
+    "en": "rude",
+    "fr_false_meaning": "rude (dur, sévère)",
+    "fr_real_meaning": "impoli / grossier",
+    "en_for_intended_french": "harsh / tough",
+    "example_correct_en": "Don't be rude to the waiter.",
+    "example_correct_fr": "Sois pas impoli avec le serveur.",
+    "level": "A2"
+  },
+  {
+    "en": "sale",
+    "fr_false_meaning": "sale (pas propre)",
+    "fr_real_meaning": "vente / solde",
+    "en_for_intended_french": "dirty",
+    "example_correct_en": "Everything is on sale this weekend.",
+    "example_correct_fr": "Tout est en solde ce week-end.",
+    "level": "A2"
+  },
+  {
+    "en": "slip",
+    "fr_false_meaning": "slip (sous-vêtement)",
+    "fr_real_meaning": "glisser / faux pas / petit papier",
+    "en_for_intended_french": "briefs / underwear",
+    "example_correct_en": "Be careful — you might slip on the ice.",
+    "example_correct_fr": "Fais attention, tu pourrais glisser sur la glace.",
+    "level": "B1"
+  },
+  {
+    "en": "sort",
+    "fr_false_meaning": "sort (destin / sortilège)",
+    "fr_real_meaning": "trier / sorte (type)",
+    "en_for_intended_french": "fate / spell",
+    "example_correct_en": "I need to sort these files by date.",
+    "example_correct_fr": "Je dois trier ces dossiers par date.",
+    "level": "B1"
+  },
+  {
+    "en": "store",
+    "fr_false_meaning": "store (de fenêtre)",
+    "fr_real_meaning": "magasin / stocker",
+    "en_for_intended_french": "blinds / shutter",
+    "example_correct_en": "I'll stop by the grocery store on my way home.",
+    "example_correct_fr": "Je passe à l'épicerie en rentrant.",
+    "level": "A2"
+  },
+  {
+    "en": "supply",
+    "fr_false_meaning": "supplier",
+    "fr_real_meaning": "fournir / approvisionner",
+    "en_for_intended_french": "beg / plead",
+    "example_correct_en": "We supply hospitals with medical equipment.",
+    "example_correct_fr": "Nous fournissons les hôpitaux en matériel médical.",
+    "level": "B1"
+  },
+  {
+    "en": "support",
+    "fr_false_meaning": "supporter (tolérer)",
+    "fr_real_meaning": "soutenir / appuyer",
+    "en_for_intended_french": "put up with / stand / bear",
+    "example_correct_en": "My family supports my career choice.",
+    "example_correct_fr": "Ma famille soutient mon choix de carrière.",
+    "level": "A2"
+  },
+  {
+    "en": "surname",
+    "fr_false_meaning": "surnom",
+    "fr_real_meaning": "nom de famille",
+    "en_for_intended_french": "nickname",
+    "example_correct_en": "What's your surname?",
+    "example_correct_fr": "Quel est votre nom de famille ?",
+    "level": "A2"
+  },
+  {
+    "en": "sympathetic",
+    "fr_false_meaning": "sympathique",
+    "fr_real_meaning": "compatissant / qui éprouve de l'empathie",
+    "en_for_intended_french": "nice / friendly / likeable",
+    "example_correct_en": "She was very sympathetic when I told her about my loss.",
+    "example_correct_fr": "Elle a été très compatissante quand je lui ai parlé de ma perte.",
+    "level": "B2"
+  },
+  {
+    "en": "terrible",
+    "fr_false_meaning": "terrible (super, génial)",
+    "fr_real_meaning": "affreux / horrible",
+    "en_for_intended_french": "awesome / amazing",
+    "example_correct_en": "The weather is terrible today.",
+    "example_correct_fr": "Le temps est affreux aujourd'hui.",
+    "level": "A2"
+  },
+  {
+    "en": "tissue",
+    "fr_false_meaning": "tissu (étoffe)",
+    "fr_real_meaning": "mouchoir en papier / tissu (biologique)",
+    "en_for_intended_french": "fabric / cloth",
+    "example_correct_en": "Can you grab me a tissue?",
+    "example_correct_fr": "Tu peux me passer un mouchoir ?",
+    "level": "A2"
+  },
+  {
+    "en": "travel",
+    "fr_false_meaning": "travailler",
+    "fr_real_meaning": "voyager",
+    "en_for_intended_french": "work",
+    "example_correct_en": "I love to travel in the summer.",
+    "example_correct_fr": "J'adore voyager en été.",
+    "level": "A2"
+  },
+  {
+    "en": "trespass",
+    "fr_false_meaning": "trépasser (mourir)",
+    "fr_real_meaning": "entrer sans permission (propriété privée)",
+    "en_for_intended_french": "pass away / die",
+    "example_correct_en": "No trespassing — private property.",
+    "example_correct_fr": "Entrée interdite — propriété privée.",
+    "level": "B2"
+  },
+  {
+    "en": "vacation",
+    "fr_false_meaning": "vacation (mission ponctuelle)",
+    "fr_real_meaning": "vacances / congés (US)",
+    "en_for_intended_french": "freelance assignment / temp work",
+    "example_correct_en": "We're going on vacation next month.",
+    "example_correct_fr": "On part en vacances le mois prochain.",
+    "level": "A2"
+  },
+  {
+    "en": "wagon",
+    "fr_false_meaning": "wagon (de train)",
+    "fr_real_meaning": "chariot / charrette",
+    "en_for_intended_french": "(train) car / carriage",
+    "example_correct_en": "The kids pulled a wagon full of toys.",
+    "example_correct_fr": "Les enfants tiraient un chariot plein de jouets.",
+    "level": "B1"
+  },
+  {
+    "en": "host",
+    "fr_false_meaning": "hôte (invité)",
+    "fr_real_meaning": "hôte (qui reçoit) / animateur",
+    "en_for_intended_french": "guest",
+    "example_correct_en": "Our host welcomed us with a glass of wine.",
+    "example_correct_fr": "Notre hôte nous a accueillis avec un verre de vin.",
+    "level": "B1"
+  },
+  {
+    "en": "hostess",
+    "fr_false_meaning": "hôtesse de l'air",
+    "fr_real_meaning": "maîtresse de maison / hôtesse d'accueil",
+    "en_for_intended_french": "flight attendant",
+    "example_correct_en": "The hostess showed us to our table.",
+    "example_correct_fr": "L'hôtesse nous a conduits à notre table.",
+    "level": "B1"
+  },
+  {
+    "en": "fastidious",
+    "fr_false_meaning": "fastidieux",
+    "fr_real_meaning": "méticuleux / pointilleux",
+    "en_for_intended_french": "tedious / boring",
+    "example_correct_en": "He's fastidious about his appearance.",
+    "example_correct_fr": "Il est pointilleux sur son apparence.",
+    "level": "B2"
+  },
+  {
+    "en": "bra",
+    "fr_false_meaning": "bras",
+    "fr_real_meaning": "soutien-gorge",
+    "en_for_intended_french": "arm",
+    "example_correct_en": "She bought a new bra.",
+    "example_correct_fr": "Elle a acheté un nouveau soutien-gorge.",
+    "level": "A2"
+  },
+  {
+    "en": "argument",
+    "fr_false_meaning": "argument (raisonnement)",
+    "fr_real_meaning": "dispute / argument (selon contexte)",
+    "en_for_intended_french": "point / reasoning",
+    "example_correct_en": "They had a big argument last night.",
+    "example_correct_fr": "Ils se sont disputés violemment hier soir.",
+    "level": "B1"
+  },
+  {
+    "en": "mark",
+    "fr_false_meaning": "marque (de produit)",
+    "fr_real_meaning": "note (école) / tache / marque",
+    "en_for_intended_french": "brand",
+    "example_correct_en": "She got a good mark on her essay.",
+    "example_correct_fr": "Elle a eu une bonne note sur sa dissertation.",
+    "level": "A2"
+  },
+  {
+    "en": "conductor",
+    "fr_false_meaning": "conducteur (de voiture)",
+    "fr_real_meaning": "chef d'orchestre / contrôleur de train",
+    "en_for_intended_french": "driver",
+    "example_correct_en": "The conductor checked our tickets.",
+    "example_correct_fr": "Le contrôleur a vérifié nos billets.",
+    "level": "B1"
+  },
+  {
+    "en": "patron",
+    "fr_false_meaning": "patron (chef)",
+    "fr_real_meaning": "client (régulier) / mécène",
+    "en_for_intended_french": "boss / employer",
+    "example_correct_en": "The restaurant has many loyal patrons.",
+    "example_correct_fr": "Le restaurant a beaucoup de clients fidèles.",
+    "level": "B2"
+  },
+  {
+    "en": "formidable",
+    "fr_false_meaning": "formidable (super, génial)",
+    "fr_real_meaning": "redoutable / impressionnant",
+    "en_for_intended_french": "great / awesome / fantastic",
+    "example_correct_en": "She's a formidable opponent in court.",
+    "example_correct_fr": "C'est une adversaire redoutable au tribunal.",
+    "level": "B2"
+  },
+  {
+    "en": "ignore",
+    "fr_false_meaning": "ignorer (ne pas savoir)",
+    "fr_real_meaning": "ignorer (volontairement) / ne pas tenir compte",
+    "en_for_intended_french": "not know / be unaware of",
+    "example_correct_en": "She just ignored my question.",
+    "example_correct_fr": "Elle a juste ignoré ma question.",
+    "level": "B1"
+  },
+  {
+    "en": "propose",
+    "fr_false_meaning": "proposer (suggérer)",
+    "fr_real_meaning": "demander en mariage / proposer",
+    "en_for_intended_french": "suggest / offer",
+    "example_correct_en": "He proposed to her on the beach.",
+    "example_correct_fr": "Il l'a demandée en mariage sur la plage.",
+    "level": "B1"
+  },
+  {
+    "en": "prejudice",
+    "fr_false_meaning": "préjudice (dommage)",
+    "fr_real_meaning": "préjugé",
+    "en_for_intended_french": "harm / damage",
+    "example_correct_en": "We need to fight racial prejudice.",
+    "example_correct_fr": "Il faut combattre les préjugés raciaux.",
+    "level": "B2"
+  },
+  {
+    "en": "caution",
+    "fr_false_meaning": "caution (somme d'argent)",
+    "fr_real_meaning": "prudence / précaution",
+    "en_for_intended_french": "deposit / bail",
+    "example_correct_en": "Proceed with caution — the road is icy.",
+    "example_correct_fr": "Avance prudemment — la route est verglacée.",
+    "level": "B1"
+  },
+  {
+    "en": "candid",
+    "fr_false_meaning": "candide (naïf)",
+    "fr_real_meaning": "franc / sincère",
+    "en_for_intended_french": "naive",
+    "example_correct_en": "Can I be candid with you?",
+    "example_correct_fr": "Je peux être franc avec toi ?",
+    "level": "B2"
+  },
+  {
+    "en": "conference",
+    "fr_false_meaning": "conférence (exposé)",
+    "fr_real_meaning": "congrès / réunion professionnelle",
+    "en_for_intended_french": "lecture / talk",
+    "example_correct_en": "I'm flying to a conference in Chicago.",
+    "example_correct_fr": "Je m'envole pour un congrès à Chicago.",
+    "level": "B1"
+  },
+  {
+    "en": "regard",
+    "fr_false_meaning": "regard",
+    "fr_real_meaning": "considération / égard",
+    "en_for_intended_french": "look / glance / gaze",
+    "example_correct_en": "She has high regard for her mentor.",
+    "example_correct_fr": "Elle a beaucoup de considération pour son mentor.",
+    "level": "B2"
+  },
+  {
+    "en": "regular",
+    "fr_false_meaning": "régulier (constant, fluide)",
+    "fr_real_meaning": "habituel / standard / ordinaire",
+    "en_for_intended_french": "consistent / steady",
+    "example_correct_en": "I'll have a regular coffee, please.",
+    "example_correct_fr": "Un café normal, s'il vous plaît.",
+    "level": "A2"
+  },
+  {
+    "en": "advertisement",
+    "fr_false_meaning": "avertissement",
+    "fr_real_meaning": "publicité / annonce commerciale",
+    "en_for_intended_french": "warning",
+    "example_correct_en": "I saw the advertisement on TV.",
+    "example_correct_fr": "J'ai vu la publicité à la télé.",
+    "level": "A2"
+  },
+  {
+    "en": "advise",
+    "fr_false_meaning": "aviser (informer)",
+    "fr_real_meaning": "conseiller",
+    "en_for_intended_french": "inform / notify",
+    "example_correct_en": "I advise you to see a doctor.",
+    "example_correct_fr": "Je te conseille de voir un médecin.",
+    "level": "B1"
+  },
+  {
+    "en": "audition",
+    "fr_false_meaning": "audition (ouïe)",
+    "fr_real_meaning": "essai / casting (acteurs, musiciens)",
+    "en_for_intended_french": "hearing (sense)",
+    "example_correct_en": "She has an audition for the play tomorrow.",
+    "example_correct_fr": "Elle a un casting pour la pièce demain.",
+    "level": "B1"
+  },
+  {
+    "en": "estate",
+    "fr_false_meaning": "état",
+    "fr_real_meaning": "patrimoine / propriété / domaine",
+    "en_for_intended_french": "state",
+    "example_correct_en": "She inherited a large estate.",
+    "example_correct_fr": "Elle a hérité d'un grand domaine.",
+    "level": "B2"
+  },
+  {
+    "en": "exhibition",
+    "fr_false_meaning": "exhibition (impudique)",
+    "fr_real_meaning": "exposition (art, salon)",
+    "en_for_intended_french": "indecent exposure",
+    "example_correct_en": "We went to a Picasso exhibition.",
+    "example_correct_fr": "On est allés à une exposition Picasso.",
+    "level": "B1"
+  },
+  {
+    "en": "global",
+    "fr_false_meaning": "global (au sens 'général, dans l'ensemble')",
+    "fr_real_meaning": "mondial / planétaire",
+    "en_for_intended_french": "overall / general",
+    "example_correct_en": "Global warming is accelerating.",
+    "example_correct_fr": "Le réchauffement climatique s'accélère.",
+    "level": "B1"
+  },
+  {
+    "en": "actual",
+    "fr_false_meaning": "actuel",
+    "fr_real_meaning": "réel / véritable",
+    "en_for_intended_french": "current / present",
+    "example_correct_en": "The actual cost was higher than expected.",
+    "example_correct_fr": "Le coût réel a été plus élevé que prévu.",
+    "level": "B1"
+  },
+  {
+    "en": "ball",
+    "fr_false_meaning": "balle (projectile)",
+    "fr_real_meaning": "balle / ballon / bal (danse)",
+    "en_for_intended_french": "bullet",
+    "example_correct_en": "Throw me the ball!",
+    "example_correct_fr": "Lance-moi le ballon !",
+    "level": "A2"
+  }
+]

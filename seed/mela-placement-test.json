@@ -1,0 +1,421 @@
+{
+  "id": "mela-placement-test-v1",
+  "title": "MELA Placement Test",
+  "description": "Test diagnostic adaptatif 40 questions — évalue un apprenant francophone de A1 à C1.",
+  "total_questions": 40,
+  "questions": [
+    {
+      "id": 1,
+      "level": "A1",
+      "category": "grammar",
+      "q": "I ___ a student.",
+      "options": ["am", "is", "are", "be"],
+      "correctIdx": 0,
+      "explanation_fr": "Avec le pronom 'I', on utilise toujours 'am' au présent du verbe 'to be'."
+    },
+    {
+      "id": 2,
+      "level": "A1",
+      "category": "grammar",
+      "q": "She ___ two brothers.",
+      "options": ["have", "has", "had", "is"],
+      "correctIdx": 1,
+      "explanation_fr": "À la 3ème personne du singulier (he/she/it), 'to have' devient 'has'."
+    },
+    {
+      "id": 3,
+      "level": "A1",
+      "category": "grammar",
+      "q": "He ___ to school every day.",
+      "options": ["go", "goes", "going", "went"],
+      "correctIdx": 1,
+      "explanation_fr": "Au présent simple, on ajoute -s/-es à la 3ème personne du singulier : he goes."
+    },
+    {
+      "id": 4,
+      "level": "A1",
+      "category": "vocab",
+      "q": "Que signifie 'library' en français ?",
+      "options": ["bibliothèque", "librairie", "livre", "lecture"],
+      "correctIdx": 0,
+      "explanation_fr": "Faux-ami classique : 'library' = bibliothèque. 'Librairie' (où on achète des livres) se dit 'bookstore'."
+    },
+    {
+      "id": 5,
+      "level": "A1",
+      "category": "grammar",
+      "q": "I have ___ apple.",
+      "options": ["a", "an", "the", "some"],
+      "correctIdx": 1,
+      "explanation_fr": "Devant un mot commençant par un son voyelle (apple), on utilise l'article 'an'."
+    },
+    {
+      "id": 6,
+      "level": "A1",
+      "category": "grammar",
+      "q": "I ___ like coffee.",
+      "options": ["don't", "doesn't", "not", "isn't"],
+      "correctIdx": 0,
+      "explanation_fr": "À la 1ère personne au présent simple, la négation se forme avec 'do not / don't'."
+    },
+    {
+      "id": 7,
+      "level": "A1",
+      "category": "vocab",
+      "q": "Pluriel irrégulier : 'three ___'.",
+      "options": ["child", "children", "childs", "childes"],
+      "correctIdx": 1,
+      "explanation_fr": "'Child' a un pluriel irrégulier : 'children'."
+    },
+    {
+      "id": 8,
+      "level": "A1",
+      "category": "grammar",
+      "q": "They ___ tired.",
+      "options": ["is", "am", "are", "be"],
+      "correctIdx": 2,
+      "explanation_fr": "Avec 'they' (3ème pluriel), on utilise 'are' au présent du verbe 'to be'."
+    },
+    {
+      "id": 9,
+      "level": "A2",
+      "category": "grammar",
+      "q": "Yesterday, I ___ to the cinema.",
+      "options": ["go", "went", "gone", "going"],
+      "correctIdx": 1,
+      "explanation_fr": "'Yesterday' indique le passé simple (past simple). 'Go' est irrégulier : went / gone."
+    },
+    {
+      "id": 10,
+      "level": "A2",
+      "category": "grammar",
+      "q": "She ___ TV right now.",
+      "options": ["watch", "watches", "is watching", "watched"],
+      "correctIdx": 2,
+      "explanation_fr": "'Right now' marque une action en cours → present continuous : be + V-ing."
+    },
+    {
+      "id": 11,
+      "level": "A2",
+      "category": "grammar",
+      "q": "We arrived ___ Paris at 8 PM.",
+      "options": ["at", "in", "on", "to"],
+      "correctIdx": 1,
+      "explanation_fr": "'Arrive in' s'utilise pour les villes et pays. 'Arrive at' s'emploie pour un lieu précis (arrive at the airport)."
+    },
+    {
+      "id": 12,
+      "level": "A2",
+      "category": "vocab",
+      "q": "Que signifie 'actually' ?",
+      "options": ["actuellement", "en fait", "maintenant", "vraiment"],
+      "correctIdx": 1,
+      "explanation_fr": "Faux-ami piégeux : 'actually' = en fait/en réalité. 'Actuellement' se dit 'currently' ou 'right now'."
+    },
+    {
+      "id": 13,
+      "level": "A2",
+      "category": "grammar",
+      "q": "This book is ___ than that one.",
+      "options": ["good", "best", "better", "more good"],
+      "correctIdx": 2,
+      "explanation_fr": "Comparatif irrégulier de 'good' : good → better → best."
+    },
+    {
+      "id": 14,
+      "level": "A2",
+      "category": "grammar",
+      "q": "I ___ call you tomorrow.",
+      "options": ["will", "would", "am", "going"],
+      "correctIdx": 0,
+      "explanation_fr": "Futur simple : 'will' + base verbale. Une décision spontanée prise au moment de parler."
+    },
+    {
+      "id": 15,
+      "level": "A2",
+      "category": "grammar",
+      "q": "He ___ his keys this morning.",
+      "options": ["loose", "loosed", "lost", "losed"],
+      "correctIdx": 2,
+      "explanation_fr": "Verbe irrégulier : lose → lost → lost. Attention : 'loose' (adjectif = lâche) ≠ 'lose' (verbe = perdre)."
+    },
+    {
+      "id": 16,
+      "level": "A2",
+      "category": "vocab",
+      "q": "Que signifie le phrasal verb 'to wake up' ?",
+      "options": ["se lever", "se réveiller", "se coucher", "s'habiller"],
+      "correctIdx": 1,
+      "explanation_fr": "'Wake up' = se réveiller (sortir du sommeil). 'Get up' = se lever (sortir du lit)."
+    },
+    {
+      "id": 17,
+      "level": "B1",
+      "category": "grammar",
+      "q": "I ___ to London three times.",
+      "options": ["went", "have been", "was", "had been"],
+      "correctIdx": 1,
+      "explanation_fr": "Present perfect : expérience de vie sans précision de date. 'Have/has been' = être allé (et revenu)."
+    },
+    {
+      "id": 18,
+      "level": "B1",
+      "category": "grammar",
+      "q": "When she called, I ___ dinner.",
+      "options": ["cooked", "was cooking", "have cooked", "am cooking"],
+      "correctIdx": 1,
+      "explanation_fr": "Past continuous (was/were + V-ing) : action en cours interrompue par une autre action au passé."
+    },
+    {
+      "id": 19,
+      "level": "B1",
+      "category": "grammar",
+      "q": "You ___ smoke here, it's forbidden.",
+      "options": ["mustn't", "don't have to", "shouldn't", "can"],
+      "correctIdx": 0,
+      "explanation_fr": "'Mustn't' = interdiction. 'Don't have to' = absence d'obligation (≠ interdiction)."
+    },
+    {
+      "id": 20,
+      "level": "B1",
+      "category": "grammar",
+      "q": "If it rains, we ___ inside.",
+      "options": ["stay", "will stay", "would stay", "stayed"],
+      "correctIdx": 1,
+      "explanation_fr": "1er conditionnel (réel/probable) : If + présent simple, ... will + base verbale."
+    },
+    {
+      "id": 21,
+      "level": "B1",
+      "category": "vocab",
+      "q": "Que signifie le phrasal verb 'to give up' ?",
+      "options": ["abandonner", "donner", "grandir", "applaudir"],
+      "correctIdx": 0,
+      "explanation_fr": "'Give up' = abandonner, renoncer. Ex : 'I gave up smoking' = j'ai arrêté de fumer."
+    },
+    {
+      "id": 22,
+      "level": "B1",
+      "category": "grammar",
+      "q": "I enjoy ___ books.",
+      "options": ["read", "to read", "reading", "reads"],
+      "correctIdx": 2,
+      "explanation_fr": "Après 'enjoy', 'mind', 'finish', 'avoid', 'practice' on utilise toujours le gérondif (V-ing)."
+    },
+    {
+      "id": 23,
+      "level": "B1",
+      "category": "grammar",
+      "q": "She is interested ___ music.",
+      "options": ["on", "at", "in", "for"],
+      "correctIdx": 2,
+      "explanation_fr": "'Interested in' est une collocation fixe. Mémoriser les couples adjectif + préposition."
+    },
+    {
+      "id": 24,
+      "level": "B1",
+      "category": "vocab",
+      "q": "Que signifie 'to assist' en anglais ?",
+      "options": ["assister à un événement", "aider", "applaudir", "résister"],
+      "correctIdx": 1,
+      "explanation_fr": "Faux-ami : 'assist' = aider. 'Assister à' se traduit par 'to attend'."
+    },
+    {
+      "id": 25,
+      "level": "B1",
+      "category": "reading",
+      "q": "Lis le texte puis réponds : 'Sarah works in a bookstore. She loves recommending novels to customers, especially mystery stories. Last week, a tourist asked her for a book about local history.' — What does Sarah mainly do at her job?",
+      "options": ["She writes novels", "She recommends books", "She organizes tours", "She studies history"],
+      "correctIdx": 1,
+      "explanation_fr": "Le texte précise 'She loves recommending novels to customers' : son activité principale est de recommander des livres."
+    },
+    {
+      "id": 26,
+      "level": "B1",
+      "category": "grammar",
+      "q": "When I arrived, they ___ already left.",
+      "options": ["have", "had", "were", "did"],
+      "correctIdx": 1,
+      "explanation_fr": "Past perfect (had + participe passé) : action antérieure à une autre action au passé."
+    },
+    {
+      "id": 27,
+      "level": "B2",
+      "category": "grammar",
+      "q": "If I ___ rich, I would travel the world.",
+      "options": ["am", "was", "were", "be"],
+      "correctIdx": 2,
+      "explanation_fr": "2ème conditionnel (irréel au présent) : If + prétérit (were à toutes les personnes en anglais soigné) + would + base verbale."
+    },
+    {
+      "id": 28,
+      "level": "B2",
+      "category": "grammar",
+      "q": "If I had studied harder, I ___ the test.",
+      "options": ["pass", "would pass", "would have passed", "passed"],
+      "correctIdx": 2,
+      "explanation_fr": "3ème conditionnel (irréel au passé) : If + past perfect + would have + participe passé."
+    },
+    {
+      "id": 29,
+      "level": "B2",
+      "category": "grammar",
+      "q": "Discours indirect : She said she ___ tired.",
+      "options": ["is", "was", "has been", "be"],
+      "correctIdx": 1,
+      "explanation_fr": "Reported speech : on recule d'un temps. 'I am tired' → 'She said she was tired'."
+    },
+    {
+      "id": 30,
+      "level": "B2",
+      "category": "vocab",
+      "q": "Que signifie 'to put up with' ?",
+      "options": ["supporter, tolérer", "installer", "préparer", "mettre dehors"],
+      "correctIdx": 0,
+      "explanation_fr": "Phrasal verb à 3 mots : 'put up with' = supporter, tolérer. Ex : 'I can't put up with his noise.'"
+    },
+    {
+      "id": 31,
+      "level": "B2",
+      "category": "grammar",
+      "q": "The cake ___ by my mom.",
+      "options": ["baked", "was baked", "has baked", "bakes"],
+      "correctIdx": 1,
+      "explanation_fr": "Voix passive au passé : be (was) + participe passé (baked). Le sujet subit l'action."
+    },
+    {
+      "id": 32,
+      "level": "B2",
+      "category": "vocab",
+      "q": "Que signifie 'eventually' ?",
+      "options": ["éventuellement", "finalement", "peut-être", "parfois"],
+      "correctIdx": 1,
+      "explanation_fr": "Faux-ami capital : 'eventually' = finalement, à la fin. 'Éventuellement' se dit 'possibly'."
+    },
+    {
+      "id": 33,
+      "level": "B2",
+      "category": "reading",
+      "q": "Lis : 'Despite numerous warnings from his doctor, Marcus continued his unhealthy habits. He told himself he would change next month—but next month always became the following month. Only after a serious health scare did he finally commit to a new lifestyle.' — When did Marcus actually change?",
+      "options": ["Immediately after his doctor's warnings", "Next month", "After a health scare", "He never changed"],
+      "correctIdx": 2,
+      "explanation_fr": "'Only after a serious health scare did he finally commit' : il n'a vraiment changé qu'après une grosse alerte santé."
+    },
+    {
+      "id": 34,
+      "level": "B2",
+      "category": "grammar",
+      "q": "He stopped ___ to her on his way home.",
+      "options": ["talking", "to talk", "talk", "talked"],
+      "correctIdx": 1,
+      "explanation_fr": "Stop + infinitif (to talk) = s'arrêter pour faire qqch (but). Stop + V-ing = arrêter de faire qqch."
+    },
+    {
+      "id": 35,
+      "level": "C1",
+      "category": "vocab",
+      "q": "Que signifie l'idiome 'to bite the bullet' ?",
+      "options": ["serrer les dents et faire face", "mâcher avec difficulté", "échouer brutalement", "blesser quelqu'un"],
+      "correctIdx": 0,
+      "explanation_fr": "Idiome : 'bite the bullet' = prendre son courage à deux mains, serrer les dents pour affronter une situation pénible."
+    },
+    {
+      "id": 36,
+      "level": "C1",
+      "category": "grammar",
+      "q": "If I had taken that job in Paris, I ___ there now.",
+      "options": ["would live", "would have lived", "lived", "will live"],
+      "correctIdx": 0,
+      "explanation_fr": "Mixed conditional : condition au passé (had + V-ed) + conséquence au présent (would + base verbale)."
+    },
+    {
+      "id": 37,
+      "level": "C1",
+      "category": "vocab",
+      "q": "Que signifie l'idiome 'to spill the beans' ?",
+      "options": ["vendre la mèche", "renverser la sauce", "perdre son calme", "tout ramasser"],
+      "correctIdx": 0,
+      "explanation_fr": "Idiome : 'spill the beans' = révéler un secret, vendre la mèche."
+    },
+    {
+      "id": 38,
+      "level": "C1",
+      "category": "grammar",
+      "q": "Inversion stylistique : 'Hardly ___ when the phone rang.'",
+      "options": ["I had arrived", "had I arrived", "I arrived", "did I arrive"],
+      "correctIdx": 1,
+      "explanation_fr": "Après un adverbe négatif/restrictif en tête de phrase (hardly, never, rarely, no sooner), on fait l'inversion sujet/auxiliaire."
+    },
+    {
+      "id": 39,
+      "level": "C1",
+      "category": "reading",
+      "q": "Lis : 'The CEO's resignation came as no surprise to those familiar with the company's recent struggles. Although she had publicly maintained an optimistic outlook, internal memos revealed a growing tension between her vision and the board's priorities.' — What does the passage imply?",
+      "options": ["The CEO was forced out by employees", "Her resignation was unexpected by everyone", "There was conflict between the CEO and the board", "The board fully supported her vision"],
+      "correctIdx": 2,
+      "explanation_fr": "Le texte évoque 'a growing tension between her vision and the board's priorities' : un conflit existait entre la PDG et le conseil d'administration."
+    },
+    {
+      "id": 40,
+      "level": "C1",
+      "category": "vocab",
+      "q": "Que signifie 'to be on the same wavelength' ?",
+      "options": ["être sur la même longueur d'onde", "emprunter le même chemin", "parler la même langue", "être au même niveau hiérarchique"],
+      "correctIdx": 0,
+      "explanation_fr": "Idiome : 'on the same wavelength' = être en phase, se comprendre intuitivement. Traduction directe et fidèle en français."
+    }
+  ],
+  "scoring": {
+    "description": "Mapping nb_correct → niveau CECRL + estimation TOEIC. Les seuils TOEIC suivent la grille de correspondance ETS (CEFR ↔ TOEIC Listening & Reading).",
+    "ranges": [
+      {
+        "min_correct": 0,
+        "max_correct": 7,
+        "level": "pré-A1",
+        "label": "Débutant absolu",
+        "toeic_estimate": "< 120",
+        "recommendation_fr": "Commencer par les bases : alphabet, présent de be/have, vocabulaire du quotidien."
+      },
+      {
+        "min_correct": 8,
+        "max_correct": 13,
+        "level": "A1",
+        "label": "Débutant",
+        "toeic_estimate": "120-225",
+        "recommendation_fr": "Travailler les temps du présent, les questions/négations et un vocabulaire de survie (~500 mots)."
+      },
+      {
+        "min_correct": 14,
+        "max_correct": 20,
+        "level": "A2",
+        "label": "Élémentaire",
+        "toeic_estimate": "225-550",
+        "recommendation_fr": "Consolider passé/futur simples, prépositions, faux-amis fréquents et conversations courtes."
+      },
+      {
+        "min_correct": 21,
+        "max_correct": 27,
+        "level": "B1",
+        "label": "Intermédiaire",
+        "toeic_estimate": "550-785",
+        "recommendation_fr": "Maîtriser present perfect, modaux, 1er/2ème conditionnels et phrasal verbs courants."
+      },
+      {
+        "min_correct": 28,
+        "max_correct": 33,
+        "level": "B2",
+        "label": "Intermédiaire avancé",
+        "toeic_estimate": "785-940",
+        "recommendation_fr": "Travailler conditionnels complexes, voix passive, discours rapporté, faux-amis pièges et lecture longue."
+      },
+      {
+        "min_correct": 34,
+        "max_correct": 40,
+        "level": "C1",
+        "label": "Avancé",
+        "toeic_estimate": "940-990",
+        "recommendation_fr": "Affiner idiomes, inversions stylistiques, registres de langue et compréhension nuancée de textes complexes."
+      }
+    ]
+  }
+}

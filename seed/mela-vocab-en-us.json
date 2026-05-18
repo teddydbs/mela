@@ -1,0 +1,2735 @@
+[
+  {
+    "category": "daily life",
+    "en": "wake up",
+    "fr": "se réveiller",
+    "ipa": "/weɪk ʌp/",
+    "example_en": "I usually wake up at 7 a.m. on weekdays.",
+    "example_fr": "Je me réveille généralement à 7 h en semaine.",
+    "level": "A2"
+  },
+  {
+    "category": "daily life",
+    "en": "get up",
+    "fr": "se lever (du lit)",
+    "ipa": "/ɡɛt ʌp/",
+    "example_en": "It's hard to get up when it's still dark outside.",
+    "example_fr": "C'est dur de se lever quand il fait encore nuit dehors.",
+    "level": "A2"
+  },
+  {
+    "category": "daily life",
+    "en": "brush my teeth",
+    "fr": "se brosser les dents",
+    "ipa": "/brʌʃ maɪ tiθ/",
+    "example_en": "I brush my teeth twice a day.",
+    "example_fr": "Je me brosse les dents deux fois par jour.",
+    "level": "A2"
+  },
+  {
+    "category": "daily life",
+    "en": "take a shower",
+    "fr": "prendre une douche",
+    "ipa": "/teɪk ə ˈʃaʊɚ/",
+    "example_en": "I'll take a quick shower before we leave.",
+    "example_fr": "Je vais prendre une douche rapide avant qu'on parte.",
+    "level": "A2"
+  },
+  {
+    "category": "daily life",
+    "en": "get dressed",
+    "fr": "s'habiller",
+    "ipa": "/ɡɛt drɛst/",
+    "example_en": "Get dressed — we're running late.",
+    "example_fr": "Habille-toi, on est en retard.",
+    "level": "A2"
+  },
+  {
+    "category": "daily life",
+    "en": "commute",
+    "fr": "faire le trajet domicile-travail",
+    "ipa": "/kəˈmjut/",
+    "example_en": "My commute takes about forty minutes each way.",
+    "example_fr": "Mon trajet prend environ quarante minutes dans chaque sens.",
+    "level": "B1"
+  },
+  {
+    "category": "daily life",
+    "en": "run errands",
+    "fr": "faire ses courses / petites démarches",
+    "ipa": "/rʌn ˈɛrəndz/",
+    "example_en": "I have to run a few errands after work.",
+    "example_fr": "Je dois faire quelques courses après le boulot.",
+    "level": "B1"
+  },
+  {
+    "category": "daily life",
+    "en": "do laundry",
+    "fr": "faire la lessive",
+    "ipa": "/du ˈlɔndri/",
+    "example_en": "I do laundry on Sundays.",
+    "example_fr": "Je fais la lessive le dimanche.",
+    "level": "A2",
+    "note": "Royaume-Uni : 'do the washing'."
+  },
+  {
+    "category": "daily life",
+    "en": "do the dishes",
+    "fr": "faire la vaisselle",
+    "ipa": "/du ðə ˈdɪʃəz/",
+    "example_en": "It's your turn to do the dishes tonight.",
+    "example_fr": "C'est ton tour de faire la vaisselle ce soir.",
+    "level": "A2"
+  },
+  {
+    "category": "daily life",
+    "en": "take out the trash",
+    "fr": "sortir la poubelle",
+    "ipa": "/teɪk aʊt ðə træʃ/",
+    "example_en": "Don't forget to take out the trash before bed.",
+    "example_fr": "N'oublie pas de sortir la poubelle avant de te coucher.",
+    "level": "A2",
+    "note": "US 'trash' = UK 'rubbish'."
+  },
+  {
+    "category": "daily life",
+    "en": "vacuum",
+    "fr": "passer l'aspirateur",
+    "ipa": "/ˈvækjum/",
+    "example_en": "I need to vacuum the living room.",
+    "example_fr": "Je dois passer l'aspirateur dans le salon.",
+    "level": "B1",
+    "note": "Royaume-Uni : 'hoover'."
+  },
+  {
+    "category": "daily life",
+    "en": "make the bed",
+    "fr": "faire le lit",
+    "ipa": "/meɪk ðə bɛd/",
+    "example_en": "She makes the bed every morning.",
+    "example_fr": "Elle fait le lit tous les matins.",
+    "level": "A2"
+  },
+  {
+    "category": "daily life",
+    "en": "cook dinner",
+    "fr": "préparer le dîner",
+    "ipa": "/kʊk ˈdɪnɚ/",
+    "example_en": "I'm cooking dinner — are you hungry?",
+    "example_fr": "Je prépare le dîner — t'as faim ?",
+    "level": "A2"
+  },
+  {
+    "category": "daily life",
+    "en": "go to bed",
+    "fr": "aller se coucher",
+    "ipa": "/ɡoʊ tə bɛd/",
+    "example_en": "I usually go to bed around eleven.",
+    "example_fr": "Je vais généralement me coucher vers vingt-trois heures.",
+    "level": "A2"
+  },
+  {
+    "category": "daily life",
+    "en": "fall asleep",
+    "fr": "s'endormir",
+    "ipa": "/fɔl əˈslip/",
+    "example_en": "I fell asleep on the couch watching TV.",
+    "example_fr": "Je me suis endormi sur le canapé en regardant la télé.",
+    "level": "B1"
+  },
+  {
+    "category": "daily life",
+    "en": "neighborhood",
+    "fr": "quartier",
+    "ipa": "/ˈneɪbɚˌhʊd/",
+    "example_en": "I live in a quiet neighborhood near downtown.",
+    "example_fr": "J'habite dans un quartier calme près du centre-ville.",
+    "level": "A2",
+    "note": "US 'neighborhood' / UK 'neighbourhood'."
+  },
+  {
+    "category": "daily life",
+    "en": "apartment",
+    "fr": "appartement",
+    "ipa": "/əˈpɑrtmənt/",
+    "example_en": "We just moved into a new apartment.",
+    "example_fr": "On vient d'emménager dans un nouvel appartement.",
+    "level": "A2",
+    "note": "US 'apartment' = UK 'flat'."
+  },
+  {
+    "category": "daily life",
+    "en": "roommate",
+    "fr": "colocataire",
+    "ipa": "/ˈrumˌmeɪt/",
+    "example_en": "My roommate is really easy to live with.",
+    "example_fr": "Mon colocataire est vraiment facile à vivre.",
+    "level": "A2",
+    "note": "US 'roommate' = UK 'flatmate'."
+  },
+  {
+    "category": "daily life",
+    "en": "sidewalk",
+    "fr": "trottoir",
+    "ipa": "/ˈsaɪdˌwɔk/",
+    "example_en": "Kids were drawing on the sidewalk with chalk.",
+    "example_fr": "Des enfants dessinaient sur le trottoir à la craie.",
+    "level": "A2",
+    "note": "US 'sidewalk' = UK 'pavement'."
+  },
+  {
+    "category": "daily life",
+    "en": "elevator",
+    "fr": "ascenseur",
+    "ipa": "/ˈɛləˌveɪtɚ/",
+    "example_en": "The elevator is out of order — take the stairs.",
+    "example_fr": "L'ascenseur est en panne — prends les escaliers.",
+    "level": "A2",
+    "note": "US 'elevator' = UK 'lift'."
+  },
+  {
+    "category": "daily life",
+    "en": "trash can",
+    "fr": "poubelle",
+    "ipa": "/træʃ kæn/",
+    "example_en": "Throw it in the trash can.",
+    "example_fr": "Jette-le à la poubelle.",
+    "level": "A2",
+    "note": "US 'trash can' = UK 'bin' / 'dustbin'."
+  },
+  {
+    "category": "daily life",
+    "en": "parking lot",
+    "fr": "parking",
+    "ipa": "/ˈpɑrkɪŋ lɑt/",
+    "example_en": "I'll meet you in the parking lot.",
+    "example_fr": "On se retrouve sur le parking.",
+    "level": "A2",
+    "note": "US 'parking lot' = UK 'car park'."
+  },
+  {
+    "category": "daily life",
+    "en": "gas station",
+    "fr": "station-service",
+    "ipa": "/ɡæs ˈsteɪʃən/",
+    "example_en": "We need to stop at a gas station soon.",
+    "example_fr": "Il faut qu'on s'arrête à une station-service bientôt.",
+    "level": "A2",
+    "note": "US 'gas station' = UK 'petrol station'."
+  },
+  {
+    "category": "daily life",
+    "en": "drugstore",
+    "fr": "pharmacie / drugstore",
+    "ipa": "/ˈdrʌɡˌstɔr/",
+    "example_en": "I'll grab some aspirin at the drugstore.",
+    "example_fr": "Je vais prendre de l'aspirine à la pharmacie.",
+    "level": "B1",
+    "note": "US 'drugstore' = UK 'chemist's' ou 'pharmacy'."
+  },
+  {
+    "category": "daily life",
+    "en": "mall",
+    "fr": "centre commercial",
+    "ipa": "/mɔl/",
+    "example_en": "Let's meet at the mall around two.",
+    "example_fr": "Rendez-vous au centre commercial vers quatorze heures.",
+    "level": "A2",
+    "note": "US 'mall' = UK 'shopping centre'."
+  },
+  {
+    "category": "daily life",
+    "en": "downtown",
+    "fr": "centre-ville",
+    "ipa": "/ˈdaʊnˌtaʊn/",
+    "example_en": "She works downtown.",
+    "example_fr": "Elle travaille en centre-ville.",
+    "level": "A2",
+    "note": "US 'downtown' = UK 'city centre'."
+  },
+  {
+    "category": "daily life",
+    "en": "line",
+    "fr": "file d'attente",
+    "ipa": "/laɪn/",
+    "example_en": "There's a long line at the coffee shop.",
+    "example_fr": "Il y a une longue file au café.",
+    "level": "A2",
+    "note": "US 'line' / 'stand in line' = UK 'queue'."
+  },
+  {
+    "category": "daily life",
+    "en": "cell phone",
+    "fr": "téléphone portable",
+    "ipa": "/sɛl foʊn/",
+    "example_en": "I left my cell phone at home.",
+    "example_fr": "J'ai laissé mon portable à la maison.",
+    "level": "A2",
+    "note": "US 'cell phone' = UK 'mobile phone'."
+  },
+  {
+    "category": "daily life",
+    "en": "mailbox",
+    "fr": "boîte aux lettres",
+    "ipa": "/ˈmeɪlˌbɑks/",
+    "example_en": "Check the mailbox — I'm expecting a package.",
+    "example_fr": "Va voir la boîte aux lettres, j'attends un colis.",
+    "level": "A2",
+    "note": "US 'mailbox' = UK 'postbox' / 'letterbox'."
+  },
+  {
+    "category": "daily life",
+    "en": "zip code",
+    "fr": "code postal",
+    "ipa": "/zɪp koʊd/",
+    "example_en": "What's the zip code for your address?",
+    "example_fr": "C'est quoi le code postal de ton adresse ?",
+    "level": "A2",
+    "note": "US 'zip code' = UK 'postcode'."
+  },
+  {
+    "category": "daily life",
+    "en": "faucet",
+    "fr": "robinet",
+    "ipa": "/ˈfɔsət/",
+    "example_en": "The kitchen faucet is leaking.",
+    "example_fr": "Le robinet de la cuisine fuit.",
+    "level": "B1",
+    "note": "US 'faucet' = UK 'tap'."
+  },
+  {
+    "category": "daily life",
+    "en": "closet",
+    "fr": "placard / penderie",
+    "ipa": "/ˈklɑzət/",
+    "example_en": "Your shirts are in the closet.",
+    "example_fr": "Tes chemises sont dans le placard.",
+    "level": "A2",
+    "note": "US 'closet' = UK 'wardrobe' / 'cupboard'."
+  },
+  {
+    "category": "daily life",
+    "en": "couch",
+    "fr": "canapé",
+    "ipa": "/kaʊtʃ/",
+    "example_en": "He fell asleep on the couch.",
+    "example_fr": "Il s'est endormi sur le canapé.",
+    "level": "A2",
+    "note": "Aussi 'sofa', plus universel."
+  },
+  {
+    "category": "daily life",
+    "en": "yard",
+    "fr": "jardin / cour",
+    "ipa": "/jɑrd/",
+    "example_en": "The kids are playing in the yard.",
+    "example_fr": "Les enfants jouent dans le jardin.",
+    "level": "A2",
+    "note": "US 'yard' = UK 'garden' (extérieur d'une maison)."
+  },
+  {
+    "category": "daily life",
+    "en": "truck",
+    "fr": "camion",
+    "ipa": "/trʌk/",
+    "example_en": "A delivery truck just pulled up outside.",
+    "example_fr": "Un camion de livraison vient de s'arrêter dehors.",
+    "level": "A2",
+    "note": "US 'truck' = UK 'lorry'."
+  },
+  {
+    "category": "daily life",
+    "en": "subway",
+    "fr": "métro",
+    "ipa": "/ˈsʌbˌweɪ/",
+    "example_en": "I take the subway to work every day.",
+    "example_fr": "Je prends le métro pour aller au travail tous les jours.",
+    "level": "A2",
+    "note": "US 'subway' = UK 'underground' / 'tube' (à Londres)."
+  },
+  {
+    "category": "daily life",
+    "en": "take a nap",
+    "fr": "faire la sieste",
+    "ipa": "/teɪk ə næp/",
+    "example_en": "I'm going to take a quick nap.",
+    "example_fr": "Je vais faire une petite sieste.",
+    "level": "A2"
+  },
+  {
+    "category": "daily life",
+    "en": "hang out",
+    "fr": "traîner / passer du temps ensemble",
+    "ipa": "/hæŋ aʊt/",
+    "example_en": "We hung out at the park all afternoon.",
+    "example_fr": "On a traîné au parc tout l'après-midi.",
+    "level": "B1"
+  },
+  {
+    "category": "daily life",
+    "en": "catch up",
+    "fr": "rattraper / se mettre à jour",
+    "ipa": "/kætʃ ʌp/",
+    "example_en": "Let's grab coffee and catch up.",
+    "example_fr": "Allons prendre un café et donner des nouvelles.",
+    "level": "B1"
+  },
+  {
+    "category": "daily life",
+    "en": "work out",
+    "fr": "faire du sport / s'entraîner",
+    "ipa": "/wɝk aʊt/",
+    "example_en": "I work out three times a week.",
+    "example_fr": "Je m'entraîne trois fois par semaine.",
+    "level": "A2"
+  },
+  {
+    "category": "daily life",
+    "en": "grab a bite",
+    "fr": "manger un morceau",
+    "ipa": "/ɡræb ə baɪt/",
+    "example_en": "Want to grab a bite after work?",
+    "example_fr": "Tu veux manger un morceau après le boulot ?",
+    "level": "B1"
+  },
+  {
+    "category": "daily life",
+    "en": "show up",
+    "fr": "se pointer / arriver",
+    "ipa": "/ʃoʊ ʌp/",
+    "example_en": "He didn't show up to the meeting.",
+    "example_fr": "Il ne s'est pas pointé à la réunion.",
+    "level": "B1"
+  },
+  {
+    "category": "daily life",
+    "en": "drop by",
+    "fr": "passer (chez quelqu'un)",
+    "ipa": "/drɑp baɪ/",
+    "example_en": "Feel free to drop by anytime.",
+    "example_fr": "N'hésite pas à passer quand tu veux.",
+    "level": "B1"
+  },
+  {
+    "category": "daily life",
+    "en": "set up",
+    "fr": "installer / configurer",
+    "ipa": "/sɛt ʌp/",
+    "example_en": "Can you help me set up my new printer?",
+    "example_fr": "Tu peux m'aider à installer ma nouvelle imprimante ?",
+    "level": "B1"
+  },
+  {
+    "category": "daily life",
+    "en": "clean up",
+    "fr": "ranger / nettoyer",
+    "ipa": "/klin ʌp/",
+    "example_en": "Let's clean up before guests arrive.",
+    "example_fr": "Rangeons avant que les invités arrivent.",
+    "level": "A2"
+  },
+  {
+    "category": "daily life",
+    "en": "log in",
+    "fr": "se connecter (à un compte)",
+    "ipa": "/lɔɡ ɪn/",
+    "example_en": "I can't log in to my email account.",
+    "example_fr": "Je n'arrive pas à me connecter à ma boîte mail.",
+    "level": "A2"
+  },
+  {
+    "category": "daily life",
+    "en": "sign up",
+    "fr": "s'inscrire",
+    "ipa": "/saɪn ʌp/",
+    "example_en": "I signed up for a yoga class.",
+    "example_fr": "Je me suis inscrit à un cours de yoga.",
+    "level": "A2"
+  },
+  {
+    "category": "daily life",
+    "en": "errand",
+    "fr": "course (à faire) / commission",
+    "ipa": "/ˈɛrənd/",
+    "example_en": "I have one more errand to run before lunch.",
+    "example_fr": "J'ai encore une course à faire avant le déjeuner.",
+    "level": "B1"
+  },
+  {
+    "category": "daily life",
+    "en": "schedule",
+    "fr": "emploi du temps / planning",
+    "ipa": "/ˈskɛdʒul/",
+    "example_en": "My schedule is pretty packed this week.",
+    "example_fr": "Mon planning est plutôt chargé cette semaine.",
+    "level": "A2",
+    "note": "Prononciation US /ˈskɛdʒul/ vs UK /ˈʃɛdjuːl/."
+  },
+  {
+    "category": "daily life",
+    "en": "weekend",
+    "fr": "week-end",
+    "ipa": "/ˈwikˌɛnd/",
+    "example_en": "Any plans for the weekend?",
+    "example_fr": "Des plans pour le week-end ?",
+    "level": "A2"
+  },
+  {
+    "category": "food & drink",
+    "en": "breakfast",
+    "fr": "petit-déjeuner",
+    "ipa": "/ˈbrɛkfəst/",
+    "example_en": "I usually skip breakfast on busy mornings.",
+    "example_fr": "Je saute souvent le petit-déjeuner les matins chargés.",
+    "level": "A2"
+  },
+  {
+    "category": "food & drink",
+    "en": "lunch",
+    "fr": "déjeuner",
+    "ipa": "/lʌntʃ/",
+    "example_en": "Let's have lunch together tomorrow.",
+    "example_fr": "Déjeunons ensemble demain.",
+    "level": "A2"
+  },
+  {
+    "category": "food & drink",
+    "en": "dinner",
+    "fr": "dîner",
+    "ipa": "/ˈdɪnɚ/",
+    "example_en": "Dinner's almost ready.",
+    "example_fr": "Le dîner est presque prêt.",
+    "level": "A2"
+  },
+  {
+    "category": "food & drink",
+    "en": "snack",
+    "fr": "collation / en-cas",
+    "ipa": "/snæk/",
+    "example_en": "I need a snack — I'm starving.",
+    "example_fr": "Il me faut un en-cas, je meurs de faim.",
+    "level": "A2"
+  },
+  {
+    "category": "food & drink",
+    "en": "appetizer",
+    "fr": "entrée (au restaurant)",
+    "ipa": "/ˈæpəˌtaɪzɚ/",
+    "example_en": "We ordered a few appetizers to share.",
+    "example_fr": "On a commandé quelques entrées à partager.",
+    "level": "B1",
+    "note": "US 'appetizer' = UK 'starter'."
+  },
+  {
+    "category": "food & drink",
+    "en": "entrée",
+    "fr": "plat principal",
+    "ipa": "/ˈɑnˌtreɪ/",
+    "example_en": "What's your entrée going to be?",
+    "example_fr": "Tu prends quoi en plat principal ?",
+    "level": "B1",
+    "note": "Aux US, 'entrée' = plat principal ; au UK, 'entrée' désigne plutôt une entrée."
+  },
+  {
+    "category": "food & drink",
+    "en": "dessert",
+    "fr": "dessert",
+    "ipa": "/dɪˈzɝt/",
+    "example_en": "Save room for dessert.",
+    "example_fr": "Garde de la place pour le dessert.",
+    "level": "A2"
+  },
+  {
+    "category": "food & drink",
+    "en": "takeout",
+    "fr": "à emporter",
+    "ipa": "/ˈteɪkˌaʊt/",
+    "example_en": "Let's just get takeout tonight.",
+    "example_fr": "On commande à emporter ce soir, c'est plus simple.",
+    "level": "B1",
+    "note": "US 'takeout' = UK 'takeaway'."
+  },
+  {
+    "category": "food & drink",
+    "en": "to-go",
+    "fr": "à emporter (commande)",
+    "ipa": "/tə ɡoʊ/",
+    "example_en": "I'll have a coffee to-go, please.",
+    "example_fr": "Un café à emporter, s'il vous plaît.",
+    "level": "A2"
+  },
+  {
+    "category": "food & drink",
+    "en": "grocery store",
+    "fr": "épicerie / supermarché",
+    "ipa": "/ˈɡroʊsri stɔr/",
+    "example_en": "I need to swing by the grocery store.",
+    "example_fr": "Il faut que je passe à l'épicerie.",
+    "level": "A2",
+    "note": "Plus courant aux US que 'supermarket'."
+  },
+  {
+    "category": "food & drink",
+    "en": "cookie",
+    "fr": "biscuit / cookie",
+    "ipa": "/ˈkʊki/",
+    "example_en": "These cookies are still warm.",
+    "example_fr": "Ces cookies sont encore tièdes.",
+    "level": "A2",
+    "note": "US 'cookie' = UK 'biscuit'."
+  },
+  {
+    "category": "food & drink",
+    "en": "french fries",
+    "fr": "frites",
+    "ipa": "/frɛntʃ fraɪz/",
+    "example_en": "Can I get fries with that?",
+    "example_fr": "Je peux avoir des frites avec ça ?",
+    "level": "A2",
+    "note": "US 'french fries' / 'fries' = UK 'chips'."
+  },
+  {
+    "category": "food & drink",
+    "en": "chips",
+    "fr": "chips",
+    "ipa": "/tʃɪps/",
+    "example_en": "I bought a bag of potato chips.",
+    "example_fr": "J'ai acheté un paquet de chips.",
+    "level": "A2",
+    "note": "US 'chips' = UK 'crisps'. Attention à l'inversion."
+  },
+  {
+    "category": "food & drink",
+    "en": "soda",
+    "fr": "soda",
+    "ipa": "/ˈsoʊdə/",
+    "example_en": "Do you want a soda with your meal?",
+    "example_fr": "Tu veux un soda avec ton repas ?",
+    "level": "A2",
+    "note": "Aussi 'pop' dans le Midwest ; UK 'fizzy drink'."
+  },
+  {
+    "category": "food & drink",
+    "en": "eggplant",
+    "fr": "aubergine",
+    "ipa": "/ˈɛɡˌplænt/",
+    "example_en": "I'll grill some eggplant tonight.",
+    "example_fr": "Je vais griller de l'aubergine ce soir.",
+    "level": "B1",
+    "note": "US 'eggplant' = UK 'aubergine'."
+  },
+  {
+    "category": "food & drink",
+    "en": "zucchini",
+    "fr": "courgette",
+    "ipa": "/zuˈkini/",
+    "example_en": "She put zucchini in the pasta sauce.",
+    "example_fr": "Elle a mis de la courgette dans la sauce pour les pâtes.",
+    "level": "B1",
+    "note": "US 'zucchini' = UK 'courgette'."
+  },
+  {
+    "category": "food & drink",
+    "en": "shrimp",
+    "fr": "crevette",
+    "ipa": "/ʃrɪmp/",
+    "example_en": "The shrimp tacos are amazing here.",
+    "example_fr": "Les tacos aux crevettes sont excellents ici.",
+    "level": "B1",
+    "note": "US 'shrimp' = UK 'prawn'."
+  },
+  {
+    "category": "food & drink",
+    "en": "ground beef",
+    "fr": "viande hachée (de bœuf)",
+    "ipa": "/ɡraʊnd bif/",
+    "example_en": "I need a pound of ground beef for the burgers.",
+    "example_fr": "Il me faut 500 g de viande hachée pour les burgers.",
+    "level": "B1",
+    "note": "US 'ground beef' = UK 'mince' ou 'minced beef'."
+  },
+  {
+    "category": "food & drink",
+    "en": "check",
+    "fr": "addition (au restaurant)",
+    "ipa": "/tʃɛk/",
+    "example_en": "Can we get the check, please?",
+    "example_fr": "L'addition, s'il vous plaît.",
+    "level": "A2",
+    "note": "US 'check' = UK 'bill' au restaurant."
+  },
+  {
+    "category": "food & drink",
+    "en": "tip",
+    "fr": "pourboire",
+    "ipa": "/tɪp/",
+    "example_en": "Tipping 20% is pretty standard in the US.",
+    "example_fr": "Laisser 20 % de pourboire est assez standard aux US.",
+    "level": "A2",
+    "note": "Le pourboire est attendu aux US (15-25 %), pas optionnel."
+  },
+  {
+    "category": "food & drink",
+    "en": "spicy",
+    "fr": "épicé",
+    "ipa": "/ˈspaɪsi/",
+    "example_en": "I love spicy food.",
+    "example_fr": "J'adore la nourriture épicée.",
+    "level": "A2"
+  },
+  {
+    "category": "food & drink",
+    "en": "sweet",
+    "fr": "sucré",
+    "ipa": "/swit/",
+    "example_en": "This sauce is too sweet for me.",
+    "example_fr": "Cette sauce est trop sucrée pour moi.",
+    "level": "A2"
+  },
+  {
+    "category": "food & drink",
+    "en": "salty",
+    "fr": "salé",
+    "ipa": "/ˈsɔlti/",
+    "example_en": "These chips are really salty.",
+    "example_fr": "Ces chips sont vraiment salées.",
+    "level": "A2"
+  },
+  {
+    "category": "food & drink",
+    "en": "medium rare",
+    "fr": "saignant (steak)",
+    "ipa": "/ˈmidiəm rɛr/",
+    "example_en": "I'd like my steak medium rare.",
+    "example_fr": "Je voudrais mon steak saignant.",
+    "level": "B1"
+  },
+  {
+    "category": "food & drink",
+    "en": "order",
+    "fr": "commander",
+    "ipa": "/ˈɔrdɚ/",
+    "example_en": "Are you ready to order?",
+    "example_fr": "Vous êtes prêts à commander ?",
+    "level": "A2"
+  },
+  {
+    "category": "food & drink",
+    "en": "server",
+    "fr": "serveur / serveuse",
+    "ipa": "/ˈsɝvɚ/",
+    "example_en": "Our server was really friendly.",
+    "example_fr": "Notre serveur était très sympa.",
+    "level": "A2",
+    "note": "Terme neutre préféré au-dessus de 'waiter/waitress' aux US."
+  },
+  {
+    "category": "food & drink",
+    "en": "refill",
+    "fr": "re-remplir / faire le plein",
+    "ipa": "/ˈriˌfɪl/",
+    "example_en": "Most American restaurants offer free refills on soda.",
+    "example_fr": "La plupart des restaurants américains offrent les sodas à volonté.",
+    "level": "B1"
+  },
+  {
+    "category": "food & drink",
+    "en": "doggy bag",
+    "fr": "sac à emporter (les restes)",
+    "ipa": "/ˈdɔɡi bæɡ/",
+    "example_en": "Could I get a doggy bag for the rest?",
+    "example_fr": "Je peux avoir un sac pour emporter le reste ?",
+    "level": "B1"
+  },
+  {
+    "category": "food & drink",
+    "en": "brunch",
+    "fr": "brunch",
+    "ipa": "/brʌntʃ/",
+    "example_en": "We're going out for brunch on Sunday.",
+    "example_fr": "On va bruncher dimanche.",
+    "level": "A2"
+  },
+  {
+    "category": "food & drink",
+    "en": "leftovers",
+    "fr": "restes (de repas)",
+    "ipa": "/ˈlɛftˌoʊvɚz/",
+    "example_en": "I had leftovers for lunch.",
+    "example_fr": "J'ai mangé les restes au déjeuner.",
+    "level": "B1"
+  },
+  {
+    "category": "food & drink",
+    "en": "side dish",
+    "fr": "accompagnement",
+    "ipa": "/saɪd dɪʃ/",
+    "example_en": "What side dishes come with the chicken?",
+    "example_fr": "Quels accompagnements viennent avec le poulet ?",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "job",
+    "fr": "emploi / boulot",
+    "ipa": "/dʒɑb/",
+    "example_en": "I just started a new job.",
+    "example_fr": "Je viens de commencer un nouveau boulot.",
+    "level": "A2"
+  },
+  {
+    "category": "work & business",
+    "en": "career",
+    "fr": "carrière",
+    "ipa": "/kəˈrɪr/",
+    "example_en": "She's building a career in marketing.",
+    "example_fr": "Elle construit sa carrière dans le marketing.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "coworker",
+    "fr": "collègue",
+    "ipa": "/ˈkoʊˌwɝkɚ/",
+    "example_en": "My coworkers threw me a birthday party.",
+    "example_fr": "Mes collègues m'ont organisé une fête d'anniversaire.",
+    "level": "A2",
+    "note": "US 'coworker' = UK 'colleague' (les deux s'utilisent aux US)."
+  },
+  {
+    "category": "work & business",
+    "en": "boss",
+    "fr": "patron / chef",
+    "ipa": "/bɔs/",
+    "example_en": "I need to talk to my boss about the project.",
+    "example_fr": "Je dois parler à mon chef du projet.",
+    "level": "A2"
+  },
+  {
+    "category": "work & business",
+    "en": "manager",
+    "fr": "manager / responsable",
+    "ipa": "/ˈmænədʒɚ/",
+    "example_en": "Ask the manager if you need approval.",
+    "example_fr": "Demande au responsable si tu as besoin d'une approbation.",
+    "level": "A2"
+  },
+  {
+    "category": "work & business",
+    "en": "employee",
+    "fr": "employé",
+    "ipa": "/ɛmˈplɔɪi/",
+    "example_en": "The company has over 500 employees.",
+    "example_fr": "L'entreprise compte plus de 500 employés.",
+    "level": "A2"
+  },
+  {
+    "category": "work & business",
+    "en": "team",
+    "fr": "équipe",
+    "ipa": "/tim/",
+    "example_en": "Our team is growing fast.",
+    "example_fr": "Notre équipe grandit vite.",
+    "level": "A2"
+  },
+  {
+    "category": "work & business",
+    "en": "meeting",
+    "fr": "réunion",
+    "ipa": "/ˈmitɪŋ/",
+    "example_en": "I have back-to-back meetings all morning.",
+    "example_fr": "J'ai des réunions à la chaîne toute la matinée.",
+    "level": "A2"
+  },
+  {
+    "category": "work & business",
+    "en": "deadline",
+    "fr": "date limite / échéance",
+    "ipa": "/ˈdɛdˌlaɪn/",
+    "example_en": "The deadline is Friday at noon.",
+    "example_fr": "L'échéance est vendredi midi.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "project",
+    "fr": "projet",
+    "ipa": "/ˈprɑdʒɛkt/",
+    "example_en": "I'm leading a new project this quarter.",
+    "example_fr": "Je dirige un nouveau projet ce trimestre.",
+    "level": "A2"
+  },
+  {
+    "category": "work & business",
+    "en": "task",
+    "fr": "tâche",
+    "ipa": "/tæsk/",
+    "example_en": "I still have a few tasks on my plate.",
+    "example_fr": "J'ai encore quelques tâches sur les bras.",
+    "level": "A2"
+  },
+  {
+    "category": "work & business",
+    "en": "resume",
+    "fr": "CV",
+    "ipa": "/ˈrɛzʊˌmeɪ/",
+    "example_en": "Send me your resume by Monday.",
+    "example_fr": "Envoie-moi ton CV avant lundi.",
+    "level": "B1",
+    "note": "US 'resume' (ou 'résumé') = UK 'CV'."
+  },
+  {
+    "category": "work & business",
+    "en": "interview",
+    "fr": "entretien (d'embauche)",
+    "ipa": "/ˈɪntɚˌvju/",
+    "example_en": "I have a job interview tomorrow.",
+    "example_fr": "J'ai un entretien d'embauche demain.",
+    "level": "A2"
+  },
+  {
+    "category": "work & business",
+    "en": "hire",
+    "fr": "embaucher",
+    "ipa": "/haɪr/",
+    "example_en": "They're hiring a new designer.",
+    "example_fr": "Ils embauchent un nouveau designer.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "fire",
+    "fr": "licencier",
+    "ipa": "/faɪr/",
+    "example_en": "He got fired last week.",
+    "example_fr": "Il s'est fait licencier la semaine dernière.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "lay off",
+    "fr": "licencier (pour raisons éco)",
+    "ipa": "/leɪ ɔf/",
+    "example_en": "The company laid off 200 people.",
+    "example_fr": "L'entreprise a licencié 200 personnes.",
+    "level": "B1",
+    "note": "Différent de 'fire' : 'lay off' = licenciement éco, sans faute."
+  },
+  {
+    "category": "work & business",
+    "en": "quit",
+    "fr": "démissionner",
+    "ipa": "/kwɪt/",
+    "example_en": "She quit her job to start a business.",
+    "example_fr": "Elle a démissionné pour monter sa boîte.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "raise",
+    "fr": "augmentation (de salaire)",
+    "ipa": "/reɪz/",
+    "example_en": "I'm hoping to get a raise this year.",
+    "example_fr": "J'espère avoir une augmentation cette année.",
+    "level": "B1",
+    "note": "US 'raise' = UK 'pay rise'."
+  },
+  {
+    "category": "work & business",
+    "en": "promotion",
+    "fr": "promotion",
+    "ipa": "/prəˈmoʊʃən/",
+    "example_en": "Congrats on the promotion!",
+    "example_fr": "Félicitations pour la promo !",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "salary",
+    "fr": "salaire",
+    "ipa": "/ˈsæləri/",
+    "example_en": "The salary is competitive.",
+    "example_fr": "Le salaire est compétitif.",
+    "level": "A2"
+  },
+  {
+    "category": "work & business",
+    "en": "paycheck",
+    "fr": "chèque de paie / paie",
+    "ipa": "/ˈpeɪˌtʃɛk/",
+    "example_en": "My paycheck comes every two weeks.",
+    "example_fr": "Je suis payé toutes les deux semaines.",
+    "level": "B1",
+    "note": "Aux US, paie souvent bi-mensuelle."
+  },
+  {
+    "category": "work & business",
+    "en": "benefits",
+    "fr": "avantages (sociaux)",
+    "ipa": "/ˈbɛnəfɪts/",
+    "example_en": "The benefits package includes health insurance.",
+    "example_fr": "Le package inclut une assurance santé.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "office",
+    "fr": "bureau",
+    "ipa": "/ˈɔfəs/",
+    "example_en": "I'm heading back to the office.",
+    "example_fr": "Je retourne au bureau.",
+    "level": "A2"
+  },
+  {
+    "category": "work & business",
+    "en": "remote work",
+    "fr": "télétravail",
+    "ipa": "/rɪˈmoʊt wɝk/",
+    "example_en": "I do remote work three days a week.",
+    "example_fr": "Je fais du télétravail trois jours par semaine.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "overtime",
+    "fr": "heures supplémentaires",
+    "ipa": "/ˈoʊvɚˌtaɪm/",
+    "example_en": "I had to work overtime to finish.",
+    "example_fr": "J'ai dû faire des heures sup' pour finir.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "day off",
+    "fr": "jour de congé",
+    "ipa": "/deɪ ɔf/",
+    "example_en": "I'm taking a day off on Friday.",
+    "example_fr": "Je prends un jour de congé vendredi.",
+    "level": "A2"
+  },
+  {
+    "category": "work & business",
+    "en": "vacation",
+    "fr": "vacances / congés",
+    "ipa": "/veɪˈkeɪʃən/",
+    "example_en": "We're going on vacation next month.",
+    "example_fr": "On part en vacances le mois prochain.",
+    "level": "A2",
+    "note": "US 'vacation' = UK 'holiday'."
+  },
+  {
+    "category": "work & business",
+    "en": "sick day",
+    "fr": "jour de maladie",
+    "ipa": "/sɪk deɪ/",
+    "example_en": "I'm taking a sick day — I can barely move.",
+    "example_fr": "Je prends un jour de maladie, je peux à peine bouger.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "business trip",
+    "fr": "voyage d'affaires",
+    "ipa": "/ˈbɪznəs trɪp/",
+    "example_en": "He's on a business trip in Chicago.",
+    "example_fr": "Il est en voyage d'affaires à Chicago.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "conference call",
+    "fr": "conférence téléphonique",
+    "ipa": "/ˈkɑnfɚəns kɔl/",
+    "example_en": "I have a conference call at three.",
+    "example_fr": "J'ai une conf call à quinze heures.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "report",
+    "fr": "rapport",
+    "ipa": "/rɪˈpɔrt/",
+    "example_en": "I'll send you the report by EOD.",
+    "example_fr": "Je t'envoie le rapport d'ici la fin de journée.",
+    "level": "A2"
+  },
+  {
+    "category": "work & business",
+    "en": "presentation",
+    "fr": "présentation",
+    "ipa": "/ˌprɛzənˈteɪʃən/",
+    "example_en": "I'm giving a presentation to the board.",
+    "example_fr": "Je fais une présentation au conseil.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "client",
+    "fr": "client (professionnel)",
+    "ipa": "/ˈklaɪənt/",
+    "example_en": "We met with a new client this morning.",
+    "example_fr": "On a rencontré un nouveau client ce matin.",
+    "level": "A2"
+  },
+  {
+    "category": "work & business",
+    "en": "brainstorm",
+    "fr": "brainstormer / réfléchir ensemble",
+    "ipa": "/ˈbreɪnˌstɔrm/",
+    "example_en": "Let's brainstorm a few ideas before the meeting.",
+    "example_fr": "Brainstormons quelques idées avant la réunion.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "follow up",
+    "fr": "faire un suivi / relancer",
+    "ipa": "/ˈfɑloʊ ʌp/",
+    "example_en": "I'll follow up with you next week.",
+    "example_fr": "Je te relance la semaine prochaine.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "reach out",
+    "fr": "contacter / prendre contact",
+    "ipa": "/ritʃ aʊt/",
+    "example_en": "Feel free to reach out if you have questions.",
+    "example_fr": "N'hésite pas à me contacter si tu as des questions.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "networking",
+    "fr": "réseautage",
+    "ipa": "/ˈnɛtˌwɝkɪŋ/",
+    "example_en": "Networking is huge in the tech industry.",
+    "example_fr": "Le réseautage est essentiel dans la tech.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "startup",
+    "fr": "startup",
+    "ipa": "/ˈstɑrtˌʌp/",
+    "example_en": "She works for a tech startup in Austin.",
+    "example_fr": "Elle bosse pour une startup tech à Austin.",
+    "level": "A2"
+  },
+  {
+    "category": "work & business",
+    "en": "freelance",
+    "fr": "freelance / indépendant",
+    "ipa": "/ˈfriˌlæns/",
+    "example_en": "I've been freelancing for two years.",
+    "example_fr": "Je suis freelance depuis deux ans.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "deadline-driven",
+    "fr": "orienté résultats / dates limites",
+    "ipa": "/ˈdɛdˌlaɪn ˈdrɪvən/",
+    "example_en": "It's a deadline-driven environment.",
+    "example_fr": "C'est un environnement orienté résultats.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "PTO",
+    "fr": "congés payés",
+    "ipa": "/ˌpi ti ˈoʊ/",
+    "example_en": "I'm putting in for PTO next week.",
+    "example_fr": "Je pose des congés la semaine prochaine.",
+    "level": "B1",
+    "note": "'PTO' = Paid Time Off, très courant aux US (RH)."
+  },
+  {
+    "category": "work & business",
+    "en": "onboarding",
+    "fr": "intégration (nouveau salarié)",
+    "ipa": "/ˈɑnˌbɔrdɪŋ/",
+    "example_en": "Onboarding takes about a week.",
+    "example_fr": "L'intégration prend environ une semaine.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "performance review",
+    "fr": "entretien annuel / évaluation",
+    "ipa": "/pɚˈfɔrməns rɪˈvju/",
+    "example_en": "My performance review is next Tuesday.",
+    "example_fr": "Mon entretien annuel est mardi prochain.",
+    "level": "B1"
+  },
+  {
+    "category": "work & business",
+    "en": "HR",
+    "fr": "RH / Ressources Humaines",
+    "ipa": "/ˌeɪtʃ ˈɑr/",
+    "example_en": "Talk to HR about the new policy.",
+    "example_fr": "Parle aux RH de la nouvelle politique.",
+    "level": "A2",
+    "note": "Acronyme très courant à l'oral."
+  },
+  {
+    "category": "work & business",
+    "en": "out of office",
+    "fr": "absent du bureau",
+    "ipa": "/aʊt əv ˈɔfəs/",
+    "example_en": "She's out of office until Monday.",
+    "example_fr": "Elle est absente jusqu'à lundi.",
+    "level": "B1",
+    "note": "Souvent abrégé 'OOO' dans les emails."
+  },
+  {
+    "category": "travel",
+    "en": "flight",
+    "fr": "vol",
+    "ipa": "/flaɪt/",
+    "example_en": "My flight leaves at 6 a.m.",
+    "example_fr": "Mon vol part à 6 h.",
+    "level": "A2"
+  },
+  {
+    "category": "travel",
+    "en": "airport",
+    "fr": "aéroport",
+    "ipa": "/ˈɛrˌpɔrt/",
+    "example_en": "We need to be at the airport two hours early.",
+    "example_fr": "On doit être à l'aéroport deux heures avant.",
+    "level": "A2"
+  },
+  {
+    "category": "travel",
+    "en": "luggage",
+    "fr": "bagages",
+    "ipa": "/ˈlʌɡɪdʒ/",
+    "example_en": "My luggage didn't make it to the destination.",
+    "example_fr": "Mes bagages ne sont pas arrivés à destination.",
+    "level": "A2"
+  },
+  {
+    "category": "travel",
+    "en": "carry-on",
+    "fr": "bagage à main",
+    "ipa": "/ˈkæri ɑn/",
+    "example_en": "I only travel with a carry-on.",
+    "example_fr": "Je voyage uniquement avec un bagage à main.",
+    "level": "B1"
+  },
+  {
+    "category": "travel",
+    "en": "boarding pass",
+    "fr": "carte d'embarquement",
+    "ipa": "/ˈbɔrdɪŋ pæs/",
+    "example_en": "Show your boarding pass at the gate.",
+    "example_fr": "Présente ta carte d'embarquement à la porte.",
+    "level": "A2"
+  },
+  {
+    "category": "travel",
+    "en": "gate",
+    "fr": "porte d'embarquement",
+    "ipa": "/ɡeɪt/",
+    "example_en": "Our gate just changed to B12.",
+    "example_fr": "Notre porte vient de changer pour la B12.",
+    "level": "A2"
+  },
+  {
+    "category": "travel",
+    "en": "layover",
+    "fr": "escale",
+    "ipa": "/ˈleɪˌoʊvɚ/",
+    "example_en": "I have a four-hour layover in Dallas.",
+    "example_fr": "J'ai une escale de quatre heures à Dallas.",
+    "level": "B1",
+    "note": "US 'layover' = UK 'stopover'."
+  },
+  {
+    "category": "travel",
+    "en": "round-trip",
+    "fr": "aller-retour",
+    "ipa": "/ˈraʊnd trɪp/",
+    "example_en": "I booked a round-trip ticket to Miami.",
+    "example_fr": "J'ai réservé un aller-retour pour Miami.",
+    "level": "B1",
+    "note": "US 'round-trip' = UK 'return'."
+  },
+  {
+    "category": "travel",
+    "en": "one-way",
+    "fr": "aller simple",
+    "ipa": "/wʌn weɪ/",
+    "example_en": "I just need a one-way ticket.",
+    "example_fr": "Je veux juste un aller simple.",
+    "level": "B1",
+    "note": "US 'one-way' = UK 'single'."
+  },
+  {
+    "category": "travel",
+    "en": "passport",
+    "fr": "passeport",
+    "ipa": "/ˈpæsˌpɔrt/",
+    "example_en": "My passport expires next year.",
+    "example_fr": "Mon passeport expire l'an prochain.",
+    "level": "A2"
+  },
+  {
+    "category": "travel",
+    "en": "visa",
+    "fr": "visa",
+    "ipa": "/ˈvizə/",
+    "example_en": "Do I need a visa to enter?",
+    "example_fr": "Est-ce qu'il me faut un visa pour entrer ?",
+    "level": "A2"
+  },
+  {
+    "category": "travel",
+    "en": "customs",
+    "fr": "douane",
+    "ipa": "/ˈkʌstəmz/",
+    "example_en": "Customs took forever this time.",
+    "example_fr": "La douane a duré une éternité cette fois.",
+    "level": "B1"
+  },
+  {
+    "category": "travel",
+    "en": "baggage claim",
+    "fr": "retrait des bagages",
+    "ipa": "/ˈbæɡɪdʒ kleɪm/",
+    "example_en": "Meet me at baggage claim.",
+    "example_fr": "Retrouve-moi au retrait des bagages.",
+    "level": "B1"
+  },
+  {
+    "category": "travel",
+    "en": "tourist",
+    "fr": "touriste",
+    "ipa": "/ˈtʊrəst/",
+    "example_en": "The city is full of tourists in summer.",
+    "example_fr": "La ville est pleine de touristes en été.",
+    "level": "A2"
+  },
+  {
+    "category": "travel",
+    "en": "sightseeing",
+    "fr": "tourisme / visites",
+    "ipa": "/ˈsaɪtˌsiɪŋ/",
+    "example_en": "We spent the day sightseeing in New York.",
+    "example_fr": "On a passé la journée à visiter New York.",
+    "level": "B1"
+  },
+  {
+    "category": "travel",
+    "en": "souvenir",
+    "fr": "souvenir (objet)",
+    "ipa": "/ˌsuvəˈnɪr/",
+    "example_en": "I bought a few souvenirs for my family.",
+    "example_fr": "J'ai acheté quelques souvenirs pour ma famille.",
+    "level": "B1"
+  },
+  {
+    "category": "travel",
+    "en": "itinerary",
+    "fr": "itinéraire",
+    "ipa": "/aɪˈtɪnəˌrɛri/",
+    "example_en": "Send me your itinerary when you book.",
+    "example_fr": "Envoie-moi ton itinéraire quand tu réserves.",
+    "level": "B1"
+  },
+  {
+    "category": "travel",
+    "en": "hotel",
+    "fr": "hôtel",
+    "ipa": "/hoʊˈtɛl/",
+    "example_en": "Our hotel is right downtown.",
+    "example_fr": "Notre hôtel est en plein centre-ville.",
+    "level": "A2"
+  },
+  {
+    "category": "travel",
+    "en": "reservation",
+    "fr": "réservation",
+    "ipa": "/ˌrɛzɚˈveɪʃən/",
+    "example_en": "I have a reservation under Smith.",
+    "example_fr": "J'ai une réservation au nom de Smith.",
+    "level": "A2",
+    "note": "Au restaurant, US dit aussi 'reservation' ; UK utilise 'booking'."
+  },
+  {
+    "category": "travel",
+    "en": "check in",
+    "fr": "s'enregistrer / faire le check-in",
+    "ipa": "/tʃɛk ɪn/",
+    "example_en": "We can check in at 3 p.m.",
+    "example_fr": "On peut s'enregistrer à 15 h.",
+    "level": "A2"
+  },
+  {
+    "category": "travel",
+    "en": "check out",
+    "fr": "libérer la chambre / régler",
+    "ipa": "/tʃɛk aʊt/",
+    "example_en": "What time do we need to check out?",
+    "example_fr": "À quelle heure on doit libérer la chambre ?",
+    "level": "A2"
+  },
+  {
+    "category": "travel",
+    "en": "tour",
+    "fr": "visite guidée",
+    "ipa": "/tʊr/",
+    "example_en": "We booked a walking tour of the old city.",
+    "example_fr": "On a réservé une visite à pied de la vieille ville.",
+    "level": "A2"
+  },
+  {
+    "category": "travel",
+    "en": "landmark",
+    "fr": "monument / point de repère",
+    "ipa": "/ˈlændˌmɑrk/",
+    "example_en": "The Statue of Liberty is a famous landmark.",
+    "example_fr": "La Statue de la Liberté est un monument célèbre.",
+    "level": "B1"
+  },
+  {
+    "category": "travel",
+    "en": "map",
+    "fr": "carte (géographique)",
+    "ipa": "/mæp/",
+    "example_en": "Can I see the map for a second?",
+    "example_fr": "Je peux voir la carte une seconde ?",
+    "level": "A2"
+  },
+  {
+    "category": "travel",
+    "en": "directions",
+    "fr": "indications (routières)",
+    "ipa": "/dəˈrɛkʃənz/",
+    "example_en": "Could you give me directions to the museum?",
+    "example_fr": "Vous pourriez m'indiquer le chemin du musée ?",
+    "level": "A2"
+  },
+  {
+    "category": "travel",
+    "en": "rental car",
+    "fr": "voiture de location",
+    "ipa": "/ˈrɛntəl kɑr/",
+    "example_en": "We picked up the rental car at the airport.",
+    "example_fr": "On a récupéré la voiture de location à l'aéroport.",
+    "level": "B1",
+    "note": "US 'rental car' = UK 'hire car'."
+  },
+  {
+    "category": "travel",
+    "en": "highway",
+    "fr": "autoroute",
+    "ipa": "/ˈhaɪˌweɪ/",
+    "example_en": "Take the highway south for about two hours.",
+    "example_fr": "Prends l'autoroute vers le sud pendant environ deux heures.",
+    "level": "A2",
+    "note": "US 'highway' / 'freeway' / 'interstate' = UK 'motorway'."
+  },
+  {
+    "category": "travel",
+    "en": "road trip",
+    "fr": "voyage en voiture (long)",
+    "ipa": "/roʊd trɪp/",
+    "example_en": "We did a road trip across California.",
+    "example_fr": "On a fait un road trip à travers la Californie.",
+    "level": "B1",
+    "note": "Concept culturel très américain."
+  },
+  {
+    "category": "travel",
+    "en": "jet lag",
+    "fr": "décalage horaire",
+    "ipa": "/ˈdʒɛt læɡ/",
+    "example_en": "I'm still fighting the jet lag.",
+    "example_fr": "Je lutte encore contre le décalage horaire.",
+    "level": "B1"
+  },
+  {
+    "category": "travel",
+    "en": "delay",
+    "fr": "retard (vol/train)",
+    "ipa": "/dɪˈleɪ/",
+    "example_en": "There's a two-hour delay on my flight.",
+    "example_fr": "Il y a deux heures de retard sur mon vol.",
+    "level": "A2"
+  },
+  {
+    "category": "travel",
+    "en": "destination",
+    "fr": "destination",
+    "ipa": "/ˌdɛstəˈneɪʃən/",
+    "example_en": "What's your final destination?",
+    "example_fr": "Quelle est votre destination finale ?",
+    "level": "A2"
+  },
+  {
+    "category": "travel",
+    "en": "abroad",
+    "fr": "à l'étranger",
+    "ipa": "/əˈbrɔd/",
+    "example_en": "I'd love to study abroad next year.",
+    "example_fr": "J'aimerais étudier à l'étranger l'année prochaine.",
+    "level": "B1"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "happy",
+    "fr": "heureux",
+    "ipa": "/ˈhæpi/",
+    "example_en": "I'm really happy for you.",
+    "example_fr": "Je suis vraiment content pour toi.",
+    "level": "A2"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "sad",
+    "fr": "triste",
+    "ipa": "/sæd/",
+    "example_en": "She looked sad after the call.",
+    "example_fr": "Elle avait l'air triste après l'appel.",
+    "level": "A2"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "angry",
+    "fr": "en colère",
+    "ipa": "/ˈæŋɡri/",
+    "example_en": "He gets angry pretty easily.",
+    "example_fr": "Il se met en colère facilement.",
+    "level": "A2"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "mad",
+    "fr": "fâché / énervé",
+    "ipa": "/mæd/",
+    "example_en": "Don't be mad at me — I forgot.",
+    "example_fr": "Sois pas fâché contre moi, j'ai oublié.",
+    "level": "A2",
+    "note": "Aux US, 'mad' = 'angry' ; au UK, 'mad' = 'fou'."
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "upset",
+    "fr": "contrarié / blessé",
+    "ipa": "/ʌpˈsɛt/",
+    "example_en": "He was really upset about the news.",
+    "example_fr": "Il était vraiment contrarié par la nouvelle.",
+    "level": "B1"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "excited",
+    "fr": "enthousiaste / impatient",
+    "ipa": "/ɪkˈsaɪtəd/",
+    "example_en": "I'm so excited for the trip!",
+    "example_fr": "J'ai trop hâte du voyage !",
+    "level": "A2",
+    "note": "Faux-ami : 'excited' = enthousiaste, pas 'excité' au sens FR."
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "nervous",
+    "fr": "nerveux / stressé",
+    "ipa": "/ˈnɝvəs/",
+    "example_en": "I'm a little nervous about the interview.",
+    "example_fr": "Je suis un peu stressé pour l'entretien.",
+    "level": "A2"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "anxious",
+    "fr": "anxieux",
+    "ipa": "/ˈæŋkʃəs/",
+    "example_en": "I've been feeling anxious lately.",
+    "example_fr": "Je me sens anxieux ces derniers temps.",
+    "level": "B1"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "worried",
+    "fr": "inquiet",
+    "ipa": "/ˈwɝid/",
+    "example_en": "I'm worried about my mom.",
+    "example_fr": "Je m'inquiète pour ma mère.",
+    "level": "A2"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "scared",
+    "fr": "effrayé",
+    "ipa": "/skɛrd/",
+    "example_en": "I'm scared of heights.",
+    "example_fr": "J'ai peur du vide.",
+    "level": "A2"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "afraid",
+    "fr": "qui a peur",
+    "ipa": "/əˈfreɪd/",
+    "example_en": "Don't be afraid to ask questions.",
+    "example_fr": "N'aie pas peur de poser des questions.",
+    "level": "A2"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "bored",
+    "fr": "qui s'ennuie",
+    "ipa": "/bɔrd/",
+    "example_en": "I'm bored — let's do something.",
+    "example_fr": "Je m'ennuie, faisons quelque chose.",
+    "level": "A2"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "tired",
+    "fr": "fatigué",
+    "ipa": "/ˈtaɪɚd/",
+    "example_en": "I'm too tired to cook tonight.",
+    "example_fr": "Je suis trop fatigué pour cuisiner ce soir.",
+    "level": "A2"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "exhausted",
+    "fr": "épuisé",
+    "ipa": "/ɪɡˈzɔstəd/",
+    "example_en": "I'm exhausted after that flight.",
+    "example_fr": "Je suis épuisé après ce vol.",
+    "level": "B1"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "surprised",
+    "fr": "surpris",
+    "ipa": "/sɚˈpraɪzd/",
+    "example_en": "I was surprised to see her there.",
+    "example_fr": "J'ai été surpris de la voir là-bas.",
+    "level": "A2"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "shocked",
+    "fr": "choqué / sidéré",
+    "ipa": "/ʃɑkt/",
+    "example_en": "We were all shocked by the news.",
+    "example_fr": "On a tous été sidérés par la nouvelle.",
+    "level": "B1"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "annoyed",
+    "fr": "agacé",
+    "ipa": "/əˈnɔɪd/",
+    "example_en": "I'm a little annoyed with him right now.",
+    "example_fr": "Il m'agace un peu en ce moment.",
+    "level": "B1"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "confused",
+    "fr": "confus / perdu",
+    "ipa": "/kənˈfjuzd/",
+    "example_en": "I'm so confused about the instructions.",
+    "example_fr": "Je suis complètement perdu sur les instructions.",
+    "level": "A2"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "embarrassed",
+    "fr": "gêné / honteux",
+    "ipa": "/ɪmˈbɛrəst/",
+    "example_en": "I'm so embarrassed — I forgot her name.",
+    "example_fr": "Je suis tellement gêné, j'ai oublié son prénom.",
+    "level": "B1",
+    "note": "Faux-ami : ne pas confondre avec 'enceinte' (pregnant)."
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "proud",
+    "fr": "fier",
+    "ipa": "/praʊd/",
+    "example_en": "I'm really proud of you.",
+    "example_fr": "Je suis vraiment fier de toi.",
+    "level": "A2"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "jealous",
+    "fr": "jaloux",
+    "ipa": "/ˈdʒɛləs/",
+    "example_en": "I'm a little jealous of your vacation.",
+    "example_fr": "Je suis un peu jaloux de tes vacances.",
+    "level": "B1"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "lonely",
+    "fr": "seul / solitaire",
+    "ipa": "/ˈloʊnli/",
+    "example_en": "She feels lonely since the move.",
+    "example_fr": "Elle se sent seule depuis le déménagement.",
+    "level": "B1"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "grateful",
+    "fr": "reconnaissant",
+    "ipa": "/ˈɡreɪtfəl/",
+    "example_en": "I'm so grateful for your help.",
+    "example_fr": "Je suis tellement reconnaissant pour ton aide.",
+    "level": "B1"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "disappointed",
+    "fr": "déçu",
+    "ipa": "/ˌdɪsəˈpɔɪntəd/",
+    "example_en": "I was disappointed with the result.",
+    "example_fr": "J'ai été déçu du résultat.",
+    "level": "B1"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "stressed out",
+    "fr": "stressé / sous pression",
+    "ipa": "/strɛst aʊt/",
+    "example_en": "I've been stressed out all week.",
+    "example_fr": "Je suis stressé toute la semaine.",
+    "level": "B1"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "overwhelmed",
+    "fr": "dépassé / submergé",
+    "ipa": "/ˌoʊvɚˈwɛlmd/",
+    "example_en": "I'm overwhelmed with work right now.",
+    "example_fr": "Je suis submergé par le travail en ce moment.",
+    "level": "B1"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "relaxed",
+    "fr": "détendu",
+    "ipa": "/rɪˈlækst/",
+    "example_en": "I feel really relaxed after yoga.",
+    "example_fr": "Je me sens vraiment détendu après le yoga.",
+    "level": "A2"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "thrilled",
+    "fr": "ravi / enchanté",
+    "ipa": "/θrɪld/",
+    "example_en": "She was thrilled to get the offer.",
+    "example_fr": "Elle était ravie d'avoir l'offre.",
+    "level": "B1"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "frustrated",
+    "fr": "frustré",
+    "ipa": "/ˈfrʌsˌtreɪtəd/",
+    "example_en": "I get frustrated when things don't work.",
+    "example_fr": "Je suis frustré quand les trucs marchent pas.",
+    "level": "B1"
+  },
+  {
+    "category": "feelings & emotions",
+    "en": "content",
+    "fr": "satisfait / serein",
+    "ipa": "/kənˈtɛnt/",
+    "example_en": "He's content with what he has.",
+    "example_fr": "Il est satisfait de ce qu'il a.",
+    "level": "B1",
+    "note": "Adjectif (kən-TENT) ≠ nom (CON-tent = contenu)."
+  },
+  {
+    "category": "money & shopping",
+    "en": "cash",
+    "fr": "espèces / liquide",
+    "ipa": "/kæʃ/",
+    "example_en": "Do you take cash or card only?",
+    "example_fr": "Vous prenez les espèces ou seulement la carte ?",
+    "level": "A2"
+  },
+  {
+    "category": "money & shopping",
+    "en": "credit card",
+    "fr": "carte de crédit",
+    "ipa": "/ˈkrɛdət kɑrd/",
+    "example_en": "I'll put it on my credit card.",
+    "example_fr": "Je vais le mettre sur ma carte de crédit.",
+    "level": "A2"
+  },
+  {
+    "category": "money & shopping",
+    "en": "debit card",
+    "fr": "carte de débit",
+    "ipa": "/ˈdɛbət kɑrd/",
+    "example_en": "I usually pay with my debit card.",
+    "example_fr": "Je paie en général avec ma carte de débit.",
+    "level": "A2"
+  },
+  {
+    "category": "money & shopping",
+    "en": "ATM",
+    "fr": "distributeur automatique",
+    "ipa": "/ˌeɪ ti ˈɛm/",
+    "example_en": "Is there an ATM around here?",
+    "example_fr": "Y a-t-il un distributeur dans le coin ?",
+    "level": "A2",
+    "note": "US 'ATM' = UK 'cashpoint' (les deux marchent au UK aussi)."
+  },
+  {
+    "category": "money & shopping",
+    "en": "bill",
+    "fr": "facture / billet",
+    "ipa": "/bɪl/",
+    "example_en": "I need to pay the electricity bill.",
+    "example_fr": "Je dois payer la facture d'électricité.",
+    "level": "A2",
+    "note": "Aux US, 'bill' = facture ET billet (a 20-dollar bill)."
+  },
+  {
+    "category": "money & shopping",
+    "en": "coin",
+    "fr": "pièce de monnaie",
+    "ipa": "/kɔɪn/",
+    "example_en": "She dropped a few coins on the ground.",
+    "example_fr": "Elle a fait tomber quelques pièces par terre.",
+    "level": "A2"
+  },
+  {
+    "category": "money & shopping",
+    "en": "dollar",
+    "fr": "dollar",
+    "ipa": "/ˈdɑlɚ/",
+    "example_en": "It costs about twenty dollars.",
+    "example_fr": "Ça coûte environ vingt dollars.",
+    "level": "A2",
+    "note": "Souvent abrégé 'bucks' à l'oral : 'twenty bucks'."
+  },
+  {
+    "category": "money & shopping",
+    "en": "cent",
+    "fr": "centime / cent",
+    "ipa": "/sɛnt/",
+    "example_en": "It's ninety-nine cents.",
+    "example_fr": "Ça fait quatre-vingt-dix-neuf cents.",
+    "level": "A2"
+  },
+  {
+    "category": "money & shopping",
+    "en": "price",
+    "fr": "prix",
+    "ipa": "/praɪs/",
+    "example_en": "What's the price on that one?",
+    "example_fr": "C'est quoi le prix de celui-là ?",
+    "level": "A2"
+  },
+  {
+    "category": "money & shopping",
+    "en": "sale",
+    "fr": "solde / promotion",
+    "ipa": "/seɪl/",
+    "example_en": "Everything is on sale this weekend.",
+    "example_fr": "Tout est en promo ce week-end.",
+    "level": "A2"
+  },
+  {
+    "category": "money & shopping",
+    "en": "discount",
+    "fr": "réduction",
+    "ipa": "/ˈdɪsˌkaʊnt/",
+    "example_en": "They gave me a 10% discount.",
+    "example_fr": "Ils m'ont fait 10 % de réduction.",
+    "level": "A2"
+  },
+  {
+    "category": "money & shopping",
+    "en": "coupon",
+    "fr": "bon de réduction",
+    "ipa": "/ˈkuˌpɑn/",
+    "example_en": "I have a coupon for this brand.",
+    "example_fr": "J'ai un bon de réduction pour cette marque.",
+    "level": "B1"
+  },
+  {
+    "category": "money & shopping",
+    "en": "receipt",
+    "fr": "reçu / ticket de caisse",
+    "ipa": "/rɪˈsit/",
+    "example_en": "Would you like a receipt?",
+    "example_fr": "Voulez-vous un reçu ?",
+    "level": "A2",
+    "note": "Le 'p' est muet."
+  },
+  {
+    "category": "money & shopping",
+    "en": "refund",
+    "fr": "remboursement",
+    "ipa": "/ˈriˌfʌnd/",
+    "example_en": "Can I get a refund for this?",
+    "example_fr": "Je peux me faire rembourser ça ?",
+    "level": "B1"
+  },
+  {
+    "category": "money & shopping",
+    "en": "exchange",
+    "fr": "échange",
+    "ipa": "/ɪksˈtʃeɪndʒ/",
+    "example_en": "I'd like to exchange this for a larger size.",
+    "example_fr": "Je voudrais échanger ça pour une taille plus grande.",
+    "level": "B1"
+  },
+  {
+    "category": "money & shopping",
+    "en": "return",
+    "fr": "retour (d'un produit)",
+    "ipa": "/rɪˈtɝn/",
+    "example_en": "Returns are accepted within 30 days.",
+    "example_fr": "Les retours sont acceptés sous 30 jours.",
+    "level": "B1"
+  },
+  {
+    "category": "money & shopping",
+    "en": "cashier",
+    "fr": "caissier / caissière",
+    "ipa": "/kæˈʃɪr/",
+    "example_en": "Pay the cashier at the front.",
+    "example_fr": "Payez le caissier à l'avant.",
+    "level": "A2"
+  },
+  {
+    "category": "money & shopping",
+    "en": "shopping cart",
+    "fr": "chariot / caddie",
+    "ipa": "/ˈʃɑpɪŋ kɑrt/",
+    "example_en": "Grab a shopping cart on your way in.",
+    "example_fr": "Prends un caddie en entrant.",
+    "level": "B1",
+    "note": "US 'shopping cart' = UK 'trolley'."
+  },
+  {
+    "category": "money & shopping",
+    "en": "fitting room",
+    "fr": "cabine d'essayage",
+    "ipa": "/ˈfɪtɪŋ rum/",
+    "example_en": "The fitting rooms are in the back.",
+    "example_fr": "Les cabines d'essayage sont au fond.",
+    "level": "B1"
+  },
+  {
+    "category": "money & shopping",
+    "en": "afford",
+    "fr": "se permettre / avoir les moyens",
+    "ipa": "/əˈfɔrd/",
+    "example_en": "I can't afford that right now.",
+    "example_fr": "Je peux pas me permettre ça maintenant.",
+    "level": "B1"
+  },
+  {
+    "category": "money & shopping",
+    "en": "broke",
+    "fr": "fauché",
+    "ipa": "/broʊk/",
+    "example_en": "I'm completely broke until payday.",
+    "example_fr": "Je suis complètement fauché jusqu'à la paie.",
+    "level": "B1"
+  },
+  {
+    "category": "money & shopping",
+    "en": "budget",
+    "fr": "budget",
+    "ipa": "/ˈbʌdʒət/",
+    "example_en": "We're sticking to a tight budget this month.",
+    "example_fr": "On respecte un budget serré ce mois-ci.",
+    "level": "A2"
+  },
+  {
+    "category": "money & shopping",
+    "en": "save",
+    "fr": "économiser",
+    "ipa": "/seɪv/",
+    "example_en": "I'm saving up for a new laptop.",
+    "example_fr": "J'économise pour un nouveau laptop.",
+    "level": "A2"
+  },
+  {
+    "category": "money & shopping",
+    "en": "spend",
+    "fr": "dépenser",
+    "ipa": "/spɛnd/",
+    "example_en": "I spend too much on coffee.",
+    "example_fr": "Je dépense trop en café.",
+    "level": "A2"
+  },
+  {
+    "category": "money & shopping",
+    "en": "owe",
+    "fr": "devoir (de l'argent)",
+    "ipa": "/oʊ/",
+    "example_en": "I still owe you twenty bucks.",
+    "example_fr": "Je te dois encore vingt balles.",
+    "level": "B1"
+  },
+  {
+    "category": "money & shopping",
+    "en": "tax",
+    "fr": "taxe / impôt",
+    "ipa": "/tæks/",
+    "example_en": "Tax isn't included in the listed price.",
+    "example_fr": "La taxe n'est pas incluse dans le prix affiché.",
+    "level": "B1",
+    "note": "Aux US, la taxe (sales tax) s'ajoute au prix en caisse."
+  },
+  {
+    "category": "money & shopping",
+    "en": "fee",
+    "fr": "frais",
+    "ipa": "/fi/",
+    "example_en": "There's a small service fee.",
+    "example_fr": "Il y a des petits frais de service.",
+    "level": "B1"
+  },
+  {
+    "category": "money & shopping",
+    "en": "expensive",
+    "fr": "cher",
+    "ipa": "/ɪkˈspɛnsɪv/",
+    "example_en": "That restaurant is way too expensive.",
+    "example_fr": "Ce restaurant est beaucoup trop cher.",
+    "level": "A2"
+  },
+  {
+    "category": "money & shopping",
+    "en": "cheap",
+    "fr": "pas cher / bon marché",
+    "ipa": "/tʃip/",
+    "example_en": "I found a cheap flight to Vegas.",
+    "example_fr": "J'ai trouvé un vol pas cher pour Vegas.",
+    "level": "A2"
+  },
+  {
+    "category": "money & shopping",
+    "en": "wallet",
+    "fr": "portefeuille",
+    "ipa": "/ˈwɑlət/",
+    "example_en": "I left my wallet at home.",
+    "example_fr": "J'ai laissé mon portefeuille à la maison.",
+    "level": "A2"
+  },
+  {
+    "category": "health & body",
+    "en": "doctor",
+    "fr": "médecin",
+    "ipa": "/ˈdɑktɚ/",
+    "example_en": "I have a doctor's appointment tomorrow.",
+    "example_fr": "J'ai un rendez-vous médecin demain.",
+    "level": "A2"
+  },
+  {
+    "category": "health & body",
+    "en": "dentist",
+    "fr": "dentiste",
+    "ipa": "/ˈdɛntəst/",
+    "example_en": "I should see a dentist about this tooth.",
+    "example_fr": "Je devrais voir un dentiste pour cette dent.",
+    "level": "A2"
+  },
+  {
+    "category": "health & body",
+    "en": "nurse",
+    "fr": "infirmier / infirmière",
+    "ipa": "/nɝs/",
+    "example_en": "The nurse will see you shortly.",
+    "example_fr": "L'infirmier va vous recevoir sous peu.",
+    "level": "A2"
+  },
+  {
+    "category": "health & body",
+    "en": "hospital",
+    "fr": "hôpital",
+    "ipa": "/ˈhɑˌspɪtəl/",
+    "example_en": "He's still at the hospital.",
+    "example_fr": "Il est encore à l'hôpital.",
+    "level": "A2"
+  },
+  {
+    "category": "health & body",
+    "en": "pharmacy",
+    "fr": "pharmacie",
+    "ipa": "/ˈfɑrməsi/",
+    "example_en": "The pharmacy closes at nine.",
+    "example_fr": "La pharmacie ferme à neuf heures.",
+    "level": "A2",
+    "note": "US dit aussi 'drugstore' (espace plus large : santé + cosmétiques)."
+  },
+  {
+    "category": "health & body",
+    "en": "prescription",
+    "fr": "ordonnance",
+    "ipa": "/prɪˈskrɪpʃən/",
+    "example_en": "I need to pick up my prescription.",
+    "example_fr": "Je dois récupérer mon ordonnance.",
+    "level": "B1"
+  },
+  {
+    "category": "health & body",
+    "en": "medicine",
+    "fr": "médicament",
+    "ipa": "/ˈmɛdəsən/",
+    "example_en": "Did you take your medicine?",
+    "example_fr": "Tu as pris ton médicament ?",
+    "level": "A2"
+  },
+  {
+    "category": "health & body",
+    "en": "headache",
+    "fr": "mal de tête",
+    "ipa": "/ˈhɛˌdeɪk/",
+    "example_en": "I have a splitting headache.",
+    "example_fr": "J'ai un mal de tête atroce.",
+    "level": "A2"
+  },
+  {
+    "category": "health & body",
+    "en": "stomachache",
+    "fr": "mal de ventre",
+    "ipa": "/ˈstʌməkˌeɪk/",
+    "example_en": "I have a stomachache from lunch.",
+    "example_fr": "J'ai mal au ventre depuis le déjeuner.",
+    "level": "B1"
+  },
+  {
+    "category": "health & body",
+    "en": "fever",
+    "fr": "fièvre",
+    "ipa": "/ˈfivɚ/",
+    "example_en": "She has a slight fever.",
+    "example_fr": "Elle a un peu de fièvre.",
+    "level": "A2"
+  },
+  {
+    "category": "health & body",
+    "en": "cough",
+    "fr": "toux",
+    "ipa": "/kɔf/",
+    "example_en": "I've had this cough for a week.",
+    "example_fr": "J'ai cette toux depuis une semaine.",
+    "level": "A2"
+  },
+  {
+    "category": "health & body",
+    "en": "cold",
+    "fr": "rhume",
+    "ipa": "/koʊld/",
+    "example_en": "I'm coming down with a cold.",
+    "example_fr": "Je couve un rhume.",
+    "level": "A2"
+  },
+  {
+    "category": "health & body",
+    "en": "flu",
+    "fr": "grippe",
+    "ipa": "/flu/",
+    "example_en": "He's out with the flu this week.",
+    "example_fr": "Il est absent avec la grippe cette semaine.",
+    "level": "A2"
+  },
+  {
+    "category": "health & body",
+    "en": "allergy",
+    "fr": "allergie",
+    "ipa": "/ˈælɚdʒi/",
+    "example_en": "I have a peanut allergy.",
+    "example_fr": "Je suis allergique aux cacahuètes.",
+    "level": "B1"
+  },
+  {
+    "category": "health & body",
+    "en": "injury",
+    "fr": "blessure",
+    "ipa": "/ˈɪndʒəri/",
+    "example_en": "He has a knee injury.",
+    "example_fr": "Il a une blessure au genou.",
+    "level": "B1"
+  },
+  {
+    "category": "health & body",
+    "en": "sick",
+    "fr": "malade",
+    "ipa": "/sɪk/",
+    "example_en": "I'm feeling sick today.",
+    "example_fr": "Je me sens malade aujourd'hui.",
+    "level": "A2",
+    "note": "Aux US, 'sick' = malade. Au UK, 'sick' peut aussi vouloir dire 'avoir envie de vomir'."
+  },
+  {
+    "category": "health & body",
+    "en": "healthy",
+    "fr": "en bonne santé / sain",
+    "ipa": "/ˈhɛlθi/",
+    "example_en": "She eats really healthy food.",
+    "example_fr": "Elle mange vraiment sain.",
+    "level": "A2"
+  },
+  {
+    "category": "health & body",
+    "en": "workout",
+    "fr": "séance d'entraînement",
+    "ipa": "/ˈwɝkˌaʊt/",
+    "example_en": "I had a tough workout this morning.",
+    "example_fr": "J'ai eu une séance dure ce matin.",
+    "level": "B1"
+  },
+  {
+    "category": "health & body",
+    "en": "checkup",
+    "fr": "bilan de santé / visite médicale",
+    "ipa": "/ˈtʃɛkˌʌp/",
+    "example_en": "I'm going in for a checkup next week.",
+    "example_fr": "J'ai un bilan de santé la semaine prochaine.",
+    "level": "B1"
+  },
+  {
+    "category": "health & body",
+    "en": "Band-Aid",
+    "fr": "pansement",
+    "ipa": "/ˈbændˌeɪd/",
+    "example_en": "Do you have a Band-Aid? I cut my finger.",
+    "example_fr": "T'as un pansement ? Je me suis coupé.",
+    "level": "A2",
+    "note": "Nom de marque devenu générique aux US ; UK 'plaster'."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "piece of cake",
+    "fr": "du gâteau / fastoche",
+    "ipa": "/pis əv keɪk/",
+    "example_en": "That test was a piece of cake.",
+    "example_fr": "Cet examen, c'était du gâteau.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "break a leg",
+    "fr": "bonne chance (au théâtre/avant un défi)",
+    "ipa": "/breɪk ə lɛɡ/",
+    "example_en": "Break a leg out there!",
+    "example_fr": "Bonne chance pour ta perf' !",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "hit the books",
+    "fr": "bûcher / étudier dur",
+    "ipa": "/hɪt ðə bʊks/",
+    "example_en": "I have to hit the books tonight.",
+    "example_fr": "Je dois bûcher ce soir.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "hit the road",
+    "fr": "prendre la route / y aller",
+    "ipa": "/hɪt ðə roʊd/",
+    "example_en": "It's late — let's hit the road.",
+    "example_fr": "Il est tard, allons-y.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "hit the hay",
+    "fr": "aller au pieu",
+    "ipa": "/hɪt ðə heɪ/",
+    "example_en": "I'm exhausted — time to hit the hay.",
+    "example_fr": "Je suis crevé, je vais me coucher.",
+    "level": "B1",
+    "note": "Variante : 'hit the sack'."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "call it a day",
+    "fr": "arrêter pour aujourd'hui",
+    "ipa": "/kɔl ɪt ə deɪ/",
+    "example_en": "Let's call it a day and finish tomorrow.",
+    "example_fr": "On arrête pour aujourd'hui, on finit demain.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "cost an arm and a leg",
+    "fr": "coûter les yeux de la tête",
+    "ipa": "/kɔst ən ɑrm ən ə lɛɡ/",
+    "example_en": "That car costs an arm and a leg.",
+    "example_fr": "Cette voiture coûte les yeux de la tête.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "once in a blue moon",
+    "fr": "tous les 36 du mois",
+    "ipa": "/wʌns ɪn ə blu mun/",
+    "example_en": "I see her once in a blue moon.",
+    "example_fr": "Je la vois tous les 36 du mois.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "under the weather",
+    "fr": "pas dans son assiette",
+    "ipa": "/ˈʌndɚ ðə ˈwɛðɚ/",
+    "example_en": "I'm feeling a little under the weather.",
+    "example_fr": "Je me sens pas dans mon assiette.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "spill the beans",
+    "fr": "vendre la mèche",
+    "ipa": "/spɪl ðə binz/",
+    "example_en": "Come on, spill the beans!",
+    "example_fr": "Allez, crache le morceau !",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "let the cat out of the bag",
+    "fr": "lâcher le morceau",
+    "ipa": "/lɛt ðə kæt aʊt əv ðə bæɡ/",
+    "example_en": "Don't let the cat out of the bag.",
+    "example_fr": "Ne vends pas la mèche.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "when pigs fly",
+    "fr": "quand les poules auront des dents",
+    "ipa": "/wɛn pɪɡz flaɪ/",
+    "example_en": "He'll apologize when pigs fly.",
+    "example_fr": "Il s'excusera quand les poules auront des dents.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "raining cats and dogs",
+    "fr": "pleuvoir des cordes",
+    "ipa": "/ˈreɪnɪŋ kæts ən dɔɡz/",
+    "example_en": "It's raining cats and dogs out there.",
+    "example_fr": "Il pleut des cordes dehors.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "it's not rocket science",
+    "fr": "c'est pas sorcier",
+    "ipa": "/ɪts nɑt ˈrɑkət ˈsaɪəns/",
+    "example_en": "Come on, it's not rocket science.",
+    "example_fr": "Allez, c'est pas sorcier.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "on the same page",
+    "fr": "sur la même longueur d'onde",
+    "ipa": "/ɑn ðə seɪm peɪdʒ/",
+    "example_en": "I want to make sure we're on the same page.",
+    "example_fr": "Je veux m'assurer qu'on est sur la même longueur d'onde.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "read between the lines",
+    "fr": "lire entre les lignes",
+    "ipa": "/rid bəˈtwin ðə laɪnz/",
+    "example_en": "You have to read between the lines.",
+    "example_fr": "Il faut lire entre les lignes.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "cut to the chase",
+    "fr": "aller droit au but",
+    "ipa": "/kʌt tə ðə tʃeɪs/",
+    "example_en": "Let me cut to the chase.",
+    "example_fr": "Je vais aller droit au but.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "ballpark figure",
+    "fr": "estimation / ordre de grandeur",
+    "ipa": "/ˈbɔlˌpɑrk ˈfɪɡjɚ/",
+    "example_en": "Just give me a ballpark figure.",
+    "example_fr": "Donne-moi juste un ordre de grandeur.",
+    "level": "B1",
+    "note": "Très américain (vient du baseball)."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "touch base",
+    "fr": "faire le point",
+    "ipa": "/tʌtʃ beɪs/",
+    "example_en": "Let's touch base next week.",
+    "example_fr": "Faisons un point la semaine prochaine.",
+    "level": "B1",
+    "note": "Très courant en milieu pro US (origine baseball)."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "think outside the box",
+    "fr": "sortir des sentiers battus",
+    "ipa": "/θɪŋk ˌaʊtˈsaɪd ðə bɑks/",
+    "example_en": "We need to think outside the box.",
+    "example_fr": "Il faut sortir des sentiers battus.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "on the ball",
+    "fr": "vif / dans le coup",
+    "ipa": "/ɑn ðə bɔl/",
+    "example_en": "She's really on the ball today.",
+    "example_fr": "Elle est vraiment dans le coup aujourd'hui.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "drop the ball",
+    "fr": "se planter / merder",
+    "ipa": "/drɑp ðə bɔl/",
+    "example_en": "I dropped the ball on that email.",
+    "example_fr": "Je me suis planté sur ce mail.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "catch some Z's",
+    "fr": "piquer un roupillon",
+    "ipa": "/kætʃ sʌm ziz/",
+    "example_en": "I need to catch some Z's before the flight.",
+    "example_fr": "J'ai besoin de piquer un roupillon avant le vol.",
+    "level": "B1",
+    "note": "Z's = 'zees' (US) ; au UK on dit 'zeds'."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "crash",
+    "fr": "s'écrouler de fatigue / dormir",
+    "ipa": "/kræʃ/",
+    "example_en": "I'm gonna crash as soon as I get home.",
+    "example_fr": "Je m'écroule dès que je rentre.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "chill out",
+    "fr": "se calmer / se détendre",
+    "ipa": "/tʃɪl aʊt/",
+    "example_en": "Just chill out — it's fine.",
+    "example_fr": "Détends-toi, c'est rien.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "hang in there",
+    "fr": "tiens bon",
+    "ipa": "/hæŋ ɪn ðɛr/",
+    "example_en": "Hang in there — you've got this.",
+    "example_fr": "Tiens bon, tu gères.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "no biggie",
+    "fr": "c'est rien / pas grave",
+    "ipa": "/noʊ ˈbɪɡi/",
+    "example_en": "It's no biggie — really.",
+    "example_fr": "C'est rien, vraiment.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "no worries",
+    "fr": "pas de souci",
+    "ipa": "/noʊ ˈwɝiz/",
+    "example_en": "No worries, I've got it covered.",
+    "example_fr": "Pas de souci, je gère.",
+    "level": "A2"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "my bad",
+    "fr": "ma faute / au temps pour moi",
+    "ipa": "/maɪ bæd/",
+    "example_en": "Sorry, my bad — I forgot.",
+    "example_fr": "Désolé, ma faute, j'ai oublié.",
+    "level": "B1",
+    "note": "Très courant à l'oral, jeune et décontracté."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "you bet",
+    "fr": "bien sûr / pas de quoi",
+    "ipa": "/jə bɛt/",
+    "example_en": "Thanks! — You bet.",
+    "example_fr": "Merci ! — De rien.",
+    "level": "B1",
+    "note": "Plus américain que 'you're welcome'."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "for real",
+    "fr": "sérieusement / vraiment",
+    "ipa": "/fɚ ril/",
+    "example_en": "Wait, for real?",
+    "example_fr": "Attends, sérieux ?",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "way to go",
+    "fr": "bien joué",
+    "ipa": "/weɪ tə ɡoʊ/",
+    "example_en": "Way to go, champ!",
+    "example_fr": "Bien joué, champion !",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "nailed it",
+    "fr": "parfaitement réussi",
+    "ipa": "/neɪld ɪt/",
+    "example_en": "She nailed the presentation.",
+    "example_fr": "Elle a déchiré sa présentation.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "screw up",
+    "fr": "merder / faire foirer",
+    "ipa": "/skru ʌp/",
+    "example_en": "I really screwed up this time.",
+    "example_fr": "J'ai vraiment merdé cette fois.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "bummer",
+    "fr": "dommage / la loose",
+    "ipa": "/ˈbʌmɚ/",
+    "example_en": "Your flight got cancelled? Bummer.",
+    "example_fr": "Ton vol est annulé ? La loose.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "awesome",
+    "fr": "génial / super",
+    "ipa": "/ˈɔsəm/",
+    "example_en": "That movie was awesome.",
+    "example_fr": "Ce film était génial.",
+    "level": "A2",
+    "note": "Très américain, omniprésent à l'oral."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "dude",
+    "fr": "mec / pote",
+    "ipa": "/dud/",
+    "example_en": "Dude, check this out.",
+    "example_fr": "Mec, regarde ça.",
+    "level": "A2",
+    "note": "Très américain, jeune et décontracté ; pour homme ou femme à l'oral."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "guys",
+    "fr": "les gars / vous (pluriel)",
+    "ipa": "/ɡaɪz/",
+    "example_en": "Hey guys, are you ready?",
+    "example_fr": "Hey les gars, vous êtes prêts ?",
+    "level": "A2",
+    "note": "Aux US, 'you guys' s'adresse à un groupe mixte, pas que masculin."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "y'all",
+    "fr": "vous (Sud des US)",
+    "ipa": "/jɔl/",
+    "example_en": "Are y'all coming to dinner?",
+    "example_fr": "Vous venez tous au dîner ?",
+    "level": "B1",
+    "note": "Contraction de 'you all', typique du Sud (Texas, Géorgie...)."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "gonna",
+    "fr": "going to (forme orale)",
+    "ipa": "/ˈɡʌnə/",
+    "example_en": "I'm gonna grab some coffee.",
+    "example_fr": "Je vais prendre un café.",
+    "level": "A2",
+    "note": "À l'oral uniquement, jamais à l'écrit formel."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "wanna",
+    "fr": "want to (forme orale)",
+    "ipa": "/ˈwɑnə/",
+    "example_en": "Do you wanna come with us?",
+    "example_fr": "Tu veux venir avec nous ?",
+    "level": "A2",
+    "note": "À l'oral uniquement."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "gotta",
+    "fr": "have to / got to (forme orale)",
+    "ipa": "/ˈɡɑtə/",
+    "example_en": "I gotta run — talk later!",
+    "example_fr": "Faut que j'y aille, on se parle plus tard !",
+    "level": "B1",
+    "note": "À l'oral uniquement."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "lemme",
+    "fr": "let me (forme orale)",
+    "ipa": "/ˈlɛmi/",
+    "example_en": "Lemme check my calendar.",
+    "example_fr": "Laisse-moi voir mon agenda.",
+    "level": "B1",
+    "note": "À l'oral uniquement."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "kinda",
+    "fr": "un peu / genre",
+    "ipa": "/ˈkaɪndə/",
+    "example_en": "It's kinda cold in here.",
+    "example_fr": "Il fait genre un peu froid ici.",
+    "level": "B1",
+    "note": "Contraction de 'kind of'."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "sorta",
+    "fr": "un peu / en quelque sorte",
+    "ipa": "/ˈsɔrtə/",
+    "example_en": "I sorta agree, but not really.",
+    "example_fr": "Je suis un peu d'accord, mais pas vraiment.",
+    "level": "B1",
+    "note": "Contraction de 'sort of'."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "on second thought",
+    "fr": "tout bien réfléchi",
+    "ipa": "/ɑn ˈsɛkənd θɔt/",
+    "example_en": "On second thought, let's stay in.",
+    "example_fr": "Tout bien réfléchi, restons à la maison.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "better safe than sorry",
+    "fr": "mieux vaut prévenir que guérir",
+    "ipa": "/ˈbɛtɚ seɪf ðən ˈsɑri/",
+    "example_en": "Bring an umbrella — better safe than sorry.",
+    "example_fr": "Prends un parapluie, mieux vaut prévenir que guérir.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "you're telling me",
+    "fr": "à qui le dis-tu",
+    "ipa": "/jɚ ˈtɛlɪŋ mi/",
+    "example_en": "Traffic was terrible! — You're telling me.",
+    "example_fr": "Il y avait un trafic d'enfer ! — À qui le dis-tu.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "burn the midnight oil",
+    "fr": "travailler tard dans la nuit",
+    "ipa": "/bɝn ðə ˈmɪdˌnaɪt ɔɪl/",
+    "example_en": "She's burning the midnight oil to finish the report.",
+    "example_fr": "Elle travaille tard pour finir le rapport.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "make ends meet",
+    "fr": "joindre les deux bouts",
+    "ipa": "/meɪk ɛndz mit/",
+    "example_en": "It's hard to make ends meet these days.",
+    "example_fr": "C'est dur de joindre les deux bouts ces temps-ci.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "ASAP",
+    "fr": "dès que possible",
+    "ipa": "/ˌeɪ ɛs eɪ ˈpi/",
+    "example_en": "Send it back to me ASAP.",
+    "example_fr": "Renvoie-le moi dès que possible.",
+    "level": "A2",
+    "note": "Acronyme = As Soon As Possible. Très courant à l'écrit ET à l'oral."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "FYI",
+    "fr": "pour info",
+    "ipa": "/ˌɛf waɪ ˈaɪ/",
+    "example_en": "FYI, the meeting got moved to 3 p.m.",
+    "example_fr": "Pour info, la réunion est repoussée à 15 h.",
+    "level": "B1",
+    "note": "Acronyme = For Your Information. Très courant aux US."
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "no big deal",
+    "fr": "c'est pas grand-chose",
+    "ipa": "/noʊ bɪɡ dil/",
+    "example_en": "Forgot the milk? No big deal.",
+    "example_fr": "T'as oublié le lait ? C'est pas grand-chose.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "speak of the devil",
+    "fr": "quand on parle du loup",
+    "ipa": "/spik əv ðə ˈdɛvəl/",
+    "example_en": "Speak of the devil — there she is!",
+    "example_fr": "Quand on parle du loup, la voilà !",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "long story short",
+    "fr": "bref / pour faire court",
+    "ipa": "/lɔŋ ˈstɔri ʃɔrt/",
+    "example_en": "Long story short, we missed the flight.",
+    "example_fr": "Bref, on a raté l'avion.",
+    "level": "B1"
+  },
+  {
+    "category": "idioms & expressions",
+    "en": "off the top of my head",
+    "fr": "comme ça, de mémoire",
+    "ipa": "/ɔf ðə tɑp əv maɪ hɛd/",
+    "example_en": "Off the top of my head, I'd say twenty.",
+    "example_fr": "Comme ça, de mémoire, je dirais vingt.",
+    "level": "B1"
+  }
+]

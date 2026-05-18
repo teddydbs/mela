@@ -1,0 +1,812 @@
+{
+  "meta": {
+    "language": "English (American)",
+    "targetLearner": "French speaker, A2 → B1",
+    "total": 80,
+    "categories": ["work", "daily", "social", "idiomatic"],
+    "version": "1.0.0",
+    "notes": "Separable = true means an object pronoun can go between the verb and particle (pick him up). Separable = false means the verb is intransitive or the particle can't be split (look into it, NOT look it into)."
+  },
+  "phrasalVerbs": [
+    {
+      "verb": "pick up",
+      "meaning_en": "to collect someone or something; to lift",
+      "meaning_fr": "récupérer / aller chercher / prendre",
+      "example_en": "Can you pick up the kids at 5?",
+      "example_fr": "Tu peux récupérer les enfants à 17h ?",
+      "separable": true,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "give up",
+      "meaning_en": "to stop trying; to quit",
+      "meaning_fr": "abandonner / arrêter",
+      "example_en": "Don't give up on your dreams.",
+      "example_fr": "N'abandonne pas tes rêves.",
+      "separable": true,
+      "level": "A2",
+      "category": "idiomatic"
+    },
+    {
+      "verb": "look forward to",
+      "meaning_en": "to be excited about something coming up",
+      "meaning_fr": "avoir hâte de / attendre avec impatience",
+      "example_en": "I'm looking forward to the weekend.",
+      "example_fr": "J'ai hâte d'être au week-end.",
+      "separable": false,
+      "level": "B1",
+      "category": "social"
+    },
+    {
+      "verb": "run out of",
+      "meaning_en": "to have no more of something",
+      "meaning_fr": "être à court de / ne plus avoir",
+      "example_en": "We ran out of coffee this morning.",
+      "example_fr": "On n'avait plus de café ce matin.",
+      "separable": false,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "get along",
+      "meaning_en": "to have a good relationship with someone",
+      "meaning_fr": "bien s'entendre",
+      "example_en": "I get along really well with my coworkers.",
+      "example_fr": "Je m'entends très bien avec mes collègues.",
+      "separable": false,
+      "level": "A2",
+      "category": "social"
+    },
+    {
+      "verb": "figure out",
+      "meaning_en": "to understand or solve something",
+      "meaning_fr": "comprendre / résoudre",
+      "example_en": "I can't figure out why it's not working.",
+      "example_fr": "J'arrive pas à comprendre pourquoi ça marche pas.",
+      "separable": true,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "work out",
+      "meaning_en": "to exercise; to have a good result; to solve",
+      "meaning_fr": "faire du sport / bien se passer / résoudre",
+      "example_en": "I work out three times a week.",
+      "example_fr": "Je fais du sport trois fois par semaine.",
+      "separable": true,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "set up",
+      "meaning_en": "to arrange or organize something",
+      "meaning_fr": "organiser / mettre en place / configurer",
+      "example_en": "Let's set up a meeting for next Tuesday.",
+      "example_fr": "Organisons une réunion pour mardi prochain.",
+      "separable": true,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "come up with",
+      "meaning_en": "to think of an idea or solution",
+      "meaning_fr": "trouver / inventer une idée",
+      "example_en": "She came up with a brilliant idea.",
+      "example_fr": "Elle a trouvé une idée géniale.",
+      "separable": false,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "deal with",
+      "meaning_en": "to handle or manage a situation",
+      "meaning_fr": "gérer / s'occuper de",
+      "example_en": "I'll deal with the customer complaint.",
+      "example_fr": "Je vais gérer la plainte du client.",
+      "separable": false,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "count on",
+      "meaning_en": "to rely on someone",
+      "meaning_fr": "compter sur",
+      "example_en": "You can count on me.",
+      "example_fr": "Tu peux compter sur moi.",
+      "separable": false,
+      "level": "B1",
+      "category": "social"
+    },
+    {
+      "verb": "end up",
+      "meaning_en": "to finally be in a place or situation",
+      "meaning_fr": "finir par / se retrouver",
+      "example_en": "We ended up staying home.",
+      "example_fr": "On a fini par rester à la maison.",
+      "separable": false,
+      "level": "A2",
+      "category": "idiomatic"
+    },
+    {
+      "verb": "look up",
+      "meaning_en": "to search for information (in a book, online)",
+      "meaning_fr": "chercher (un mot, une info)",
+      "example_en": "Look up the word in the dictionary.",
+      "example_fr": "Cherche le mot dans le dictionnaire.",
+      "separable": true,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "point out",
+      "meaning_en": "to mention or draw attention to",
+      "meaning_fr": "faire remarquer / souligner",
+      "example_en": "She pointed out a typo in my email.",
+      "example_fr": "Elle m'a fait remarquer une faute dans mon mail.",
+      "separable": true,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "turn down",
+      "meaning_en": "to refuse; to lower volume",
+      "meaning_fr": "refuser / baisser (le son)",
+      "example_en": "He turned down the job offer.",
+      "example_fr": "Il a refusé l'offre d'emploi.",
+      "separable": true,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "take over",
+      "meaning_en": "to take control or responsibility for something",
+      "meaning_fr": "reprendre / prendre le contrôle",
+      "example_en": "Can you take over the project next month?",
+      "example_fr": "Tu peux reprendre le projet le mois prochain ?",
+      "separable": true,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "follow up",
+      "meaning_en": "to check back on something",
+      "meaning_fr": "relancer / faire un suivi",
+      "example_en": "I'll follow up with the client tomorrow.",
+      "example_fr": "Je ferai un suivi avec le client demain.",
+      "separable": false,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "reach out",
+      "meaning_en": "to contact someone, especially for help",
+      "meaning_fr": "contacter / prendre contact",
+      "example_en": "Feel free to reach out if you have questions.",
+      "example_fr": "N'hésitez pas à me contacter si vous avez des questions.",
+      "separable": false,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "catch up",
+      "meaning_en": "to reach the same level; to share news",
+      "meaning_fr": "rattraper (le retard) / prendre des nouvelles",
+      "example_en": "Let's grab a coffee and catch up.",
+      "example_fr": "On se prend un café et on se raconte tout.",
+      "separable": false,
+      "level": "A2",
+      "category": "social"
+    },
+    {
+      "verb": "fill out",
+      "meaning_en": "to complete a form",
+      "meaning_fr": "remplir (un formulaire)",
+      "example_en": "Please fill out this form.",
+      "example_fr": "Merci de remplir ce formulaire.",
+      "separable": true,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "hand in",
+      "meaning_en": "to submit / to turn in (homework, report)",
+      "meaning_fr": "rendre / remettre",
+      "example_en": "Don't forget to hand in your report.",
+      "example_fr": "N'oublie pas de rendre ton rapport.",
+      "separable": true,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "carry out",
+      "meaning_en": "to perform or complete a task",
+      "meaning_fr": "effectuer / mener à bien",
+      "example_en": "We need to carry out a security audit.",
+      "example_fr": "On doit effectuer un audit de sécurité.",
+      "separable": true,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "wrap up",
+      "meaning_en": "to finish or conclude",
+      "meaning_fr": "terminer / boucler",
+      "example_en": "Let's wrap up the meeting.",
+      "example_fr": "Bouclons la réunion.",
+      "separable": true,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "bring up",
+      "meaning_en": "to mention or start a topic",
+      "meaning_fr": "aborder / évoquer (un sujet)",
+      "example_en": "She brought up an interesting point.",
+      "example_fr": "Elle a soulevé un point intéressant.",
+      "separable": true,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "go over",
+      "meaning_en": "to review or check",
+      "meaning_fr": "revoir / vérifier",
+      "example_en": "Let's go over the numbers one more time.",
+      "example_fr": "Reprenons les chiffres une dernière fois.",
+      "separable": false,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "look into",
+      "meaning_en": "to investigate",
+      "meaning_fr": "se renseigner sur / enquêter",
+      "example_en": "I'll look into the issue and get back to you.",
+      "example_fr": "Je me renseigne et je te recontacte.",
+      "separable": false,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "sort out",
+      "meaning_en": "to resolve or organize",
+      "meaning_fr": "régler / arranger",
+      "example_en": "I need to sort out my schedule.",
+      "example_fr": "Je dois arranger mon planning.",
+      "separable": true,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "sign up",
+      "meaning_en": "to register for something",
+      "meaning_fr": "s'inscrire",
+      "example_en": "I signed up for the yoga class.",
+      "example_fr": "Je me suis inscrit au cours de yoga.",
+      "separable": false,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "write down",
+      "meaning_en": "to make a note of",
+      "meaning_fr": "noter / écrire",
+      "example_en": "Write down my number, just in case.",
+      "example_fr": "Note mon numéro, au cas où.",
+      "separable": true,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "think over",
+      "meaning_en": "to consider carefully",
+      "meaning_fr": "réfléchir à / peser le pour et le contre",
+      "example_en": "Take a few days to think it over.",
+      "example_fr": "Prends quelques jours pour y réfléchir.",
+      "separable": true,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "put off",
+      "meaning_en": "to postpone",
+      "meaning_fr": "reporter / remettre à plus tard",
+      "example_en": "We put off the trip until summer.",
+      "example_fr": "On a reporté le voyage à cet été.",
+      "separable": true,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "take on",
+      "meaning_en": "to accept a task or responsibility",
+      "meaning_fr": "prendre en charge / accepter",
+      "example_en": "She took on two new clients this week.",
+      "example_fr": "Elle a pris en charge deux nouveaux clients cette semaine.",
+      "separable": true,
+      "level": "B1",
+      "category": "work"
+    },
+    {
+      "verb": "wake up",
+      "meaning_en": "to stop sleeping",
+      "meaning_fr": "se réveiller",
+      "example_en": "I wake up at 7 every day.",
+      "example_fr": "Je me réveille à 7h tous les jours.",
+      "separable": true,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "get up",
+      "meaning_en": "to get out of bed",
+      "meaning_fr": "se lever",
+      "example_en": "I got up early to go for a run.",
+      "example_fr": "Je me suis levé tôt pour aller courir.",
+      "separable": false,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "put on",
+      "meaning_en": "to dress in clothing",
+      "meaning_fr": "mettre / enfiler (un vêtement)",
+      "example_en": "Put on a jacket, it's cold outside.",
+      "example_fr": "Mets une veste, il fait froid dehors.",
+      "separable": true,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "take off",
+      "meaning_en": "to remove clothing; (plane) to leave the ground",
+      "meaning_fr": "enlever / décoller (avion)",
+      "example_en": "Take off your shoes at the door.",
+      "example_fr": "Enlève tes chaussures à l'entrée.",
+      "separable": true,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "clean up",
+      "meaning_en": "to tidy a space",
+      "meaning_fr": "ranger / nettoyer",
+      "example_en": "Could you clean up the kitchen?",
+      "example_fr": "Tu peux ranger la cuisine ?",
+      "separable": true,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "throw away",
+      "meaning_en": "to put in the trash",
+      "meaning_fr": "jeter (à la poubelle)",
+      "example_en": "Throw away the old leftovers.",
+      "example_fr": "Jette les vieux restes.",
+      "separable": true,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "show up",
+      "meaning_en": "to arrive or appear",
+      "meaning_fr": "se pointer / arriver",
+      "example_en": "He didn't show up to the meeting.",
+      "example_fr": "Il s'est pas pointé à la réunion.",
+      "separable": false,
+      "level": "A2",
+      "category": "social"
+    },
+    {
+      "verb": "drop by",
+      "meaning_en": "to visit briefly without planning",
+      "meaning_fr": "passer (en coup de vent)",
+      "example_en": "Feel free to drop by anytime.",
+      "example_fr": "N'hésite pas à passer quand tu veux.",
+      "separable": false,
+      "level": "B1",
+      "category": "social"
+    },
+    {
+      "verb": "eat out",
+      "meaning_en": "to eat at a restaurant",
+      "meaning_fr": "manger au restaurant",
+      "example_en": "We eat out every Friday night.",
+      "example_fr": "On va au restau tous les vendredis soir.",
+      "separable": false,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "try on",
+      "meaning_en": "to test clothes before buying",
+      "meaning_fr": "essayer (un vêtement)",
+      "example_en": "Can I try on these jeans?",
+      "example_fr": "Je peux essayer ce jean ?",
+      "separable": true,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "pick out",
+      "meaning_en": "to choose / select",
+      "meaning_fr": "choisir / sélectionner",
+      "example_en": "She picked out a nice dress for the party.",
+      "example_fr": "Elle a choisi une jolie robe pour la fête.",
+      "separable": true,
+      "level": "B1",
+      "category": "daily"
+    },
+    {
+      "verb": "drop off",
+      "meaning_en": "to leave someone or something at a place",
+      "meaning_fr": "déposer",
+      "example_en": "I'll drop you off at the airport.",
+      "example_fr": "Je te dépose à l'aéroport.",
+      "separable": true,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "get on",
+      "meaning_en": "to board (bus, train, plane)",
+      "meaning_fr": "monter dans (bus, train)",
+      "example_en": "We got on the bus at 8am.",
+      "example_fr": "On est montés dans le bus à 8h.",
+      "separable": false,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "get off",
+      "meaning_en": "to leave (bus, train, plane)",
+      "meaning_fr": "descendre de (bus, train)",
+      "example_en": "Get off at the next stop.",
+      "example_fr": "Descends au prochain arrêt.",
+      "separable": false,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "turn on",
+      "meaning_en": "to switch on (a device)",
+      "meaning_fr": "allumer",
+      "example_en": "Can you turn on the TV?",
+      "example_fr": "Tu peux allumer la télé ?",
+      "separable": true,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "turn off",
+      "meaning_en": "to switch off (a device)",
+      "meaning_fr": "éteindre",
+      "example_en": "Don't forget to turn off the lights.",
+      "example_fr": "N'oublie pas d'éteindre les lumières.",
+      "separable": true,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "find out",
+      "meaning_en": "to discover information",
+      "meaning_fr": "découvrir / apprendre",
+      "example_en": "I just found out she's moving to NYC.",
+      "example_fr": "Je viens d'apprendre qu'elle déménage à NYC.",
+      "separable": true,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "pay back",
+      "meaning_en": "to repay money",
+      "meaning_fr": "rembourser",
+      "example_en": "I'll pay you back next week.",
+      "example_fr": "Je te rembourse la semaine prochaine.",
+      "separable": true,
+      "level": "B1",
+      "category": "daily"
+    },
+    {
+      "verb": "save up",
+      "meaning_en": "to set aside money for the future",
+      "meaning_fr": "économiser",
+      "example_en": "I'm saving up for a new laptop.",
+      "example_fr": "J'économise pour un nouveau laptop.",
+      "separable": false,
+      "level": "B1",
+      "category": "daily"
+    },
+    {
+      "verb": "hang out",
+      "meaning_en": "to spend time casually with people",
+      "meaning_fr": "traîner / passer du temps",
+      "example_en": "We hung out at the park all afternoon.",
+      "example_fr": "On a traîné au parc tout l'après-midi.",
+      "separable": false,
+      "level": "A2",
+      "category": "social"
+    },
+    {
+      "verb": "bump into",
+      "meaning_en": "to meet someone by chance",
+      "meaning_fr": "tomber sur (par hasard)",
+      "example_en": "I bumped into Sarah at the grocery store.",
+      "example_fr": "Je suis tombé sur Sarah à l'épicerie.",
+      "separable": false,
+      "level": "B1",
+      "category": "social"
+    },
+    {
+      "verb": "ask out",
+      "meaning_en": "to invite someone on a date",
+      "meaning_fr": "inviter (à sortir)",
+      "example_en": "He finally asked her out.",
+      "example_fr": "Il l'a enfin invitée à sortir.",
+      "separable": true,
+      "level": "B1",
+      "category": "social"
+    },
+    {
+      "verb": "break up",
+      "meaning_en": "to end a romantic relationship",
+      "meaning_fr": "rompre / casser",
+      "example_en": "They broke up after three years together.",
+      "example_fr": "Ils ont rompu après trois ans ensemble.",
+      "separable": false,
+      "level": "A2",
+      "category": "social"
+    },
+    {
+      "verb": "make up",
+      "meaning_en": "to reconcile; to invent (a story)",
+      "meaning_fr": "se réconcilier / inventer",
+      "example_en": "They had a fight but made up the next day.",
+      "example_fr": "Ils se sont disputés mais réconciliés le lendemain.",
+      "separable": true,
+      "level": "B1",
+      "category": "social"
+    },
+    {
+      "verb": "cheer up",
+      "meaning_en": "to make someone feel happier",
+      "meaning_fr": "remonter le moral",
+      "example_en": "I brought flowers to cheer her up.",
+      "example_fr": "J'ai apporté des fleurs pour lui remonter le moral.",
+      "separable": true,
+      "level": "B1",
+      "category": "social"
+    },
+    {
+      "verb": "show off",
+      "meaning_en": "to display proudly (often arrogantly)",
+      "meaning_fr": "frimer / se vanter",
+      "example_en": "Stop showing off your new car.",
+      "example_fr": "Arrête de frimer avec ta nouvelle voiture.",
+      "separable": false,
+      "level": "B1",
+      "category": "social"
+    },
+    {
+      "verb": "hit it off",
+      "meaning_en": "to immediately get along well",
+      "meaning_fr": "s'entendre tout de suite",
+      "example_en": "We hit it off right away.",
+      "example_fr": "On s'est tout de suite super bien entendus.",
+      "separable": false,
+      "level": "B1",
+      "category": "social"
+    },
+    {
+      "verb": "look up to",
+      "meaning_en": "to admire and respect",
+      "meaning_fr": "admirer / respecter",
+      "example_en": "She really looks up to her older sister.",
+      "example_fr": "Elle admire vraiment sa grande sœur.",
+      "separable": false,
+      "level": "B1",
+      "category": "social"
+    },
+    {
+      "verb": "get over",
+      "meaning_en": "to recover from something",
+      "meaning_fr": "se remettre de / surmonter",
+      "example_en": "It took me months to get over the flu.",
+      "example_fr": "Il m'a fallu des mois pour me remettre de la grippe.",
+      "separable": false,
+      "level": "B1",
+      "category": "idiomatic"
+    },
+    {
+      "verb": "chill out",
+      "meaning_en": "to relax",
+      "meaning_fr": "se détendre / chiller",
+      "example_en": "Let's chill out at home tonight.",
+      "example_fr": "On chille à la maison ce soir.",
+      "separable": false,
+      "level": "A2",
+      "category": "social"
+    },
+    {
+      "verb": "call back",
+      "meaning_en": "to return a phone call",
+      "meaning_fr": "rappeler (au téléphone)",
+      "example_en": "I'll call you back in an hour.",
+      "example_fr": "Je te rappelle dans une heure.",
+      "separable": true,
+      "level": "A2",
+      "category": "social"
+    },
+    {
+      "verb": "hang up",
+      "meaning_en": "to end a phone call",
+      "meaning_fr": "raccrocher",
+      "example_en": "She hung up before I could explain.",
+      "example_fr": "Elle a raccroché avant que je puisse expliquer.",
+      "separable": true,
+      "level": "A2",
+      "category": "social"
+    },
+    {
+      "verb": "come over",
+      "meaning_en": "to visit someone's place",
+      "meaning_fr": "passer / venir chez quelqu'un",
+      "example_en": "Why don't you come over for dinner?",
+      "example_fr": "Pourquoi tu viens pas dîner à la maison ?",
+      "separable": false,
+      "level": "A2",
+      "category": "social"
+    },
+    {
+      "verb": "stand up for",
+      "meaning_en": "to defend someone or something",
+      "meaning_fr": "défendre / prendre la défense de",
+      "example_en": "He always stands up for his team.",
+      "example_fr": "Il défend toujours son équipe.",
+      "separable": false,
+      "level": "B1",
+      "category": "social"
+    },
+    {
+      "verb": "mess up",
+      "meaning_en": "to make a mistake; to ruin something",
+      "meaning_fr": "rater / foirer",
+      "example_en": "I really messed up at work today.",
+      "example_fr": "J'ai vraiment foiré au boulot aujourd'hui.",
+      "separable": true,
+      "level": "B1",
+      "category": "idiomatic"
+    },
+    {
+      "verb": "come across",
+      "meaning_en": "to find by chance; to give an impression",
+      "meaning_fr": "tomber sur / paraître",
+      "example_en": "I came across an old photo of us.",
+      "example_fr": "Je suis tombé sur une vieille photo de nous.",
+      "separable": false,
+      "level": "B1",
+      "category": "idiomatic"
+    },
+    {
+      "verb": "put up with",
+      "meaning_en": "to tolerate something annoying",
+      "meaning_fr": "supporter / tolérer",
+      "example_en": "I can't put up with this noise anymore.",
+      "example_fr": "Je peux plus supporter ce bruit.",
+      "separable": false,
+      "level": "B1",
+      "category": "idiomatic"
+    },
+    {
+      "verb": "run into",
+      "meaning_en": "to meet someone unexpectedly",
+      "meaning_fr": "tomber sur (par hasard)",
+      "example_en": "I ran into my old boss downtown.",
+      "example_fr": "Je suis tombé sur mon ancien boss en ville.",
+      "separable": false,
+      "level": "B1",
+      "category": "social"
+    },
+    {
+      "verb": "get rid of",
+      "meaning_en": "to remove or dispose of",
+      "meaning_fr": "se débarrasser de",
+      "example_en": "I need to get rid of all this junk.",
+      "example_fr": "Je dois me débarrasser de tout ce bazar.",
+      "separable": false,
+      "level": "B1",
+      "category": "daily"
+    },
+    {
+      "verb": "pass out",
+      "meaning_en": "to faint; to lose consciousness",
+      "meaning_fr": "s'évanouir / tomber dans les pommes",
+      "example_en": "He passed out from the heat.",
+      "example_fr": "Il s'est évanoui à cause de la chaleur.",
+      "separable": false,
+      "level": "B1",
+      "category": "idiomatic"
+    },
+    {
+      "verb": "watch out",
+      "meaning_en": "to be careful",
+      "meaning_fr": "faire attention / attention !",
+      "example_en": "Watch out — there's a car coming!",
+      "example_fr": "Attention — il y a une voiture qui arrive !",
+      "separable": false,
+      "level": "A2",
+      "category": "daily"
+    },
+    {
+      "verb": "wear out",
+      "meaning_en": "to become unusable from use; to exhaust",
+      "meaning_fr": "user / épuiser",
+      "example_en": "These shoes are completely worn out.",
+      "example_fr": "Ces chaussures sont complètement usées.",
+      "separable": true,
+      "level": "B1",
+      "category": "idiomatic"
+    },
+    {
+      "verb": "pull off",
+      "meaning_en": "to succeed at something difficult",
+      "meaning_fr": "réussir (un coup) / pulvériser",
+      "example_en": "I can't believe she pulled off that pitch.",
+      "example_fr": "J'arrive pas à croire qu'elle ait réussi ce pitch.",
+      "separable": true,
+      "level": "B1",
+      "category": "idiomatic"
+    },
+    {
+      "verb": "turn out",
+      "meaning_en": "to end up being / to result",
+      "meaning_fr": "s'avérer / se révéler",
+      "example_en": "It turned out to be a great day.",
+      "example_fr": "C'est finalement devenu une super journée.",
+      "separable": false,
+      "level": "B1",
+      "category": "idiomatic"
+    },
+    {
+      "verb": "come down with",
+      "meaning_en": "to start to have an illness",
+      "meaning_fr": "attraper (une maladie)",
+      "example_en": "I think I'm coming down with a cold.",
+      "example_fr": "Je crois que j'attrape un rhume.",
+      "separable": false,
+      "level": "B1",
+      "category": "idiomatic"
+    },
+    {
+      "verb": "get away",
+      "meaning_en": "to escape; to take a short vacation",
+      "meaning_fr": "s'échapper / partir en vacances",
+      "example_en": "We need to get away for the weekend.",
+      "example_fr": "On a besoin de partir le week-end.",
+      "separable": false,
+      "level": "B1",
+      "category": "idiomatic"
+    },
+    {
+      "verb": "take advantage of",
+      "meaning_en": "to use an opportunity; to exploit",
+      "meaning_fr": "profiter de",
+      "example_en": "Take advantage of the discount this week.",
+      "example_fr": "Profite de la réduction cette semaine.",
+      "separable": false,
+      "level": "B1",
+      "category": "idiomatic"
+    },
+    {
+      "verb": "break down",
+      "meaning_en": "to stop working (machine); to cry uncontrollably",
+      "meaning_fr": "tomber en panne / craquer (pleurer)",
+      "example_en": "My car broke down on the highway.",
+      "example_fr": "Ma voiture est tombée en panne sur l'autoroute.",
+      "separable": false,
+      "level": "B1",
+      "category": "idiomatic"
+    }
+  ]
+}
