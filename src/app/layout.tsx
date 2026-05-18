@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
 import { TopBar } from '@/components/top-bar';
-import { BottomNav } from '@/components/bottom-nav';
+import { BottomToolbar } from '@/components/bottom-toolbar';
 
 const jakarta = Plus_Jakarta_Sans({
   variable: '--font-jakarta',
@@ -48,9 +48,9 @@ export default function RootLayout({
             </div>
           </div>
 
-          {/* Bottom black band — sticker bar fully embedded inside */}
+          {/* Bottom black band — toolbox fully embedded inside */}
           <div className="flex-shrink-0 flex items-center justify-center px-[5px] pt-2 pb-3">
-            <BottomNav />
+            <BottomToolbar />
           </div>
         </div>
       </body>

@@ -1,4 +1,26 @@
-export type CategoryId = 'tenses' | 'modals' | 'conditionals' | 'gerunds' | 'prepositions';
+export type CategoryId =
+  // Grammar foundations (covered)
+  | 'tenses'
+  | 'modals'
+  | 'conditionals'
+  | 'gerunds'
+  | 'prepositions'
+  // A2 consolidation
+  | 'articles'
+  | 'quantifiers'
+  | 'comparatives'
+  // B1 core (passage A2 → B1)
+  | 'passive'
+  | 'reported'
+  | 'relatives'
+  | 'tags'
+  // B1+ production
+  | 'connectors'
+  | 'phrasalVerbs'
+  | 'collocations'
+  | 'falseFriends';
+
+export type CategoryLevel = 'A2' | 'B1' | 'B1+';
 
 export interface Exercise {
   q: string;
@@ -15,6 +37,7 @@ export interface Category {
   description: string;
   accent: string;
   bgLight: string;
+  level?: CategoryLevel;
   exercises: Exercise[];
 }
 

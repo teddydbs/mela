@@ -1,6 +1,10 @@
 import type { Category, CategoryId } from '@/lib/types';
 
-export const CATEGORIES: Record<CategoryId, Category> = {
+// Note: 11 more categories will be added (articles, quantifiers, comparatives, passive,
+// reported, relatives, tags, connectors, phrasalVerbs, collocations, falseFriends).
+// We cast for now so existing call sites compile — runtime will return undefined for the
+// not-yet-defined ones, callers should fall back gracefully.
+const CATEGORIES_RAW = {
   tenses: {
     id: 'tenses',
     name: 'Temps verbaux',
@@ -137,6 +141,8 @@ export const CATEGORIES: Record<CategoryId, Category> = {
     ],
   },
 };
+
+export const CATEGORIES = CATEGORIES_RAW as Record<CategoryId, Category>;
 
 export const CATEGORY_IDS: CategoryId[] = ['tenses', 'modals', 'conditionals', 'gerunds', 'prepositions'];
 

@@ -22,6 +22,17 @@ export const DEFAULT_DATA: UserData = {
     conditionals: { correct: 0, attempts: 0, completed: [] },
     gerunds: { correct: 0, attempts: 0, completed: [] },
     prepositions: { correct: 0, attempts: 0, completed: [] },
+    articles: { correct: 0, attempts: 0, completed: [] },
+    quantifiers: { correct: 0, attempts: 0, completed: [] },
+    comparatives: { correct: 0, attempts: 0, completed: [] },
+    passive: { correct: 0, attempts: 0, completed: [] },
+    reported: { correct: 0, attempts: 0, completed: [] },
+    relatives: { correct: 0, attempts: 0, completed: [] },
+    tags: { correct: 0, attempts: 0, completed: [] },
+    connectors: { correct: 0, attempts: 0, completed: [] },
+    phrasalVerbs: { correct: 0, attempts: 0, completed: [] },
+    collocations: { correct: 0, attempts: 0, completed: [] },
+    falseFriends: { correct: 0, attempts: 0, completed: [] },
   },
 };
 

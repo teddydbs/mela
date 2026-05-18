@@ -1,6 +1,8 @@
 import type { Lesson, CategoryId } from '@/lib/types';
 
-export const LESSONS: Record<CategoryId, Lesson> = {
+// Note: 11 more category lessons will be added (articles, quantifiers, etc.).
+// Cast at the bottom of the file so existing call sites keep their non-nullable type.
+const LESSONS_RAW = {
   tenses: {
     intro:
       "Les temps verbaux représentent ton plus gros gap actuel. Une fois maîtrisés, tu sautes de A2 à B1 sans effort. Règle d'or : ne traduis pas du français, raisonne en logique anglaise.",
@@ -277,3 +279,5 @@ export const LESSONS: Record<CategoryId, Lesson> = {
     ],
   },
 };
+
+export const LESSONS = LESSONS_RAW as Record<CategoryId, Lesson>;

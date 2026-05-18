@@ -1,0 +1,291 @@
+{
+  "id": "mela-translation-stories-v1",
+  "title": "Translation Stories",
+  "description": "Mini-histoires en français à réécrire en anglais. Chaque histoire réutilise du vocabulaire vu dans les sets memory (food/work/travel/daily/emergencies) et le placement test. Difficulté progressive A2 → C1.",
+  "instructions_fr": "Lis l'histoire en français, puis réécris-la en anglais en utilisant les target_words ciblés. Compare ta version à 'en_reference'. Les hints_fr aident sur les points grammaticaux ou lexicaux délicats.",
+  "stories": [
+    {
+      "id": 1,
+      "level": "A2",
+      "theme": "daily",
+      "title_fr": "Le matin pressé",
+      "fr": "Ce matin, mon réveil a sonné à sept heures. J'ai pris une douche rapide, puis j'ai mangé un petit-déjeuner léger. Avant de partir au travail, j'ai fait la vaisselle.",
+      "en_reference": "This morning, my alarm rang at seven. I took a quick shower, then I had a light breakfast. Before leaving for work, I did the dishes.",
+      "target_words": ["alarm", "shower", "dishes"],
+      "hints_fr": [
+        "'Faire la vaisselle' = 'to do the dishes' (pas 'wash the plates').",
+        "'Mon réveil a sonné' = 'my alarm rang' (rang = past simple de ring)."
+      ]
+    },
+    {
+      "id": 2,
+      "level": "A2",
+      "theme": "food",
+      "title_fr": "Au supermarché",
+      "fr": "Samedi, je suis allé faire les courses. Dans le rayon des fruits, j'ai choisi des pommes bien mûres. À la caisse, j'ai payé avec ma carte et je suis rentré chez moi.",
+      "en_reference": "On Saturday, I went grocery shopping. In the fruit aisle, I picked some ripe apples. At the checkout, I paid with my card and went home.",
+      "target_words": ["groceries", "aisle", "ripe", "checkout"],
+      "hints_fr": [
+        "'Faire les courses' = 'to go grocery shopping' (US) ou 'to do the groceries'.",
+        "'Rayon' (de supermarché) = 'aisle' — pas 'shelf' qui désigne l'étagère elle-même."
+      ]
+    },
+    {
+      "id": 3,
+      "level": "B1",
+      "theme": "work",
+      "title_fr": "Lundi de réunion",
+      "fr": "Lundi matin, j'avais une réunion importante avec mon patron. Pendant mon trajet domicile-travail, j'ai relu mon rapport. Cette année, j'espère avoir une augmentation.",
+      "en_reference": "Monday morning, I had an important meeting with my boss. During my commute, I reread my report. This year, I hope to get a raise.",
+      "target_words": ["meeting", "boss", "commute", "report", "raise"],
+      "hints_fr": [
+        "'Trajet domicile-travail' = 'commute' (nom) ou 'to commute' (verbe).",
+        "'Augmentation de salaire' = 'a raise' (US) / 'a rise' (UK)."
+      ]
+    },
+    {
+      "id": 4,
+      "level": "B1",
+      "theme": "travel",
+      "title_fr": "Vol retardé",
+      "fr": "Mon vol avait deux heures de retard. J'ai dû attendre longtemps à la porte d'embarquement. Heureusement, je n'avais qu'un bagage à main, donc je n'ai pas perdu de temps à l'enregistrement.",
+      "en_reference": "My flight was delayed by two hours. I had to wait a long time at the gate. Luckily, I only had a carry-on, so I didn't waste time at check-in.",
+      "target_words": ["delay", "gate", "carry-on", "check-in"],
+      "hints_fr": [
+        "'Avoir du retard' (vol) = 'to be delayed' ou 'to have a delay'.",
+        "'Bagage à main' = 'carry-on' (US) / 'hand luggage' (UK)."
+      ]
+    },
+    {
+      "id": 5,
+      "level": "B1",
+      "theme": "emergencies",
+      "title_fr": "Chute dans l'escalier",
+      "fr": "Mon voisin est tombé dans l'escalier hier soir. J'ai immédiatement appelé une ambulance. Aux urgences, le médecin a dit qu'il avait juste une entorse à la cheville.",
+      "en_reference": "My neighbor fell down the stairs last night. I immediately called an ambulance. At the emergency room, the doctor said he just had a sprained ankle.",
+      "target_words": ["ambulance", "emergency room", "doctor", "sprain"],
+      "hints_fr": [
+        "'Tomber dans l'escalier' = 'to fall down the stairs' (pas 'in').",
+        "'Urgences' = 'emergency room' ou 'ER' en anglais américain."
+      ]
+    },
+    {
+      "id": 6,
+      "level": "A2",
+      "theme": "daily",
+      "title_fr": "Dimanche ménage",
+      "fr": "Le dimanche, je fais toutes mes tâches ménagères. Je passe l'aspirateur, je fais la lessive et je plie mes vêtements. C'est ma routine du week-end.",
+      "en_reference": "On Sundays, I do all my chores. I vacuum, I do the laundry, and I fold my clothes. It's my weekend routine.",
+      "target_words": ["chores", "vacuum", "laundry", "fold", "routine"],
+      "hints_fr": [
+        "'Tâches ménagères' = 'chores' (pluriel, jamais 'housework tasks').",
+        "'Passer l'aspirateur' = 'to vacuum' (verbe direct, pas 'use the vacuum')."
+      ]
+    },
+    {
+      "id": 7,
+      "level": "B1",
+      "theme": "food",
+      "title_fr": "Restes du soir",
+      "fr": "Hier soir, on a commandé à emporter chez le thaïlandais. Ce matin, j'ai mangé les restes au petit-déjeuner. Honnêtement, c'était encore meilleur réchauffé.",
+      "en_reference": "Last night, we ordered takeout from the Thai place. This morning, I ate the leftovers for breakfast. Honestly, it was even better reheated.",
+      "target_words": ["takeout", "leftovers"],
+      "hints_fr": [
+        "'À emporter' = 'takeout' (US) / 'takeaway' (UK).",
+        "'Les restes' = 'leftovers' (toujours pluriel)."
+      ]
+    },
+    {
+      "id": 8,
+      "level": "A2",
+      "theme": "travel",
+      "title_fr": "Le métro quotidien",
+      "fr": "Je prends le métro tous les jours pour aller au travail. J'achète mon billet, je descends sur le quai et j'attends mon train pendant cinq minutes.",
+      "en_reference": "I take the subway every day to go to work. I buy my ticket, I go down to the platform, and I wait for my train for five minutes.",
+      "target_words": ["subway", "platform"],
+      "hints_fr": [
+        "'Métro' = 'subway' (US) / 'underground' ou 'tube' (UK).",
+        "'Quai' (de gare/métro) = 'platform'."
+      ]
+    },
+    {
+      "id": 9,
+      "level": "B1",
+      "theme": "work",
+      "title_fr": "Le départ du collègue",
+      "fr": "Mon collègue a démissionné la semaine dernière. Le patron cherche maintenant à embaucher quelqu'un de nouveau. J'ai déjà préparé mon CV au cas où.",
+      "en_reference": "My coworker resigned last week. The boss is now trying to hire someone new. I've already prepared my résumé just in case.",
+      "target_words": ["coworker", "resign", "hire", "résumé"],
+      "hints_fr": [
+        "'Démissionner' = 'to resign' (formel) ou 'to quit' (familier).",
+        "'CV' = 'résumé' en anglais américain, 'CV' au Royaume-Uni."
+      ]
+    },
+    {
+      "id": 10,
+      "level": "B2",
+      "theme": "emergencies",
+      "title_fr": "Tempête et panne",
+      "fr": "Pendant la tempête, il y a eu une grosse panne de courant. Le détecteur de fumée s'est déclenché sans raison. Heureusement, mon père savait exactement comment utiliser l'extincteur.",
+      "en_reference": "During the storm, there was a major power outage. The smoke alarm went off for no reason. Luckily, my dad knew exactly how to use the fire extinguisher.",
+      "target_words": ["storm", "power outage", "smoke alarm", "fire extinguisher"],
+      "hints_fr": [
+        "'Panne de courant' = 'power outage' (US) ou 'power cut' (UK).",
+        "'Se déclencher' (alarme) = 'to go off' — phrasal verb à mémoriser."
+      ]
+    },
+    {
+      "id": 11,
+      "level": "B1",
+      "theme": "daily",
+      "title_fr": "Journée de commissions",
+      "fr": "Demain, j'ai plein de commissions à faire. Je dois aller à la pharmacie, payer mon loyer et passer chez le coiffeur. Je vais sûrement être en retard pour le dîner.",
+      "en_reference": "Tomorrow, I have a lot of errands to run. I need to go to the pharmacy, pay my rent, and stop by the hairdresser. I'll probably be late for dinner.",
+      "target_words": ["errands", "pharmacy", "rent", "run late"],
+      "hints_fr": [
+        "'Faire des commissions' = 'to run errands' (collocation fixe).",
+        "'Être en retard' (souvent) = 'to run late' — différent de 'to be late'."
+      ]
+    },
+    {
+      "id": 12,
+      "level": "B1",
+      "theme": "food",
+      "title_fr": "La recette de mamie",
+      "fr": "Pour cette recette, il faut d'abord hacher les oignons, puis ajouter des épices. Ensuite, on laisse mijoter pendant trente minutes. Sers avec un accompagnement de riz blanc.",
+      "en_reference": "For this recipe, you first need to chop the onions, then add some spices. After that, let it simmer for thirty minutes. Serve with a side dish of white rice.",
+      "target_words": ["recipe", "chop", "spices", "simmer", "side dish"],
+      "hints_fr": [
+        "'Mijoter' = 'to simmer' (feu doux, frémissement). 'To boil' serait bouillir fort.",
+        "'Accompagnement' (plat) = 'side dish' ou simplement 'a side'."
+      ]
+    },
+    {
+      "id": 13,
+      "level": "B1",
+      "theme": "travel",
+      "title_fr": "Escale à New York",
+      "fr": "À l'aéroport, j'ai d'abord fait l'enregistrement, puis je suis passé par la douane. Mon escale à New York a duré quatre longues heures. Le décalage horaire est dur à supporter.",
+      "en_reference": "At the airport, I first went through check-in, then I went through customs. My layover in New York lasted four long hours. The jet lag is hard to deal with.",
+      "target_words": ["check-in", "customs", "layover", "jet lag"],
+      "hints_fr": [
+        "'Escale' = 'layover' (US) / 'stopover' (UK).",
+        "'Décalage horaire' = 'jet lag' (sans tiret en anglais usuel)."
+      ]
+    },
+    {
+      "id": 14,
+      "level": "B2",
+      "theme": "work",
+      "title_fr": "L'entretien décisif",
+      "fr": "Pendant mon entretien, ils m'ont posé beaucoup de questions sur mes compétences. Si je suis embauché, je pourrai travailler en télétravail trois jours par semaine. J'aurais aussi des avantages sociaux intéressants.",
+      "en_reference": "During my interview, they asked me a lot of questions about my skills. If I get hired, I'll be able to work remotely three days a week. I would also get nice benefits.",
+      "target_words": ["interview", "skills", "hire", "remote work", "benefits"],
+      "hints_fr": [
+        "'Télétravail' = 'remote work' ou 'working from home' (WFH).",
+        "'Avantages sociaux' = 'benefits' (pas 'social advantages')."
+      ]
+    },
+    {
+      "id": 15,
+      "level": "B1",
+      "theme": "emergencies",
+      "title_fr": "Chute à vélo",
+      "fr": "Quand je suis tombé à vélo hier, je me suis fait une coupure profonde au genou. Ma mère a nettoyé la plaie et a mis un pansement. Elle dit que c'est les premiers secours de base.",
+      "en_reference": "When I fell off my bike yesterday, I got a deep cut on my knee. My mom cleaned the wound and put on a bandage. She says it's basic first aid.",
+      "target_words": ["cut", "wound", "bandage", "first aid"],
+      "hints_fr": [
+        "'Tomber de vélo' = 'to fall off a bike' (préposition 'off').",
+        "'Premiers secours' = 'first aid' (toujours au singulier)."
+      ]
+    },
+    {
+      "id": 16,
+      "level": "A2",
+      "theme": "food",
+      "title_fr": "Dîner au restau",
+      "fr": "Au restaurant, j'ai pris une entrée et un plat principal. Le serveur était vraiment sympa, donc j'ai laissé un bon pourboire. L'addition était plus que raisonnable.",
+      "en_reference": "At the restaurant, I had an appetizer and a main course. The waiter was really nice, so I left a good tip. The bill was more than reasonable.",
+      "target_words": ["appetizer", "tip", "bill"],
+      "hints_fr": [
+        "'Entrée' (au restaurant) = 'appetizer' (US) / 'starter' (UK). Attention : 'entrée' en anglais US = plat principal !",
+        "'Addition' = 'the bill' (UK) / 'the check' (US)."
+      ]
+    },
+    {
+      "id": 17,
+      "level": "B2",
+      "theme": "travel",
+      "title_fr": "Préparer le voyage",
+      "fr": "Avant de partir en voyage, j'ai préparé soigneusement mon itinéraire. J'ai réservé une auberge de jeunesse à Lisbonne pour économiser. Je compte visiter quelques monuments célèbres et acheter des souvenirs.",
+      "en_reference": "Before going on my trip, I carefully prepared my itinerary. I booked a hostel in Lisbon to save money. I plan to visit some famous landmarks and buy some souvenirs.",
+      "target_words": ["itinerary", "hostel", "landmark", "souvenir"],
+      "hints_fr": [
+        "'Auberge de jeunesse' = 'hostel' (≠ 'hotel' !).",
+        "'Monument' (touristique) = 'landmark' — 'monument' en EN désigne plus une statue commémorative."
+      ]
+    },
+    {
+      "id": 18,
+      "level": "B2",
+      "theme": "daily",
+      "title_fr": "Nouvel appartement",
+      "fr": "Ça fait deux semaines que j'ai déménagé et je commence enfin à m'installer. J'ai trié mes affaires, rangé mes vêtements dans les tiroirs et le placard. Il me reste juste à payer mes charges du mois.",
+      "en_reference": "It's been two weeks since I moved and I'm finally starting to settle in. I sorted out my stuff, put my clothes in the drawers and the closet. I just have to pay my utilities for the month.",
+      "target_words": ["settle in", "drawer", "closet", "utilities"],
+      "hints_fr": [
+        "'S'installer' (dans un nouveau lieu) = 'to settle in' — phrasal verb important.",
+        "'Charges' (eau/élec/gaz) = 'utilities' — 'charges' tout court ne se dit pas."
+      ]
+    },
+    {
+      "id": 19,
+      "level": "B2",
+      "theme": "work",
+      "title_fr": "Surcharge avant les vacances",
+      "fr": "La semaine dernière, j'avais une charge de travail énorme. J'ai fait des heures supplémentaires tous les soirs pour respecter l'échéance. Heureusement, je pars en congés vendredi prochain.",
+      "en_reference": "Last week, I had a huge workload. I worked overtime every evening to meet the deadline. Luckily, I'm going on vacation next Friday.",
+      "target_words": ["workload", "overtime", "deadline", "vacation"],
+      "hints_fr": [
+        "'Respecter une échéance' = 'to meet a deadline' (verbe 'meet', pas 'respect').",
+        "'Partir en congés' = 'to go on vacation' (US) / 'on holiday' (UK)."
+      ]
+    },
+    {
+      "id": 20,
+      "level": "C1",
+      "theme": "mixed",
+      "title_fr": "Le voyage qui a tout changé",
+      "fr": "Si j'avais su que ce voyage changerait ma vie, j'aurais pris plus de notes. À peine étais-je arrivé à Lisbonne que j'ai su que je m'installerais ici un jour. J'ai dû serrer les dents pour rentrer en France, mais finalement, j'ai vendu la mèche à mes amis : je déménage l'été prochain.",
+      "en_reference": "Had I known this trip would change my life, I would have taken more notes. Hardly had I arrived in Lisbon when I knew I'd settle there one day. I had to bite the bullet to go back to France, but eventually, I spilled the beans to my friends: I'm moving next summer.",
+      "target_words": ["settle in", "bite the bullet", "eventually", "spill the beans"],
+      "hints_fr": [
+        "'Si j'avais su' (3ème conditionnel) → inversion stylistique possible : 'Had I known' (registre soutenu).",
+        "'À peine ... que ...' = 'Hardly ... when ...' avec inversion.",
+        "'Finalement' = 'eventually' (faux-ami : ≠ 'éventuellement' qui se dit 'possibly')."
+      ]
+    }
+  ],
+  "scoring": {
+    "description": "Score basé sur la couverture des target_words + précision grammaticale. Comparaison ligne par ligne avec en_reference.",
+    "evaluation_modes": [
+      {
+        "mode": "strict",
+        "description": "Match exact obligatoire sur tous les target_words + grammaire correcte (temps, prépositions, ordre des mots)."
+      },
+      {
+        "mode": "flexible",
+        "description": "Accepte synonymes proches (ex: 'commute' ↔ 'daily trip'), variantes UK/US, et fautes d'orthographe mineures (distance Levenshtein ≤ 2)."
+      },
+      {
+        "mode": "guided",
+        "description": "Affiche les hints_fr dès le début et propose les target_words manquants à la fin."
+      }
+    ],
+    "points": {
+      "per_target_word": 10,
+      "grammar_bonus": 20,
+      "perfect_match_bonus": 30
+    }
+  }
+}

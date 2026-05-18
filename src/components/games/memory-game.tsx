@@ -50,7 +50,7 @@ export function MemoryGame({ theme }: Props) {
   const [moves, setMoves] = useState(0);
   const [locked, setLocked] = useState(false);
   const [startedAt, setStartedAt] = useState<number | null>(null);
-  const [now, setNow] = useState<number>(Date.now());
+  const [now, setNow] = useState<number>(0);
   const [won, setWon] = useState(false);
   const [finalDuration, setFinalDuration] = useState<number>(0);
   const resultSavedRef = useRef(false);
@@ -62,7 +62,7 @@ export function MemoryGame({ theme }: Props) {
     return () => window.clearInterval(id);
   }, [startedAt, won]);
 
-  const elapsedMs = startedAt ? (won ? finalDuration : now - startedAt) : 0;
+  const elapsedMs = startedAt ? (won ? finalDuration : Math.max(0, now - startedAt)) : 0;
 
   const handleCardClick = useCallback(
     (index: number) => {
@@ -71,7 +71,11 @@ export function MemoryGame({ theme }: Props) {
       const card = deck[index];
       if (matched.has(card.pairId)) return;
 
-      if (!startedAt) setStartedAt(Date.now());
+      if (!startedAt) {
+        const t = Date.now();
+        setStartedAt(t);
+        setNow(t);
+      }
 
       const nextFlipped = [...flipped, index];
 
