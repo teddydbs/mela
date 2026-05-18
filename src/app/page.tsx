@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ChevronRight, Flame } from 'lucide-react';
+import { BookOpen, Dumbbell, Flame } from 'lucide-react';
 import { CATEGORIES, TOTAL_EXERCISES } from '@/lib/data/categories';
 import { ProgressBar } from '@/components/progress-bar';
 import { useUserData } from '@/lib/use-user-data';
@@ -114,48 +114,69 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.1 + i * 0.05 }}
+              className="bg-white rounded-3xl p-5 border border-gray-100 shadow-sm shadow-gray-100"
             >
-              <Link
-                href={`/learn/${cat.id}`}
-                className="block w-full bg-white rounded-3xl p-5 border border-gray-100 hover:border-gray-200 hover:shadow-md transition-all text-left group active:scale-[0.99] shadow-sm shadow-gray-100"
-              >
-                <div className="flex items-center gap-4 mb-3">
-                  <div
-                    className="flex-shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center text-2xl shadow-sm"
-                    style={{
-                      background: `linear-gradient(135deg, ${cat.accent}, ${cat.accent}DD)`,
-                      boxShadow: `0 8px 20px -10px ${cat.accent}80`,
-                    }}
-                  >
-                    <span>{cat.emoji}</span>
+              {/* Header */}
+              <div className="flex items-center gap-4 mb-3">
+                <div
+                  className="flex-shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center text-2xl shadow-sm"
+                  style={{
+                    background: `linear-gradient(135deg, ${cat.accent}, ${cat.accent}DD)`,
+                    boxShadow: `0 8px 20px -10px ${cat.accent}80`,
+                  }}
+                >
+                  <span>{cat.emoji}</span>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="font-bold text-gray-900 text-base leading-tight">
+                    {cat.name}
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="font-bold text-gray-900 text-base leading-tight">
-                      {cat.name}
-                    </div>
-                    <div className="text-xs text-gray-500 mt-0.5 truncate">{cat.description}</div>
-                  </div>
-                  <ChevronRight
-                    size={20}
-                    className="text-gray-300 group-hover:text-gray-500 transition"
-                    strokeWidth={2.5}
+                  <div className="text-xs text-gray-500 mt-0.5 truncate">{cat.description}</div>
+                </div>
+              </div>
+
+              {/* Progress */}
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex-1">
+                  <ProgressBar
+                    value={prog.completed.length}
+                    max={cat.exercises.length}
+                    color={cat.accent}
+                    height="h-2"
                   />
                 </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="flex-1">
-                    <ProgressBar
-                      value={prog.completed.length}
-                      max={cat.exercises.length}
-                      color={cat.accent}
-                      height="h-2"
-                    />
-                  </div>
-                  <div className="text-xs font-bold tabular-nums" style={{ color: cat.accent }}>
-                    {pct}%
-                  </div>
+                <div className="text-xs font-bold tabular-nums" style={{ color: cat.accent }}>
+                  {prog.completed.length}/{cat.exercises.length}
                 </div>
-              </Link>
+              </div>
+
+              {/* Actions séparées : Cours / Exercices */}
+              <div className="grid grid-cols-2 gap-2">
+                <Link
+                  href={`/learn/${cat.id}`}
+                  className="flex items-center justify-center gap-1.5 px-3 py-3 rounded-xl text-sm font-bold transition active:scale-[0.97] border-2"
+                  style={{
+                    backgroundColor: cat.bgLight,
+                    color: cat.accent,
+                    borderColor: 'transparent',
+                  }}
+                >
+                  <BookOpen size={15} strokeWidth={2.5} />
+                  Cours
+                </Link>
+                <Link
+                  href={`/practice/${cat.id}`}
+                  className="flex items-center justify-center gap-1.5 px-3 py-3 rounded-xl text-sm font-bold transition active:scale-[0.97] text-white shadow-md"
+                  style={{
+                    background: `linear-gradient(135deg, ${cat.accent}, ${cat.accent}DD)`,
+                    boxShadow: `0 6px 16px -8px ${cat.accent}80`,
+                  }}
+                >
+                  <Dumbbell size={15} strokeWidth={2.5} />
+                  Exercices
+                  {pct === 100 && <span className="text-xs">✓</span>}
+                </Link>
+              </div>
             </motion.div>
           );
         })}
