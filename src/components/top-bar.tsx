@@ -39,8 +39,19 @@ export function TopBar() {
 
   return (
     <>
-      <div className="bg-[#0A0A0A] text-white px-3 sm:px-6 py-4 flex items-center justify-between gap-3">
-        {/* Left: burger (mobile) + logo */}
+      <div className="relative bg-[#0A0A0A] text-white px-3 sm:px-6 py-4 flex items-center justify-between gap-3">
+        {/* Mobile only: logo absolutely centered */}
+        <Link
+          href="/"
+          className="md:hidden absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-2 active:scale-95 transition"
+        >
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#FF6B35] to-[#FFB800] flex items-center justify-center shadow-md shadow-[#FF6B35]/40">
+            <span className="text-sm font-black text-white tracking-tighter">M</span>
+          </div>
+          <span className="text-lg font-extrabold tracking-tight">MELA</span>
+        </Link>
+
+        {/* Left: burger (mobile) + logo (desktop) */}
         <div className="flex items-center gap-2 flex-shrink-0">
           <button
             onClick={() => setMobileOpen(true)}
@@ -49,7 +60,10 @@ export function TopBar() {
           >
             <Menu size={18} strokeWidth={2.5} />
           </button>
-          <Link href="/" className="flex items-center gap-2 active:scale-95 transition">
+          <Link
+            href="/"
+            className="hidden md:flex items-center gap-2 active:scale-95 transition"
+          >
             <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#FF6B35] to-[#FFB800] flex items-center justify-center shadow-md shadow-[#FF6B35]/40">
               <span className="text-sm font-black text-white tracking-tighter">M</span>
             </div>

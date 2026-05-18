@@ -13,6 +13,7 @@ const CATEGORIES_RAW = {
     description: 'Past simple, Present perfect, Past perfect, Future perfect',
     accent: '#FF6B35',
     bgLight: '#FFF1EA',
+    level: 'B1',
     exercises: [
       { q: 'She _____ to London three times this year.', o: ['went', 'has been', 'is going', 'goes'], c: 1, e: "Present perfect ('has been') car 'this year' est une période non terminée. 'Went' n'irait qu'avec une période finie ('last year')." },
       { q: 'I _____ him at the conference yesterday.', o: ['have met', 'met', 'had met', 'was meeting'], c: 1, e: "Past simple ('met') car 'yesterday' indique un moment précis dans le passé." },
@@ -44,6 +45,7 @@ const CATEGORIES_RAW = {
     description: "Must, mustn't, have to, should, can, might",
     accent: '#34C759',
     bgLight: '#E8F8EC',
+    level: 'B1',
     exercises: [
       { q: "You _____ smoke here. It's strictly forbidden.", o: ["shouldn't", "don't have to", "mustn't", "couldn't"], c: 2, e: "'Mustn't' = interdiction formelle. 'Shouldn't' serait un conseil, plus faible." },
       { q: "It's Saturday. You _____ go to work.", o: ["mustn't", "don't have to", "shouldn't", "can't"], c: 1, e: "'Don't have to' = absence d'obligation. 'Mustn't' voudrait dire interdit (faux ici)." },
@@ -70,6 +72,7 @@ const CATEGORIES_RAW = {
     description: 'Zero, First, Second, Third, Mixed conditionals',
     accent: '#FFB800',
     bgLight: '#FFF8E1',
+    level: 'B1',
     exercises: [
       { q: 'If you heat water to 100°C, it _____.', o: ['boils', 'will boil', 'would boil', 'boiled'], c: 0, e: 'Zero conditional (vérité générale) : if + présent, présent.' },
       { q: "If it _____ tomorrow, we'll cancel the picnic.", o: ['rain', 'rains', 'will rain', 'would rain'], c: 1, e: 'First conditional : if + présent simple, will + base verbale.' },
@@ -96,6 +99,7 @@ const CATEGORIES_RAW = {
     description: 'Quand utiliser -ing vs to + verbe',
     accent: '#AF52DE',
     bgLight: '#F5EBFA',
+    level: 'B1',
     exercises: [
       { q: 'I enjoy _____ in the morning.', o: ['to run', 'running', 'run', 'to running'], c: 1, e: "Après 'enjoy', toujours -ing. Verbes de plaisir/déplaisir (enjoy, love, hate, like) prennent souvent le gérondif." },
       { q: 'She decided _____ the job.', o: ['taking', 'to take', 'take', 'to taking'], c: 1, e: "Après 'decide', toujours 'to + base verbale'. Verbes de décision/intention prennent l'infinitif." },
@@ -122,6 +126,7 @@ const CATEGORIES_RAW = {
     description: 'Les prépositions qui piègent les francophones',
     accent: '#007AFF',
     bgLight: '#E5F1FF',
+    level: 'A2',
     exercises: [
       { q: "I'm interested _____ photography.", o: ['in', 'on', 'by', 'for'], c: 0, e: "'Interested IN' — toujours. Erreur classique : en français 'intéressé par'." },
       { q: "She's good _____ math.", o: ['in', 'at', 'with', 'for'], c: 1, e: "'Good AT something' = doué pour. 'Good WITH people' marche aussi mais sens différent." },
@@ -441,26 +446,67 @@ const CATEGORIES_RAW = {
 
 export const CATEGORIES = CATEGORIES_RAW as Record<CategoryId, Category>;
 
+// Ordre pédagogique croissant : A2 fondations → B1 core → B1+ production
 export const CATEGORY_IDS: CategoryId[] = [
-  'tenses',
-  'modals',
-  'conditionals',
-  'gerunds',
-  'prepositions',
+  // A2 — fondations à consolider
   'articles',
   'quantifiers',
   'comparatives',
-  'passive',
-  'reported',
-  'relatives',
-  'tags',
-  'connectors',
-  'phrasalVerbs',
-  'collocations',
   'falseFriends',
+  'prepositions',
+  // B1 — structures et temps
+  'tenses',
+  'modals',
+  'gerunds',
+  'conditionals',
+  'passive',
+  'relatives',
+  'reported',
+  'tags',
+  // B1+ — production fluide
+  'collocations',
+  'phrasalVerbs',
+  'connectors',
 ];
 
 export const TOTAL_EXERCISES = Object.values(CATEGORIES).reduce(
   (sum, c) => sum + c.exercises.length,
   0,
 );
+
+// Chapitres pédagogiques par niveau — pour structurer l'affichage en parcours progressif
+export interface CategoryChapter {
+  level: 'A2' | 'B1' | 'B1+';
+  title: string;
+  subtitle: string;
+  accent: string;
+  bgLight: string;
+  categoryIds: CategoryId[];
+}
+
+export const CATEGORY_CHAPTERS: CategoryChapter[] = [
+  {
+    level: 'A2',
+    title: 'Fondations',
+    subtitle: 'Les bases à consolider — articles, quantifieurs, comparatifs, faux amis et prépositions.',
+    accent: '#FF6B35',
+    bgLight: '#FFF1EA',
+    categoryIds: ['articles', 'quantifiers', 'comparatives', 'falseFriends', 'prepositions'],
+  },
+  {
+    level: 'B1',
+    title: 'Structures et temps',
+    subtitle: 'Le cœur du passage A2 → B1 — temps, modaux, passive, relatives, discours rapporté.',
+    accent: '#007AFF',
+    bgLight: '#E5F1FF',
+    categoryIds: ['tenses', 'modals', 'gerunds', 'conditionals', 'passive', 'relatives', 'reported', 'tags'],
+  },
+  {
+    level: 'B1+',
+    title: 'Production fluide',
+    subtitle: 'La couche qui te fait sonner natif — collocations, phrasal verbs, connecteurs.',
+    accent: '#AF52DE',
+    bgLight: '#F5EBFA',
+    categoryIds: ['collocations', 'phrasalVerbs', 'connectors'],
+  },
+];

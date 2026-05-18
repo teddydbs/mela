@@ -10,7 +10,7 @@ import {
   Target,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
-import { CATEGORIES, TOTAL_EXERCISES } from '@/lib/data/categories';
+import { CATEGORIES, CATEGORY_IDS, TOTAL_EXERCISES } from '@/lib/data/categories';
 import { CategoryIconCircle } from '@/components/category-icon';
 import { useUserData } from '@/lib/use-user-data';
 import { overallAccuracy, totalCompletedExercises } from '@/lib/storage';
@@ -119,14 +119,15 @@ export default function StatsPage() {
       <h2 className="text-lg font-extrabold text-gray-900 mb-3">Par catégorie</h2>
 
       <div className="grid sm:grid-cols-2 gap-3 mb-8">
-        {Object.entries(CATEGORIES).map(([key, cat], i) => {
+        {CATEGORY_IDS.map((catId, i) => {
+          const cat = CATEGORIES[catId];
           const prog = data.categoryProgress[cat.id] ?? { correct: 0, attempts: 0, completed: [] };
           const catAccuracy =
             prog.attempts > 0 ? Math.round((prog.correct / prog.attempts) * 100) : 0;
           const pct = Math.round((prog.completed.length / cat.exercises.length) * 100);
           return (
             <motion.div
-              key={key}
+              key={catId}
               initial={{ opacity: 0, x: -8 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.1 + i * 0.04 }}
