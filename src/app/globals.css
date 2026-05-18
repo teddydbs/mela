@@ -1,14 +1,30 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FBFBFD;
-  --foreground: #111827;
+  /* Pastel blue background (canvas) */
+  --background: #C5E8EE;
+  /* Inner dark frame */
+  --frame-dark: #0A0A0A;
+  /* Inner content (white floor) */
+  --canvas: #FFFFFF;
+  --foreground: #0F172A;
+
+  /* Accents */
+  --accent-mint: #B5F0C9;
+  --accent-mint-deep: #34C759;
+  --accent-violet: #E5C8E8;
+  --accent-violet-deep: #C77DEC;
+  --accent-yellow: #FFF4B3;
+  --accent-yellow-deep: #FFB800;
+  --accent-pink: #FFD0DD;
+  --accent-orange: #FF6B35;
+  --accent-blue: #007AFF;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
 
 * {
@@ -27,12 +43,11 @@ button {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Custom utility: tabular-nums by default on stats */
 .tabular-nums {
   font-variant-numeric: tabular-nums;
 }
 
-/* Smooth page transitions */
+/* Animations */
 @keyframes fade-in {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
@@ -42,7 +57,6 @@ button {
   animation: fade-in 0.3s ease-out;
 }
 
-/* Confetti container */
 .confetti-canvas {
   position: fixed;
   inset: 0;
@@ -50,7 +64,6 @@ button {
   z-index: 50;
 }
 
-/* Custom scrollbar hidden on mobile */
 .scrollbar-hide {
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -59,7 +72,22 @@ button {
   display: none;
 }
 
-/* Disable iOS overscroll bounce on body */
 html, body {
   overscroll-behavior-y: none;
+}
+
+/* Dotted vertical connector between learning cards */
+.dotted-connector {
+  background-image: radial-gradient(circle, #34C759 1.5px, transparent 1.5px);
+  background-size: 1px 8px;
+  background-repeat: repeat-y;
+  background-position: center;
+}
+
+/* Dashed horizontal connector */
+.dashed-h {
+  background-image: linear-gradient(to right, #34C759 50%, transparent 0%);
+  background-size: 8px 1.5px;
+  background-repeat: repeat-x;
+  background-position: center;
 }

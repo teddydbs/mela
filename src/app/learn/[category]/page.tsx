@@ -27,7 +27,7 @@ export default function LessonPage({ params }: PageProps) {
   return (
     <div className="text-gray-900 pb-8">
       {/* Header */}
-      <div className="sticky top-[60px] z-10 bg-[#FBFBFD]/80 backdrop-blur-xl border-b border-gray-100/80">
+      <div className="bg-white border-b border-gray-100">
         <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
           <button
             onClick={() => router.back()}
