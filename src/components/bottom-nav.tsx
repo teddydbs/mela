@@ -17,10 +17,10 @@ export function BottomNav() {
 
   return (
     <nav
-      className="md:hidden absolute bottom-6 left-1/2 -translate-x-1/2 z-30 pointer-events-none"
+      className="md:hidden fixed bottom-0 left-1/2 -translate-x-1/2 z-40 pointer-events-none"
       aria-label="Navigation"
     >
-      <div className="pointer-events-auto flex items-center gap-1.5 bg-[#0A0A0A] rounded-full px-3 py-2.5 shadow-2xl">
+      <div className="pointer-events-auto flex items-center gap-1.5 bg-[#0A0A0A] border-2 border-white/10 rounded-full px-3 py-2.5 shadow-2xl">
         {NAV_ITEMS.map((item) => {
           const isActive = item.href === '/' ? pathname === '/' : pathname.startsWith(item.href);
           const Icon = item.icon;

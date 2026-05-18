@@ -135,20 +135,19 @@ export default function HomePage() {
                 completedCount={prog.completed.length}
                 totalCount={cat.exercises.length}
                 delay={0.1 + i * 0.05}
-                index={i}
               />
             );
           })}
         </div>
 
-        {/* Bottom decorative sticker bar (desktop) */}
+        {/* Bottom decorative sticker bar (desktop) — straddling white/black */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="hidden md:flex justify-center mt-8"
+          className="hidden md:flex fixed bottom-0 left-1/2 -translate-x-1/2 z-40 pointer-events-none"
         >
-          <div className="flex items-center gap-2 bg-[#0A0A0A] rounded-full px-4 py-2.5 shadow-lg">
+          <div className="pointer-events-auto flex items-center gap-2 bg-[#0A0A0A] border-2 border-white/10 rounded-full px-4 py-2.5 shadow-2xl">
             {CATEGORY_IDS.map((catId) => (
               <Link
                 key={catId}
@@ -249,7 +248,6 @@ function CategoryCard({
   completedCount,
   totalCount,
   delay,
-  index,
 }: {
   catId: CategoryId;
   category: (typeof CATEGORIES)[keyof typeof CATEGORIES];
@@ -258,7 +256,6 @@ function CategoryCard({
   completedCount: number;
   totalCount: number;
   delay: number;
-  index: number;
 }) {
   const statusBadge = isCompleted ? (
     <span className="inline-flex items-center gap-1 bg-[#B5F0C9] text-[#1F7A3F] text-[11px] font-extrabold px-2.5 py-1 rounded-full">
@@ -282,9 +279,7 @@ function CategoryCard({
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay }}
-      className={`relative bg-white border-2 border-gray-100 rounded-3xl p-5 shadow-sm hover:border-gray-200 hover:shadow-md transition ${
-        index === 1 ? 'sm:mt-8' : index === 3 ? 'sm:mt-8' : ''
-      }`}
+      className="relative bg-white border-2 border-gray-100 rounded-3xl p-5 shadow-sm hover:border-gray-200 hover:shadow-md transition h-full flex flex-col"
     >
       <div className="absolute -top-3 right-5">
         <CategoryIconCircle catId={catId} size={42} iconSize={20} variant="tint" className="shadow-md border-2 border-white" />

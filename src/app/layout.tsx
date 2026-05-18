@@ -37,13 +37,13 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${jakarta.variable} h-full bg-[#0A0A0A]`}>
       <body className="min-h-full bg-[#0A0A0A] text-gray-900 antialiased">
-        <div className="min-h-screen flex flex-col bg-[#0A0A0A] px-[5px] pb-[5px]">
+        <div className="min-h-screen flex flex-col bg-[#0A0A0A] px-[5px] pb-[28px] relative">
           <TopBar />
           {/* White inner canvas with rounded corners on all sides */}
           <div className="flex-1 bg-white rounded-[24px] sm:rounded-[28px] mt-[5px] overflow-hidden relative">
             <main className="pb-32">{children}</main>
-            <BottomNav />
           </div>
+          <BottomNav />
         </div>
       </body>
     </html>
