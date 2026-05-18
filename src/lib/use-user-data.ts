@@ -5,12 +5,13 @@ import {
   DEFAULT_DATA,
   applyAnswer,
   applyMemoryResult,
+  applyStoryResult,
   loadUserData,
   resetUserData,
   saveUserData,
   type AnswerOutcome,
 } from '@/lib/storage';
-import type { MemoryGameResult, UserData } from '@/lib/types';
+import type { MemoryGameResult, StoryResult, UserData } from '@/lib/types';
 
 export function useUserData() {
   const [data, setData] = useState<UserData>(DEFAULT_DATA);
@@ -46,10 +47,28 @@ export function useUserData() {
     [data],
   );
 
+  const recordStoryResult = useCallback(
+    (result: StoryResult) => {
+      const next = applyStoryResult(data, result);
+      setData(next);
+      saveUserData(next);
+      return next;
+    },
+    [data],
+  );
+
   const reset = useCallback(() => {
     resetUserData();
     setData(DEFAULT_DATA);
   }, []);
 
-  return { data, loaded, update, recordAnswer, recordMemoryResult, reset };
+  return {
+    data,
+    loaded,
+    update,
+    recordAnswer,
+    recordMemoryResult,
+    recordStoryResult,
+    reset,
+  };
 }

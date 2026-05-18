@@ -3,8 +3,8 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
-  ArrowRightLeft,
   ArrowUpDown,
+  BookOpenCheck,
   Construction,
   Ear,
   Gamepad2,
@@ -38,16 +38,17 @@ const ACTIVE_GAMES: GameTile[] = [
     color: '#FF6B35',
     href: '/games/memory',
   },
+  {
+    Icon: BookOpenCheck,
+    name: 'Translation Stories',
+    desc: 'Réécrire des mini-histoires en anglais',
+    bg: '#D6F5DD',
+    color: '#34C759',
+    href: '/games/stories',
+  },
 ];
 
 const UPCOMING_GAMES: GameTile[] = [
-  {
-    Icon: ArrowRightLeft,
-    name: 'Speed Translation',
-    desc: 'Max de traductions en temps limité',
-    bg: '#D6F5DD',
-    color: '#34C759',
-  },
   {
     Icon: Type,
     name: 'Fill the blank',

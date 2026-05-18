@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { BookA, NotebookPen, Timer, Zap } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { DictionaryModal } from '@/components/tools/dictionary-modal';
@@ -9,6 +9,13 @@ import { FocusTimerModal } from '@/components/tools/focus-timer-modal';
 import { QuickQuizModal } from '@/components/tools/quick-quiz-modal';
 
 type ToolKey = 'dictionary' | 'vocab' | 'timer' | 'quiz';
+
+function captureSelection(): string {
+  if (typeof window === 'undefined') return '';
+  const sel = window.getSelection()?.toString().trim() ?? '';
+  // Limit to a reasonable single-word/short-phrase length
+  return sel.length > 0 && sel.length < 60 ? sel : '';
+}
 
 type Tool = {
   key: ToolKey;
@@ -27,6 +34,12 @@ const TOOLS: Tool[] = [
 
 export function BottomToolbar() {
   const [openTool, setOpenTool] = useState<ToolKey | null>(null);
+  const pendingSelectionRef = useRef<string>('');
+
+  // Capture the page-text selection BEFORE the click destroys focus (mousedown fires first)
+  const handlePointerDown = () => {
+    pendingSelectionRef.current = captureSelection();
+  };
 
   return (
     <>
@@ -37,6 +50,7 @@ export function BottomToolbar() {
           return (
             <button
               key={tool.key}
+              onPointerDown={handlePointerDown}
               onClick={() => setOpenTool(tool.key)}
               className="group flex items-center gap-1.5 active:scale-90 transition pr-1"
               aria-label={tool.label}
@@ -63,8 +77,18 @@ export function BottomToolbar() {
         })}
       </div>
 
-      {openTool === 'dictionary' && <DictionaryModal onClose={() => setOpenTool(null)} />}
-      {openTool === 'vocab' && <VocabNotebookModal onClose={() => setOpenTool(null)} />}
+      {openTool === 'dictionary' && (
+        <DictionaryModal
+          onClose={() => setOpenTool(null)}
+          initialQuery={pendingSelectionRef.current}
+        />
+      )}
+      {openTool === 'vocab' && (
+        <VocabNotebookModal
+          onClose={() => setOpenTool(null)}
+          initialWord={pendingSelectionRef.current}
+        />
+      )}
       {openTool === 'timer' && <FocusTimerModal onClose={() => setOpenTool(null)} />}
       {openTool === 'quiz' && <QuickQuizModal onClose={() => setOpenTool(null)} />}
     </>

@@ -6,6 +6,8 @@ import type {
   MemoryGameResult,
   MemoryTheme,
   MemoryThemeStats,
+  StoriesStats,
+  StoryResult,
 } from '@/lib/types';
 
 const STORAGE_KEY = 'mela_data_v1';
@@ -182,6 +184,57 @@ export function applyMemoryResult(data: UserData, result: MemoryGameResult): Use
 
 export function getMemoryStats(data: UserData, theme: MemoryTheme): MemoryThemeStats | undefined {
   return data.games?.memory?.[theme];
+}
+
+export function applyStoryResult(data: UserData, result: StoryResult): UserData {
+  const today = todayISO();
+  const games = data.games ?? {};
+  const existing: StoriesStats = games.stories ?? {
+    completed: [],
+    attempts: 0,
+    bestScores: {},
+  };
+
+  const previousBest = existing.bestScores[result.storyId] ?? 0;
+  const isNewBest = result.score > previousBest;
+  const isSuccess = result.score >= 70;
+
+  const nextStories: StoriesStats = {
+    completed:
+      isSuccess && !existing.completed.includes(result.storyId)
+        ? [...existing.completed, result.storyId]
+        : existing.completed,
+    attempts: existing.attempts + 1,
+    bestScores: {
+      ...existing.bestScores,
+      [result.storyId]: isNewBest ? result.score : previousBest,
+    },
+    lastPlayed: today,
+  };
+
+  const next: UserData = {
+    ...data,
+    games: { ...games, stories: nextStories },
+  };
+
+  if (next.lastActive !== today) {
+    if (next.lastActive && daysBetween(next.lastActive, today) === 1) {
+      next.streak += 1;
+    } else if (!next.lastActive || daysBetween(next.lastActive, today) > 1) {
+      next.streak = 1;
+    }
+    next.lastActive = today;
+  }
+
+  const xpEarned = Math.round(result.score / 10) * 5;
+  const newBestBonus = isNewBest ? 15 : 0;
+  next.totalXP += xpEarned + newBestBonus;
+
+  return next;
+}
+
+export function getStoriesStats(data: UserData): StoriesStats | undefined {
+  return data.games?.stories;
 }
 
 export function formatDuration(ms: number): string {

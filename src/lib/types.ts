@@ -122,9 +122,47 @@ export interface MemoryGameResult {
 
 export interface GameStats {
   memory?: Partial<Record<MemoryTheme, MemoryThemeStats>>;
+  stories?: StoriesStats;
 }
 
 export type Level = 'A2' | 'B1' | 'B2';
+
+export type StoryLevel = 'A2' | 'B1' | 'B2' | 'C1';
+export type StoryTheme = MemoryTheme | 'mixed';
+
+export interface Story {
+  id: number;
+  level: StoryLevel;
+  theme: StoryTheme;
+  title_fr: string;
+  fr: string;
+  en_reference: string;
+  target_words: string[];
+  hints_fr: string[];
+}
+
+export interface StoriesData {
+  id: string;
+  title: string;
+  description: string;
+  instructions_fr: string;
+  stories: Story[];
+}
+
+export interface StoryResult {
+  storyId: number;
+  score: number;
+  matchedWords: number;
+  totalWords: number;
+  similarity: number;
+}
+
+export interface StoriesStats {
+  completed: number[];
+  attempts: number;
+  bestScores: Record<number, number>;
+  lastPlayed?: string;
+}
 
 export interface RoleplayScenario {
   id: string;
