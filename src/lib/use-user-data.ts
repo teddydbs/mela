@@ -4,12 +4,13 @@ import { useCallback, useEffect, useState } from 'react';
 import {
   DEFAULT_DATA,
   applyAnswer,
+  applyMemoryResult,
   loadUserData,
   resetUserData,
   saveUserData,
   type AnswerOutcome,
 } from '@/lib/storage';
-import type { UserData } from '@/lib/types';
+import type { MemoryGameResult, UserData } from '@/lib/types';
 
 export function useUserData() {
   const [data, setData] = useState<UserData>(DEFAULT_DATA);
@@ -35,10 +36,20 @@ export function useUserData() {
     [data],
   );
 
+  const recordMemoryResult = useCallback(
+    (result: MemoryGameResult) => {
+      const next = applyMemoryResult(data, result);
+      setData(next);
+      saveUserData(next);
+      return next;
+    },
+    [data],
+  );
+
   const reset = useCallback(() => {
     resetUserData();
     setData(DEFAULT_DATA);
   }, []);
 
-  return { data, loaded, update, recordAnswer, reset };
+  return { data, loaded, update, recordAnswer, recordMemoryResult, reset };
 }

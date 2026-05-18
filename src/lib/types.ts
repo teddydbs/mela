@@ -60,6 +60,45 @@ export interface UserData {
   totalCorrect: number;
   totalAttempts: number;
   categoryProgress: Record<CategoryId, CategoryProgress>;
+  games?: GameStats;
+}
+
+export type GameId =
+  | 'memory'
+  | 'speed-translation'
+  | 'fill-blank'
+  | 'sentence-builder'
+  | 'listening';
+
+export type MemoryTheme = 'food' | 'work' | 'travel' | 'daily' | 'emergencies';
+
+export interface MemoryPair {
+  en: string;
+  fr: string;
+  level: Level | 'A1';
+}
+
+export interface MemoryThemeData {
+  theme: MemoryTheme;
+  pairs: MemoryPair[];
+}
+
+export interface MemoryThemeStats {
+  bestTimeMs: number;
+  bestMoves: number;
+  plays: number;
+  lastPlayed: string;
+}
+
+export interface MemoryGameResult {
+  theme: MemoryTheme;
+  durationMs: number;
+  moves: number;
+  pairsCount: number;
+}
+
+export interface GameStats {
+  memory?: Partial<Record<MemoryTheme, MemoryThemeStats>>;
 }
 
 export type Level = 'A2' | 'B1' | 'B2';

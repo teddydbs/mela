@@ -35,15 +35,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`${jakarta.variable} h-full bg-[#0A0A0A]`}>
-      <body className="min-h-full bg-[#0A0A0A] text-gray-900 antialiased">
-        <div className="min-h-screen flex flex-col bg-[#0A0A0A] px-[5px] pb-[28px] relative">
+    <html lang="fr" className={`${jakarta.variable} h-full bg-[#0A0A0A] overflow-hidden`}>
+      <body className="h-full bg-[#0A0A0A] text-gray-900 antialiased overflow-hidden">
+        <div className="h-screen w-screen flex flex-col bg-[#0A0A0A]">
+          {/* Top fixed */}
           <TopBar />
-          {/* White inner canvas with rounded corners on all sides */}
-          <div className="flex-1 bg-white rounded-[24px] sm:rounded-[28px] mt-[5px] overflow-hidden relative">
-            <main className="pb-32">{children}</main>
+
+          {/* Middle: white panel where ONLY the content scrolls */}
+          <div className="flex-1 px-[5px] mt-[5px] min-h-0 flex">
+            <div className="flex-1 bg-white rounded-[24px] sm:rounded-[28px] overflow-y-auto overflow-x-hidden relative">
+              <main className="pb-6">{children}</main>
+            </div>
           </div>
-          <BottomNav />
+
+          {/* Bottom black band — sticker bar fully embedded inside */}
+          <div className="flex-shrink-0 flex items-center justify-center px-[5px] pt-2 pb-3">
+            <BottomNav />
+          </div>
         </div>
       </body>
     </html>

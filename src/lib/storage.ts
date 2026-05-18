@@ -1,6 +1,12 @@
 'use client';
 
-import type { UserData, CategoryId } from '@/lib/types';
+import type {
+  UserData,
+  CategoryId,
+  MemoryGameResult,
+  MemoryTheme,
+  MemoryThemeStats,
+} from '@/lib/types';
 
 const STORAGE_KEY = 'mela_data_v1';
 
@@ -117,4 +123,59 @@ export function overallAccuracy(data: UserData): number {
 
 export function totalCompletedExercises(data: UserData): number {
   return Object.values(data.categoryProgress).reduce((sum, c) => sum + c.completed.length, 0);
+}
+
+export function applyMemoryResult(data: UserData, result: MemoryGameResult): UserData {
+  const today = todayISO();
+  const games = data.games ?? {};
+  const memory = games.memory ?? {};
+  const existing = memory[result.theme];
+
+  const nextThemeStats: MemoryThemeStats = {
+    bestTimeMs:
+      existing && existing.bestTimeMs > 0
+        ? Math.min(existing.bestTimeMs, result.durationMs)
+        : result.durationMs,
+    bestMoves:
+      existing && existing.bestMoves > 0
+        ? Math.min(existing.bestMoves, result.moves)
+        : result.moves,
+    plays: (existing?.plays ?? 0) + 1,
+    lastPlayed: today,
+  };
+
+  const next: UserData = {
+    ...data,
+    games: {
+      ...games,
+      memory: { ...memory, [result.theme]: nextThemeStats },
+    },
+  };
+
+  if (next.lastActive !== today) {
+    if (next.lastActive && daysBetween(next.lastActive, today) === 1) {
+      next.streak += 1;
+    } else if (!next.lastActive || daysBetween(next.lastActive, today) > 1) {
+      next.streak = 1;
+    }
+    next.lastActive = today;
+  }
+
+  // XP: 5 per pair matched + 20 bonus if new best time
+  const xpEarned = result.pairsCount * 5;
+  const newBestTime = !existing || result.durationMs < existing.bestTimeMs;
+  next.totalXP += xpEarned + (newBestTime ? 20 : 0);
+
+  return next;
+}
+
+export function getMemoryStats(data: UserData, theme: MemoryTheme): MemoryThemeStats | undefined {
+  return data.games?.memory?.[theme];
+}
+
+export function formatDuration(ms: number): string {
+  const totalSec = Math.floor(ms / 1000);
+  const m = Math.floor(totalSec / 60);
+  const s = totalSec % 60;
+  return m > 0 ? `${m}m ${String(s).padStart(2, '0')}s` : `${s}s`;
 }

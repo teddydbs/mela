@@ -140,33 +140,6 @@ export default function HomePage() {
           })}
         </div>
 
-        {/* Bottom decorative sticker bar (desktop) — straddling white/black */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-          className="hidden md:flex fixed bottom-0 left-1/2 -translate-x-1/2 z-40 pointer-events-none"
-        >
-          <div className="pointer-events-auto flex items-center gap-2 bg-[#0A0A0A] border-2 border-white/10 rounded-full px-4 py-2.5 shadow-2xl">
-            {CATEGORY_IDS.map((catId) => (
-              <Link
-                key={catId}
-                href={`/learn/${catId}`}
-                className="transition active:scale-90 hover:scale-110"
-                title={CATEGORIES[catId].name}
-              >
-                <CategoryIconCircle catId={catId} size={40} iconSize={18} variant="tint" />
-              </Link>
-            ))}
-            <Link
-              href="/plan"
-              className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-700 text-white text-xl font-bold transition active:scale-90 hover:bg-gray-600"
-              aria-label="More"
-            >
-              +
-            </Link>
-          </div>
-        </motion.div>
       </div>
 
       {/* RIGHT SIDEBAR */}
