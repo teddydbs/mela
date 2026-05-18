@@ -309,7 +309,11 @@ function CategoryCard({
           </button>
           <Link
             href={`/learn/${category.id}`}
-            className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-gray-200 transition active:scale-90"
+            className="w-8 h-8 rounded-full flex items-center justify-center transition active:scale-90 shadow-sm hover:opacity-90"
+            style={{
+              backgroundColor: category.bgLight,
+              color: category.accent,
+            }}
             aria-label="Voir le cours"
             title="Cours"
           >
